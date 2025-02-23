@@ -1,31 +1,10 @@
 <div class="menu-drawer__inner-container tw-h-full">
   <div class="menu-drawer__navigation-container tw-flex tw-flex-col tw-h-full tw-px-[33px] tw-py-[10px] tw-overflow-auto">
-    <close-header-drawer class="tw-h-[20px] tw-w-[20px] tw-fixed tw-right-[25px] tw-top-[10px]">
+    <close-header-drawer class="tw-h-[20px] tw-w-[20px] tw-fixed tw-right-[16px] tw-top-[10px]">
       {% render "icon-close" %}
     </close-header-drawer>
-    {%- if settings.logo != blank -%}  
-      <div>
-        <a href="{{ routes.root_url }}" class="tw-flex tw-pb-[10px] tw-items-center tw-justify-center tw-w-full">
-            <div class="header__heading-logo-wrapper">
-              {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
-              {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
-              {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
-              {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
-              {{ settings.logo | image_url: width: 600 | image_tag:
-                class: 'header__heading-logo motion-reduce',
-                widths: widths,
-                height: logo_height,
-                width: settings.logo_width,
-                alt: logo_alt,
-                sizes: sizes,
-                preload: true
-              }}
-            </div>
-        </a>
-      </div>
-    {% endif %}
     {%- if shop.customer_accounts_enabled -%}
-      <div class="mobile-header-drawer tw-flex tw-items-center tw-justify-center tw-pb-[20px]">
+      <div class="mobile-header-drawer tw-flex tw-items-center tw-justify-center tw-pb-[20px] tw-pt-[34px]">
         {% if customer == blank %}
           <a
             href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"

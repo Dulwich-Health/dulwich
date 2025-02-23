@@ -2759,7 +2759,7 @@ details-disclosure > details {
   .search-modal__content {
     padding-left: 0;
     padding-right: 0;
-    min-width: 180px;
+    min-width: auto;
     max-width: 180px;
   }
   .header-menu-search {
@@ -3068,6 +3068,7 @@ li.active a {
   margin-top: 13px !important;
   padding: 5px 0px !important;
   font-weight: 400 !important;
+  text-transform: capitalize !important;
 }
 .cart__footer .cbb-shipping-rates-calculator {
   margin-top: 0px !important;
@@ -3123,9 +3124,12 @@ li.active a {
 .cart__footer .sc_simple-container .sc_code-btn input[type=button] {
   width: 100%;
   border-radius: 21px;
-  max-height: 30px;
+  max-height: 38px;
   font-size: 13px;
-  text-transform: uppercase;
+  text-transform: capitalize;
+}
+.cart__footer .sc_code-btn input[type="button"] {
+  padding-top: 2px;
 }
 .cart__footer .sc_simple-container .sc_code-btn {
   width: 45%;
@@ -3240,7 +3244,7 @@ cart-upsell-recommendations.splide.is-initialized {
 }
 .cart-section .scDiscount {
   margin-top: 0;
-  margin-bottom: 4px;
+  margin-bottom: 14px;
 }
 .header .header-icon-search-sticky {
   display: none;
@@ -3361,12 +3365,15 @@ p.product__text:empty {
 }
 .cart__footer .cart__ctas .payment-icons-cart {
   margin-top: 24px;
+  margin-bottom: 14px;
 }
 .cart__footer .coupon-toggle-text {
   font-size: 12px;
 }
 .cart__footer .cbb-shipping-rates-calculator-change-shipping-address-link {
   font-size: 12px;
+  color: #000;
+  font-weight: 700 !important;
 }
 @media screen and (max-width: 750px) {
   .cart__footer .coupon-toggle-text,
@@ -3386,6 +3393,7 @@ p.product__text:empty {
   }
   .cart__footer .cart__ctas .payment-icons-cart {
     margin-top: 4px;
+    margin-bottom: 0;
   }
   .cart__footer .cbb-shipping-rates-calculator-shipping-address-chooser label select, .cart__footer .cbb-shipping-rates-calculator-shipping-address-chooser label input {
     padding-left: 8px !important;
@@ -3405,7 +3413,7 @@ p.product__text:empty {
     font-size: 11px !important;
   }
   .cart__footer .sc_simple-container .sc-cube-text, .cart__footer .sc_simple-container .sc_code-btn input[type=button] {
-    max-height: 23px;
+    max-height: 33px;
     font-size: 11px;
   }
   .cart__footer .sc_simple-container .sc_code-btn input[type=button] {
@@ -3639,7 +3647,7 @@ checkout-login .login-box {
   }
   .header__icon.header__icon--menu {
     height: 1.4rem;
-    width: 3rem;
+    width: 5rem;
   }
   .header__search .search-modal__form .field__input, .header__search .search-modal__form .field__input:focus, .header__search .search-modal__form .field__input:focus-visible {
     padding-top: 7px;
@@ -3854,9 +3862,20 @@ article .article-template__content ol {
 shopify-accelerated-checkout-cart {
   --shopify-accelerated-checkout-button-block-size: 38px;
   --shopify-accelerated-checkout-button-border-radius: 38px;
+  --shopify-accelerated-checkout-inline-alignment: center;
 }
 @media screen and (max-width: 750px) {
   shopify-accelerated-checkout-cart {
     --shopify-accelerated-checkout-button-block-size: 33px;
   }
+  .header .header__search,
+  .header .header__search>details {
+    width: 100%;
+  }
+}
+.cart-section__cart-items .ruk_rating_snippet {
+  display: none;
+}
+.header__heading-link {
+  padding-bottom: 0;
 }
