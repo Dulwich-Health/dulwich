@@ -18,6 +18,11 @@
         padding-bottom: {{ section.settings.section_padding_bottom | append: 'px' }};
       }
     }
+    {% for block in section.blocks %}
+      .collection_slider-bg--{{ block.id }} {
+        background: {{ block.settings.disc_color }};
+      }
+    {% endfor %}
   {% endstyle %}
 
   {{ 'custom-collection-slider.css' | asset_url | stylesheet_tag }}
@@ -29,24 +34,34 @@
     {% if section.blocks != blank %}
       <div class="custom-collection-slider tw-flex md:tw-flex-nowrap tw-justify-start lg:tw-justify-center tw-overflow-auto md:tw-pt-[20px] md:tw-pb-[10px] {% if section.settings.flex_wrap %} tw-flex-wrap tw-justify-center {% endif %}">
         {% for block in section.blocks %}
-          <a href="{{ block.settings.collection.url }}" class="collection_slider-inner">
-            <div>
-              <div class="collection_slider-inner-image">
-                {%- assign image_fetch = false -%}
-                {%- if block.settings.image_fetch == true -%}
-                  {%- assign image_fetch = 'high' -%}
-                  {%- else -%}
-                  {%- assign image_fetch = 'auto' -%}
-                {%- endif -%}
-                {% render 'responsive-picture', desktopImage: block.settings.image, fetchpriority: image_fetch %}
+          {%- if block.settings.collection.url != blank -%}
+            <a href="{{ block.settings.collection.url }}" class="collection_slider-inner">
+          {%- else -%}
+            <div class="collection_slider-inner">
+          {%- endif -%}
+              <div class="{% if section.settings.show_title_in_disc %}title-inside-disc{% endif %}">
+                <div class="collection_slider-inner-image collection_slider-bg--{{ block.id }}">
+                  {%- assign image_fetch = false -%}
+                  {%- if block.settings.image_fetch == true -%}
+                    {%- assign image_fetch = 'high' -%}
+                    {%- else -%}
+                    {%- assign image_fetch = 'auto' -%}
+                  {%- endif -%}
+                  {%- if block.settings.image != blank -%}
+                    {% render 'responsive-picture', desktopImage: block.settings.image, fetchpriority: image_fetch %}
+                  {%- endif -%}
+                </div>
+                {% if block.settings.collection_name != blank %}
+                  <div class="collection_slider-inner-text tw-text-[9px] md:tw-text-[14px] tw-font-medium tw-text-[rgb(var(--color-foreground))] tw-font-{{ block.settings.font_family_options }}">{{ block.settings.collection_name }}</div>
+                {% else %}
+                  <div class="collection_slider-inner-text tw-text-[9px] md:tw-text-[14px] tw-font-mediumc tw-text-[rgb(var(--color-foreground))] tw-font-{{ block.settings.font_family_options }}">{{ block.settings.collection.title }}</div>
+                {% endif %}
               </div>
-              {% if block.settings.collection_name != blank %}
-                <div class="collection_slider-inner-text tw-text-[9px] md:tw-text-[14px] tw-font-medium tw-text-[rgb(var(--color-foreground))]">{{ block.settings.collection_name }}</div>
-              {% else %}
-                <div class="collection_slider-inner-text tw-text-[9px] md:tw-text-[14px] tw-font-mediumc tw-text-[rgb(var(--color-foreground))]">{{ block.settings.collection.title }}</div>
-              {% endif %}
+          {%- if block.settings.collection.url != blank -%}
+            </a>
+          {%- else -%}
             </div>
-          </a>
+          {%- endif -%}
         {% endfor %}    
       </div>
     {% endif %}
@@ -70,6 +85,12 @@
         "type": "text",
         "id": "section_title",
         "label": "Section title"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_title_in_disc",
+        "label": "Show text over the disc",
+        "default": false
       },
       {
         "type": "checkbox",
@@ -130,6 +151,12 @@
         "type": "collection_block",
         "settings": [
           {
+            "type": "color",
+            "id": "disc_color",
+            "label": "Disc color",
+            "default": "#60919F"
+          },
+          {
             "type": "image_picker",
             "id": "image",
             "label": "Image",
@@ -151,7 +178,23 @@
             "type": "text",
             "id": "collection_name",
             "label": "Collection Name"
-          }
+          },
+          {
+            "type": "select",
+            "id": "font_family_options",
+            "label": "Font Family",
+            "options": [
+              {
+                "value": "primary",
+                "label": "Poppins"
+              },
+              {
+                "value": "secondary",
+                "label": "Arial"
+              }
+            ],
+            "default": "primary"
+          },
         ]
       }
     ],

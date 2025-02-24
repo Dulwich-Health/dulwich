@@ -25,7 +25,7 @@
         <ul class="tw-relative {% if section.settings.gallery_layout contains 'slider' %} splide__list{% else %} tw-flex tw-flex-wrap tw-justify-center tw-gap-y-3{% endif %}">
           {%- for media in product.media -%}
           <li class="{% if media.media_type contains 'video' %} splide--slide-video{% endif %}{% if section.settings.gallery_layout contains 'slider' %} splide__slide{% else %} {{ section.settings.mobile_items }} {{ section.settings.desktop_items }} tw-px-2{% endif %}" data-media-id="{{ media.id }}" data-filter="{{ media.alt | escape }}">
-            <div class="slot-item group">
+            <div class="slot-item group tw-bg-[#dad0e063]">
               <a    
                 href={{ media | image_url }}
                 data-fancybox="gallery"

@@ -1,19 +1,10 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "current": {
     "enable_lazy_loading_sections": true,
     "hp_eager_section_count": 2,
     "logo": "shopify://shop_images/attachment_1.png",
     "logo_width": 117,
-    "favicon": "shopify://shop_images/cropped-Logo-Icon-32x32.png",
+    "favicon": "shopify:\/\/shop_images\/cropped-Logo-Icon-32x32.png",
     "type_header_font": "poppins_n4",
     "heading_scale": 100,
     "type_body_font": "poppins_n4",
@@ -111,19 +102,19 @@
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
     "brand_headline": "Dulwich Health",
-    "brand_description": "<p>The most unique range of health information & products. Including OxyTech, AlliTech and creators of the RadiTech geopathic stress neutralisers.</p>",
-    "social_facebook_link": "https://www.facebook.com/DulwichHealth",
-    "social_instagram_link": "https://www.instagram.com/dulwichhealth/",
+    "brand_description": "<p>The most unique range of health information & products. Including OxyTech, AlliTech and creators of the RadiTech geopathic stress neutralisers.<\/p>",
+    "social_facebook_link": "https:\/\/www.facebook.com\/DulwichHealth",
+    "social_instagram_link": "https:\/\/www.instagram.com\/dulwichhealth\/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
-    "social_twitter_link": "https://x.com/DulwichHealth",
+    "social_twitter_link": "https:\/\/x.com\/DulwichHealth",
     "social_snapchat_link": "",
     "social_pinterest_link": "",
     "social_tumblr_link": "",
     "social_vimeo_link": "",
     "social_mail_link": "mailto:shop@dulwichhealth.co.uk",
     "social_call_link": "tel:+44 208 670 5883",
-    "social_linkedin_link": "https://www.linkedin.com/company/dulwich-health",
+    "social_linkedin_link": "https:\/\/www.linkedin.com\/company\/dulwich-health",
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
@@ -199,7 +190,7 @@
           "show_tax_text": false,
           "show_checkout_btn": false,
           "notification_footer_heading": "Free Delivery Worldwide*",
-          "notification_footer_para": "<p>More info <a href=\"/pages/privacy-policy\" title=\"privacy-policy\">here</a> </p>",
+          "notification_footer_para": "<p>More info <a href=\"\/pages\/privacy-policy\" title=\"privacy-policy\">here<\/a> <\/p>",
           "enable_upsell": false,
           "upsell_heading": "You may also like",
           "limit_upsell_products": 10,
@@ -226,17 +217,17 @@
     "content_for_index": [],
     "blocks": {
       "74204263759510710": {
-        "type": "shopify://apps/dcart-discount-in-cart/blocks/app-embed/731e2611-8bdf-4514-b5e4-f64f1cae3fb7",
+        "type": "shopify:\/\/apps\/dcart-discount-in-cart\/blocks\/app-embed\/731e2611-8bdf-4514-b5e4-f64f1cae3fb7",
         "disabled": false,
         "settings": {}
       },
       "10274677211107884116": {
-        "type": "shopify://apps/shipping-rates-calc/blocks/app-embed-block/de9da91b-8d51-4359-81df-b8b0288464c7",
+        "type": "shopify:\/\/apps\/shipping-rates-calc\/blocks\/app-embed-block\/de9da91b-8d51-4359-81df-b8b0288464c7",
         "disabled": false,
         "settings": {}
       },
       "10830403595879607806": {
-        "type": "shopify://apps/reviews-io/blocks/reviewsio-core/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-core\/92a082e5-b297-4e88-b428-ac96cbc505f9",
         "disabled": false,
         "settings": {
           "url_key": "dulwichhealth.co.uk",
@@ -245,7 +236,7 @@
         }
       },
       "10557767768680663964": {
-        "type": "shopify://apps/recurpay-subscriptions-app/blocks/recurpay-widget/c600a513-dad8-4030-8697-de47c18881f2",
+        "type": "shopify:\/\/apps\/recurpay-subscriptions-app\/blocks\/recurpay-widget\/c600a513-dad8-4030-8697-de47c18881f2",
         "disabled": false,
         "settings": {
           "multiply_price_with_quantity": true,
@@ -253,13 +244,23 @@
         }
       },
       "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "6913107989674730356": {
+        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-sessions\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "disabled": true,
+        "settings": {}
+      },
+      "13768625480086291342": {
+        "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": false,
         "settings": {}
       },
       "16274361319697914395": {
-        "type": "shopify://apps/reviews-io/blocks/reviewsio-floating/92a082e5-b297-4e88-b428-ac96cbc505f9",
-        "disabled": true,
+        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-floating\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "disabled": false,
         "settings": {
           "widget_id": "",
           "show_all": true,
@@ -280,13 +281,13 @@
         "settings": {}
       },
       "15316669992541710076": {
-        "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-snippet/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-snippet\/92a082e5-b297-4e88-b428-ac96cbc505f9",
         "disabled": false,
         "settings": {
           "star": "#c2c67a",
           "text_color": "#c2c67a",
           "snippet_mode": "default",
-          "text": "",
+          "text": "Reviews",
           "line_break": false,
           "listen_for_changes": true,
           "rating_without_brackets": false,

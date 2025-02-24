@@ -58,7 +58,7 @@
 
     {% if badge_text != blank %}
       <a href="{{ product.url }}">
-        <span class="badge-capsule tw-absolute tw-top-[4px] md:tw-top-[9px] tw-left-[4px] md:tw-left-[9px] tw-leading-normal tw-whitespace-nowrap tw-tracking-normal tw-text-[rgb(var(--color-button))] md:tw-text-[rgb(var(--color-foreground))] tw-font-primary tw-font-semibold tw-border bmd:tw-border-[0.5px] tw-border-solid tw-border-[rgb(var(--color-foreground))] tw-rounded-[20px] tw-py-[2%] tw-px-[3.6%] tw-max-h-[10.7%] lg:tw-max-w-[40.7%]">{{ badge_text }}</span>
+        <span class="badge-capsule tw-absolute tw-top-[4px] md:tw-top-[9px] tw-left-[4px] md:tw-left-[9px] tw-leading-normal tw-whitespace-nowrap tw-tracking-normal tw-text-[rgb(var(--color-button))] md:tw-text-[rgb(var(--color-foreground))] tw-font-primary tw-font-semibold tw-bg-[#c2c67a] tw-rounded-[20px] tw-py-[2%] tw-px-[3.6%] tw-max-h-[10.7%] lg:tw-max-w-[40.7%]">{{ badge_text }}</span>
       </a>
     {% endif %}
 
@@ -73,11 +73,11 @@
     <div class="product-card__badges tw-absolute tw-top-4 tw-left-4">
       <a href="{{ product.url }}">
         {%- if current_variant.available == false -%}
-          <span class="badge badge--soldout" aria-hidden="true">
+          <span class="badge badge--soldout tw-bg-[#c2c67a]" aria-hidden="true">
             Sold Out
           </span>
         {%- elsif current_variant.compare_at_price > current_variant.price and current_variant.available -%}
-          <span class="badge badge--onsale" aria-hidden="true">
+          <span class="badge badge--onsale tw-bg-[#c2c67a]" aria-hidden="true">
             On Sale
           </span>
         {%- endif -%}
@@ -135,7 +135,7 @@
         {%- form 'product',
           product,
           id: product_form_id,
-          class: 'form tw-flex tw-justify-center',
+          class: 'form tw-flex tw-justify-start',
           novalidate: 'novalidate',
           data-type: 'add-to-cart-form'
         -%}

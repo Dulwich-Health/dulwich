@@ -581,3 +581,9 @@ table.product-information-table thead th {
     z-index: 1;
   }
 }
+
+.product-description-tab.pdp-description {
+  padding: 30px;
+  border-radius: 34px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 8px;
+}

@@ -3019,8 +3019,8 @@ li.active a {
   background: #AF9CB6;
 }
 .main-product-section .list-payment__item svg {
-  height: 54px;
-  width: 74px;
+  height: 36px;
+  width: 56px;
 }
 @media screen and (max-width: 750px) {
   .product-card .product-card__info .product-card__title {
@@ -3838,6 +3838,44 @@ article .article-template__content ol {
   .product-form__buttons .recurpay__widget .recurpay__action button {
     font-size: 13px;
     padding: 6px 12px;
+  }
+}
+.custom-collection-slider .title-inside-disc {
+  position: relative;
+}
+.custom-collection-slider .title-inside-disc .collection_slider-inner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 0;
+  letter-spacing: normal;
+}
+.collection_slider-inner-image:empty {
+  display: block;
+}
+.product__info-container .list-payment {
+  justify-content: flex-start;
+}
+.product__info-container .scroll-button, 
+.product__info-container .popup-button {
+  color: #60919f;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  letter-spacing: normal;
+}
+.product__info-container .popup-button {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.product__info-container product-form.product-form {
+  margin: 1rem 0;
+}
+@media screen and (min-width: 750px) {
+  .collection-hero__description.description-columns {
+    column-count: 2;
   }
 }
 .sticky-atc-button.sticky-atc .recurpay__widget_container.recurpay__widget_container--selected+.recurpay__widget_container,

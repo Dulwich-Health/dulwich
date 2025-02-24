@@ -363,6 +363,47 @@
                   </div>
                 {%- endif -%}
               </div>
+
+            {%- when 'scroll_to_section_block' -%}
+              {% if block.settings.button_text_link != blank %} 
+                <scroll-to-section target-id="{{ block.settings.target_section_id }}">
+                  <button class="scroll-button">{{ block.settings.button_text_link }}</button>
+                </scroll-to-section>
+              {% endif %}
+
+            {%- when 'popup_block' -%}
+              <custom-popup>
+                {% if block.settings.popup_text != blank %}
+                  <button 
+                    id="open-custom-popup"
+                    class="popup-button">
+                    {{ block.settings.popup_text }}
+                  </button>
+                {% endif %}
+                {% if block.settings.popup_content != blank %}
+                  {% assign popup_content = block.settings.popup_content
+                    | split: '[**' | join: '<span class="faq-black-bold">'
+                    | split: '**]' | join: '</span>'
+                    | split: '[*' | join: '<span class="faq-red-bold">'
+                    | split: '*]' | join: '</span>'
+                    | split: '[/*' | join: '<span class="faq-red-medium">'
+                    | split: '*/]' | join: '</span>'
+                    | split: '[/' | join: '<span class="faq-red-italic">'
+                    | split: '/]' | join: '</span>'
+                    | split: '[' | join: '<span class="red-color">'
+                    | split: ']' | join: '</span>'
+                  %}
+                  <div id="custom-popup" class="tw-fixed tw-inset-0 tw-bg-black/50 tw-flex tw-items-center tw-justify-center tw-z-[9999] tw-hidden">
+                    <div class="tw-bg-white tw-overflow-auto tw-max-h-[80vh] tw-min-h-[20vh] tw-rounded-lg tw-shadow-lg tw-w-[90%] md:tw-w-[800px] tw-p-[20px] tw-relative">
+                      <button id="close-custom-popup" class="popup-close-btn tw-absolute tw-top-[10px] tw-right-[14px] tw-text-gray-500 hover:tw-text-gray-800 tw-text-[20px]">
+                        {% render 'icon-close', svg_classes: "tw-h-[20px] tw-w-[20px]" %}
+                      </button>
+                      <div class="md:tw-p-[24px]">{{ popup_content | replace: '<p>', '' | replace: '</p>', '' }}</div>
+                    </div>
+                  </div>
+                {% endif %}
+              </custom-popup>
+              
             {%- when 'complementary' -%}
               <product-recommendations class="complementary-products quick-add-hidden no-js-hidden{% if block.settings.make_collapsible_row %} is-accordion{% endif %}{% if block.settings.enable_quick_add %} complementary-products-contains-quick-add{% endif %}" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary">
                 {%- if recommendations.performed and recommendations.products_count > 0 -%}
@@ -801,6 +842,43 @@
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
       "limit": 1
+    },
+    {
+      "type": "scroll_to_section_block",
+      "name": "Scroll to Section Block",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Button Text",
+          "id": "button_text_link",
+          "default": "Scroll to Target Section"
+        },
+        {
+          "type": "text",
+          "label": "Target Section ID",
+          "id": "target_section_id",
+          "default": "target_section_id",
+          "info": "Enter the ID of the section you want to scroll to."
+        }
+      ]
+    },
+    {
+      "type": "popup_block",
+      "name": "Popup Block",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Button Text",
+          "id": "popup_text",
+          "default": "Open Popup"
+        },
+        {
+          "type": "richtext",
+          "id": "popup_content",
+          "label": "Popup Content",
+          "default": "<p>This is a custom popup. Add your content here.</p>"
+        }
+      ]
     },
     {
       "type": "sku",

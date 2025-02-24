@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "custom_collection_slider_3PGxde": {
@@ -15,73 +6,55 @@
         "collection_block_VfhgYY": {
           "type": "collection_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/merchant-taking-sale-with-chip-and-swipe-reader.jpg",
+            "disc_color": "#c3c276",
             "image_fetch": false,
-            "collection": "allitech",
-            "collection_name": "Allitech"
+            "collection": "",
+            "collection_name": "Immune System"
           }
         },
         "collection_block_rAyD4h": {
           "type": "collection_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/iphone-detects-qr-code.jpg",
+            "disc_color": "#7db49b",
             "image_fetch": false,
-            "collection": "animal-health",
-            "collection_name": "Animal health"
+            "collection": "",
+            "collection_name": "Your Gut"
           }
         },
         "collection_block_hVrDBL": {
           "type": "collection_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ripe-red-strawberries-in-a-white-bowl.jpg",
+            "disc_color": "#b6a2c3",
             "image_fetch": false,
-            "collection": "losterol",
-            "collection_name": "Losterol"
+            "collection": "",
+            "collection_name": "Heart Health"
           }
         },
         "collection_block_nKjgYJ": {
           "type": "collection_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/woman-in-white-dress-outside.jpg",
+            "disc_color": "#e79e63",
             "image_fetch": false,
-            "collection": "antiseptic",
-            "collection_name": "Antiseptic"
+            "collection": "",
+            "collection_name": "Muscles & Joints"
           }
         },
         "collection_block_J8bNdz": {
           "type": "collection_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ocean-water-with-swimmers.jpg",
+            "disc_color": "#5e97aa",
             "image_fetch": false,
-            "collection": "oxytech",
-            "collection_name": "Oxytech"
+            "collection": "",
+            "collection_name": "Your Skin"
           }
         },
         "collection_block_eJnNPF": {
           "type": "collection_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
+            "disc_color": "#d081b6",
             "image_fetch": false,
-            "collection": "digestive-health",
-            "collection_name": "Digestive health"
-          }
-        },
-        "collection_block_7VtLQy": {
-          "type": "collection_block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ripe-red-strawberries-in-a-white-bowl.jpg",
-            "image_fetch": false,
-            "collection": "losterol",
-            "collection_name": "Losterol"
-          }
-        },
-        "collection_block_DgEnyC": {
-          "type": "collection_block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ocean-water-with-swimmers.jpg",
-            "image_fetch": false,
-            "collection": "oxytech",
-            "collection_name": "Oxytech"
+            "collection": "",
+            "collection_name": "Animal Health"
           }
         }
       },
@@ -91,19 +64,18 @@
         "collection_block_hVrDBL",
         "collection_block_nKjgYJ",
         "collection_block_J8bNdz",
-        "collection_block_eJnNPF",
-        "collection_block_7VtLQy",
-        "collection_block_DgEnyC"
+        "collection_block_eJnNPF"
       ],
       "settings": {
         "show_desktop": true,
         "section_title": "",
+        "show_title_in_disc": true,
         "flex_wrap": false,
         "color_scheme": "scheme-c795ab92-27c2-4ac3-a433-58cb978f2fb1",
-        "section_padding_top": 16,
-        "section_padding_bottom": 2,
+        "section_padding_top": 0,
+        "section_padding_bottom": 14,
         "mobile_padding_top": 10,
-        "mobile_padding_bottom": 0
+        "mobile_padding_bottom": 10
       }
     },
     "3fe7c8be-5899-4e5d-9802-e0af9980a81f": {

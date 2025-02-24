@@ -1,0 +1,81 @@
+{{ 'product-tabs-switch.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .padding-{{ section.id }} {
+    padding-top: {{ section.settings.mobile_padding_top | append: 'px' }};
+    padding-bottom: {{ section.settings.mobile_padding_bottom | append: 'px' }};
+  }
+  @media screen and (min-width: 750px) {
+    .padding-{{ section.id }} {
+      padding-top: {{ section.settings.desktop_padding_top | append: 'px' }};
+      padding-bottom: {{ section.settings.desktop_padding_bottom | append: 'px' }};
+    }
+  }
+{%- endstyle -%}
+
+{% if section.settings.show_description %}
+  <div class="tw-px-[25px] md:tw-px-[147px] page-width tab-switch-page-width padding-{{ section.id }}" id="pdp_product_description">
+    <div class="product-description-tab pdp-description">{{ product.description }}</div>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Product Description",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_description",
+      "label": "Show Product Description",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "desktop_padding_top",
+      "label": "Padding top (Desktop)",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "desktop_padding_bottom",
+      "label": "Padding bottom (Desktop)",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "label": "Padding top (Mobile)",
+      "default": 10,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "label": "Padding bottom (Mobile)",
+      "default": 10,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Description"
+    }
+  ]
+}
+{% endschema %}
