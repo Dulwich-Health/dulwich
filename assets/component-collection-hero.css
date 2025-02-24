@@ -52,6 +52,7 @@
     font-size: 1.8rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    text-align: justify;
   }
 
   .collection-hero__description {
