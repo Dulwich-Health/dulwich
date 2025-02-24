@@ -21,7 +21,7 @@
   }
 {%- endstyle -%}
 
-<div class="page section-{{ section.id }}-padding">
+<div class="page static-page section-{{ section.id }}-padding">
   {% if section.settings.page_title != blank %}
     {% assign page_title = section.settings.page_title
       | split: '[*' | join: '<span class="color-1">'

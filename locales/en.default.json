@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "password_page": {
@@ -299,8 +308,8 @@
       "checkout": "Checkout",
       "empty": "Your cart is empty",
       "my_bag": "My Bag",
-      "cart_notification_footer": "Free Delivery Worldwide*",
-      "more_info": "More info",
+      "cart_notification_footer": "Delivery Worldwide",
+      "more_info": "More info on deliveries, ",
       "here": "here",
       "cart_error": "There was an error while updating your cart. Please try again.",
       "cart_quantity_error_html": "You can only add {{ quantity }} of this item to your cart.",

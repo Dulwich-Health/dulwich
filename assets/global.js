@@ -1948,6 +1948,7 @@ class LazySection extends HTMLElement {
               newScriptTag.appendChild(document.createTextNode(oldScriptTag.innerHTML));
               oldScriptTag.parentNode.replaceChild(newScriptTag, oldScriptTag);
             });
+            loadReviewsIoRatingSnippets();
           }
         }
 

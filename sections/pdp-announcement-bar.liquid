@@ -14,7 +14,7 @@
 {% endstyle %}
 
 <div class="color-{{ section.settings.color_scheme }} pdp-announcement-bar padding-{{ section.id }} {% if section.settings.hide_in_desktop %}md:tw-hidden{%else%}md:tw-block{% endif %} {% if section.settings.hide_in_mobile %}tw-hidden{%else%}tw-block{% endif %}">
-  <div class="tw-max-w-[1440px] tw-mx-auto tw-px-[10px] lg:tw-px-[147px]">
+  <div class="tw-max-w-[1440px] tw-mx-auto tw-px-[10px] lg:tw-px-[147px] pdp-container">
     <carousel-component
       id="carousel--{{ section.id }}"
       class="splide"

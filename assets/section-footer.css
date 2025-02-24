@@ -524,7 +524,8 @@
 .footer-block:first-child {
   padding-left: 0;
 }
-.is-divider:empty {
+.recent-blogs__section .card__content .is-divider:empty,
+.footer .footer-block .is-divider:empty {
   background-color: #ffffffca;
   opacity: 0.8;
   display: block;
@@ -532,7 +533,7 @@
   max-width: 30px;
   width: 100%;
 }
-.article-card-wrapper .is-divider:empty {
+.recent-blogs__section .article-card-wrapper .is-divider:empty {
   opacity: 0.2;
   background-color: #60919F;
 }

@@ -261,7 +261,7 @@ cart-items {
   }
 }
 .cart__footer .list-payment__item {
-  padding: 0 2.4px;
+  padding: 0 1.4px;
 }
 @media screen and (max-width: 750px) {
   .cart-continue-shopping {

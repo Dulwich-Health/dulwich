@@ -2,7 +2,7 @@
   "current": {
     "enable_lazy_loading_sections": true,
     "hp_eager_section_count": 2,
-    "logo": "shopify:\/\/shop_images\/5caf2da7ea28e00001e6a006-198x149-2x.webp_1.png",
+    "logo": "shopify://shop_images/attachment_1.png",
     "logo_width": 117,
     "favicon": "shopify:\/\/shop_images\/cropped-Logo-Icon-32x32.png",
     "type_header_font": "poppins_n4",
@@ -269,6 +269,16 @@
           "show_collection": true,
           "show_cart": true
         }
+      },
+      "6913107989674730356": {
+        "type": "shopify://apps/reviews-io/blocks/reviewsio-sessions/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "disabled": true,
+        "settings": {}
+      },
+      "13768625480086291342": {
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": false,
+        "settings": {}
       },
       "15316669992541710076": {
         "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-snippet\/92a082e5-b297-4e88-b428-ac96cbc505f9",

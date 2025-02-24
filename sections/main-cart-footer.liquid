@@ -487,7 +487,7 @@
   {%- if cart != empty -%}
     <div class="cart-section__cart-footer {% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
       {% if section.settings.cart_announcement_text != blank %}
-        <div class="tw-bg-[#DBD1DE] bmd:tw-hidden md:tw-block tw-font-primary tw-font-normal tw-text-[14px] tw-text-center tw-px-[13px] tw-py-[18px] tw-rounded-[19px] tw-mb-[13px] cart-announcement-text">{{ section.settings.cart_announcement_text | strip }}</div>
+        <div class="tw-bg-[#DBD1DE] bmd:tw-hidden md:tw-block tw-font-primary tw-font-normal tw-text-[14px] tw-text-left tw-px-[13px] tw-py-[18px] tw-rounded-[19px] tw-mb-[13px] cart-announcement-text">{{ section.settings.cart_announcement_text | strip }}</div>
       {% endif %}
       <div class="cart-coupan-shipping-totals">
         <div class="cart__footer">
@@ -581,7 +581,7 @@
                           <ul class="list list-payment" role="list">
                             {%- for type in shop.enabled_payment_types -%}
                               <li class="list-payment__item tw-px-[1.4px] md:tw-p-[2.4px]">
-                                {{ type | payment_type_svg_tag: class: 'icon icon--full-color tw-h-[18px] tw-w-[30px] md:tw-h-[24px]' }}
+                                {{ type | payment_type_svg_tag: class: 'icon icon--full-color tw-h-[28px] tw-w-[46px] md:tw-w-[48px] md:tw-h-[30px]' }}
                               </li>
                             {%- endfor -%}
                           </ul>

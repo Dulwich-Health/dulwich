@@ -43,6 +43,7 @@ class CartUpsellRecommendations extends Carousel {
               }
               
               this.querySelector('.splide__list').appendChild(fragment);
+              loadReviewsIoRatingSnippets();
             }
           }
           

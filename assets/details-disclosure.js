@@ -44,6 +44,11 @@ class HeaderMenu extends DetailsDisclosure {
   }
 
   bindEventListeners() {
+    this.addEventListener('click', event => {
+      if (!event.target.closest('a, button')) { 
+        event.preventDefault();
+      }
+    });
     this.addEventListener('mouseenter', this.open.bind(this));
     this.content.addEventListener('mouseenter', this.open.bind(this));
 
