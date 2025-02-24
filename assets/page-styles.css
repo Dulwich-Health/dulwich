@@ -117,3 +117,6 @@
     font-size: 19px;
   }
 }
+.page .page_heading:empty {
+  display: none;
+}
