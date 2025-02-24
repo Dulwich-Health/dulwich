@@ -3851,7 +3851,7 @@ article .article-template__content ol {
   margin-top: 0;
   letter-spacing: normal;
 }
-.collection_slider-inner-image:empty {
+.custom-collection-slider .collection_slider-inner .collection_slider-inner-image:empty {
   display: block;
 }
 .product__info-container .list-payment {
