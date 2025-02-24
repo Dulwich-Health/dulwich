@@ -3916,3 +3916,6 @@ shopify-accelerated-checkout-cart {
 .header__heading-link {
   padding-bottom: 0;
 }
+.product-form .quantity__rules {
+  margin-top: 0;
+}
