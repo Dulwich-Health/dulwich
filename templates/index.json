@@ -17,7 +17,7 @@
           "settings": {
             "disc_color": "#c3c276",
             "image_fetch": false,
-            "collection": "",
+            "collection": "immune-support",
             "collection_name": "Immune System",
             "font_family_options": "primary"
           }
@@ -27,7 +27,7 @@
           "settings": {
             "disc_color": "#7db49b",
             "image_fetch": false,
-            "collection": "",
+            "collection": "heart-health",
             "collection_name": "Your Gut",
             "font_family_options": "primary"
           }
