@@ -57,7 +57,7 @@
           "settings": {
             "disc_color": "#5e97aa",
             "image_fetch": false,
-            "collection": "",
+            "collection": "your-skin",
             "collection_name": "Your Skin",
             "font_family_options": "primary"
           }
@@ -67,7 +67,7 @@
           "settings": {
             "disc_color": "#d081b6",
             "image_fetch": false,
-            "collection": "",
+            "collection": "animal-health",
             "collection_name": "Animal Health",
             "font_family_options": "primary"
           }
@@ -77,7 +77,7 @@
           "settings": {
             "disc_color": "#c3c276",
             "image_fetch": false,
-            "collection": "",
+            "collection": "your-environment-1",
             "collection_name": "Natural World",
             "font_family_options": "primary"
           }
@@ -87,7 +87,7 @@
           "settings": {
             "disc_color": "#7db49b",
             "image_fetch": false,
-            "collection": "",
+            "collection": "books",
             "collection_name": "Our Books",
             "font_family_options": "primary"
           }
