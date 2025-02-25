@@ -37,7 +37,7 @@
           "settings": {
             "disc_color": "#b6a2c3",
             "image_fetch": false,
-            "collection": "",
+            "collection": "heart-health",
             "collection_name": "Heart Health",
             "font_family_options": "primary"
           }
@@ -47,7 +47,7 @@
           "settings": {
             "disc_color": "#e79e63",
             "image_fetch": false,
-            "collection": "",
+            "collection": "muscles-joints",
             "collection_name": "Muscles & Joints",
             "font_family_options": "primary"
           }
