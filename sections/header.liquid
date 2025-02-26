@@ -360,10 +360,10 @@
 
     onScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop >= 36) {
-        this.header.classList.add('scrolled-past-header');
-        document.querySelector(".drawer.cart-notification-drawer").classList.add('header-cart-drawer-sticky');
-      }
+      // if (scrollTop >= 36) {
+      //   this.header.classList.add('scrolled-past-header');
+      //   document.querySelector(".drawer.cart-notification-drawer").classList.add('header-cart-drawer-sticky');
+      // }
 
       if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
 
@@ -386,7 +386,7 @@
         }
       } else if (scrollTop <= this.headerBounds.top) {
         this.header.classList.remove('scrolled-past-header');
-        document.querySelector(".drawer.cart-notification-drawer").classList.remove('header-cart-drawer-sticky');
+        // document.querySelector(".drawer.cart-notification-drawer").classList.remove('header-cart-drawer-sticky');
         requestAnimationFrame(this.reset.bind(this));
       }
 
