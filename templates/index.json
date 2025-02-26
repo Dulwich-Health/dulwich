@@ -77,7 +77,7 @@
           "settings": {
             "disc_color": "#c3c276",
             "image_fetch": false,
-            "collection": "your-environment-1",
+            "collection": "your-environment",
             "collection_name": "Natural World",
             "font_family_options": "primary"
           }
