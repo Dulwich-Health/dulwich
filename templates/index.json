@@ -67,7 +67,7 @@
           "settings": {
             "disc_color": "#d081b6",
             "image_fetch": false,
-            "collection": "animal-health",
+            "collection": "animal-health-1",
             "collection_name": "Animal Health",
             "font_family_options": "primary"
           }
