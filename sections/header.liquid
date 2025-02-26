@@ -366,14 +366,9 @@
       // }
 
       const cartDrawer = document.querySelector(".drawer.cart-notification-drawer");
-
-      // Get the total scrollable height
       const scrollHeight = document.documentElement.scrollHeight;
       const clientHeight = document.documentElement.clientHeight;
-      
-      // If there's not enough content to scroll, don't toggle classes
-      if (scrollHeight <= clientHeight + 50) return; // 50px buffer to avoid flickering
-      
+      if (scrollHeight <= clientHeight + 50) return;
       if (scrollTop >= 36) {
         this.header.classList.add('scrolled-past-header');
         cartDrawer?.classList.add('header-cart-drawer-sticky');
