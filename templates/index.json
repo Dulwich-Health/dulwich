@@ -141,7 +141,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<h5><strong>If you had an account with us before just login using your email and we'll send you a code to confirm it's you.</strong></h5>",
+            "text": "<h5><strong>If you had an account with us before just login using your<br/> email and we'll send you a code to confirm it's you.</strong></h5>",
             "text_font_size": "20",
             "text_font_weight": "400",
             "text_line_height": "28",
