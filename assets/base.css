@@ -3042,7 +3042,7 @@ li.active a {
 }
 .cart__footer .cbb-shipping-rates-calculator-change-shipping-address {
   text-align: left !important;
-  padding-top: 2px !important;
+  padding-top: 10px !important;
   padding-bottom: 4px !important;
   margin-bottom: 0 !important;
   font-size: 13px;
