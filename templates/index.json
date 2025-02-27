@@ -115,6 +115,39 @@
         "mobile_padding_bottom": 10
       }
     },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>New Website copy here!</strong></p>",
+            "text_font_size": "18",
+            "text_font_weight": "400",
+            "text_line_height": "28",
+            "text_font_size_mob": "11",
+            "text_font_weight_mob": "400",
+            "text_line_height_mob": "16"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-86803cb1-9ce9-4289-b05e-740e11eebf02",
+        "full_width": true,
+        "content_width": false,
+        "hide_in_mobile": false,
+        "hide_in_desktop": false,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_top_mob": 16,
+        "padding_bottom_mob": 16
+      }
+    },
     "3fe7c8be-5899-4e5d-9802-e0af9980a81f": {
       "type": "slideshow",
       "blocks": {
@@ -183,10 +216,10 @@
         "padding_bottom": 40
       }
     },
-    "rich_text": {
+    "rich_text_a3xJge": {
       "type": "rich-text",
       "blocks": {
-        "text": {
+        "text_TNCErP": {
           "type": "text",
           "settings": {
             "text": "<p><strong>Delivery to Europe?</strong>  We are excited to announce that EU deliveries are once again available.</p>",
@@ -200,7 +233,7 @@
         }
       },
       "block_order": [
-        "text"
+        "text_TNCErP"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -608,9 +641,10 @@
   },
   "order": [
     "custom_collection_slider_3PGxde",
+    "rich_text",
     "3fe7c8be-5899-4e5d-9802-e0af9980a81f",
     "f8e4c2bf-b0d7-465b-b26a-5f48def4ab61",
-    "rich_text",
+    "rich_text_a3xJge",
     "60c6c5f7-a53f-4f0e-8c7f-ac8a2ffd94ae",
     "custom_testimonial_slider_RkcPkA",
     "custom_icon_with_text_qcURre",
