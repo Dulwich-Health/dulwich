@@ -121,7 +121,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>New Website copy here!</strong></p>",
+            "text": "<h5><strong>If you had an account with us before just login using your email and and we'll just send you a code to confirm it's you</strong></h5>",
             "text_font_size": "18",
             "text_font_weight": "400",
             "text_line_height": "28",
@@ -145,7 +145,7 @@
         "padding_top": 18,
         "padding_bottom": 18,
         "padding_top_mob": 14,
-        "padding_bottom_mob": 16
+        "padding_bottom_mob": 14
       }
     },
     "3fe7c8be-5899-4e5d-9802-e0af9980a81f": {
