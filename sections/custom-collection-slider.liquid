@@ -52,9 +52,9 @@
                   {%- endif -%}
                 </div>
                 {% if block.settings.collection_name != blank %}
-                  <div class="collection_slider-inner-text tw-text-[9px] md:tw-text-[14px] tw-font-medium tw-text-[rgb(var(--color-foreground))] tw-font-{{ block.settings.font_family_options }}">{{ block.settings.collection_name }}</div>
+                  <div class="collection_slider-inner-text tw-text-[9px]/0.9 md:tw-text-[14px]/0.9 tw-font-medium tw-text-[rgb(var(--color-foreground))] tw-font-{{ block.settings.font_family_options }}">{{ block.settings.collection_name }}</div>
                 {% else %}
-                  <div class="collection_slider-inner-text tw-text-[9px] md:tw-text-[14px] tw-font-mediumc tw-text-[rgb(var(--color-foreground))] tw-font-{{ block.settings.font_family_options }}">{{ block.settings.collection.title }}</div>
+                  <div class="collection_slider-inner-text tw-text-[9px]/0.9 md:tw-text-[14px]/0.9 tw-font-mediumc tw-text-[rgb(var(--color-foreground))] tw-font-{{ block.settings.font_family_options }}">{{ block.settings.collection.title }}</div>
                 {% endif %}
               </div>
           {%- if block.settings.collection.url != blank -%}
