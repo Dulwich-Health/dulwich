@@ -3728,6 +3728,7 @@ checkout-login .login-box {
   }
   .header__heading .header__heading-link {
     padding-bottom: 0;
+    padding-top: 11px;
   }
 }
 
