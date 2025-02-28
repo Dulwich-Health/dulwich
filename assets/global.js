@@ -2225,6 +2225,8 @@ class ScrollToSection extends HTMLElement {
         if (targetSection) {
           const headerHeight = document.querySelector('header').offsetHeight;
           const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY;
+          console.log(headerHeight);
+          console.log(targetPosition)
           window.scrollTo({
             top: targetPosition - headerHeight,
             behavior: 'smooth'
