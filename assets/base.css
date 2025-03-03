@@ -3920,3 +3920,7 @@ shopify-accelerated-checkout-cart {
 .product-form .quantity__rules {
   margin-top: 0;
 }
+.cart__footer .tax-note a {
+  font-size: inherit;
+  text-decoration: underline;
+}
