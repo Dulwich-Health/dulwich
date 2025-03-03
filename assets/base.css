@@ -3925,6 +3925,6 @@ shopify-accelerated-checkout-cart {
   text-decoration: underline;
 }
 .cart__footer .cbb-shipping-rates-calculator-chooser .cbb-shipping-rates-rate-list .cbb-shipping-rates-rate-item {
-  display: flex;
+  display: flex !important;
   align-items: center;
 }
