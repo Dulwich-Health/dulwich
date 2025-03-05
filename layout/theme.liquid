@@ -539,11 +539,11 @@
           if (window.location.href.includes('contact_posted=true')) {
             // If GA4 is set up via gtag
             if (typeof gtag === 'function') {
-              gtag('event', 'contact_form_submission', {
+              gtag('event', 'Contact Us Shopify', {
                 'form_name': 'contact_form',
                 'form_location': 'contact_page'
               });
-              console.log('Contact form submission event sent to GA4');
+              console.log('Contact Us Shopify event sent to GA4');
             }
           }
         });
