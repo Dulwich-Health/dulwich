@@ -75,18 +75,6 @@
         })(window,document,'script','dataLayer','GTM-NTQTLJLX');
       </script>
       <!-- End Google Tag Manager -->
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        window.addEventListener("klaviyoForms", function(e) { 
-          if (e.detail.type == 'submit') {
-            dataLayer.push({
-                'event' : 'klaviyo',
-                'formId' : e.detail.formId,
-                'formTitle' : e.detail.metaData.$source
-            });
-          }
-        });
-      </script>
       <title>{{ page_title }}</title>
       <meta name="title" content="{{ page_title | escape }}">
       {% if page_description %}
@@ -525,6 +513,26 @@
 
       <script src="{{ 'product-form.js' | asset_url }}" defer></script>
       <script src="{{ 'carousel.js' | asset_url }}" defer="defer"></script>
+
+      <script>
+        window.addEventListener("klaviyoForms", function(e) { 
+          if (e.detail.type == 'open' || e.detail.type == 'embedOpen') {
+            gtag('event', 'form_open', {'form': 'Klaviyo form', 'form_id': e.detail.formId});
+          }
+          if (e.detail.type == 'submit') {
+            gtag('event', 'form_submit', {'form': 'Klaviyo form', 'form_id': e.detail.formId});
+          }
+          if (e.detail.type == 'stepSubmit') {
+            gtag('event', 'form_step_submit', {'form': 'Klaviyo form', 'step_name': e.detail.metaData.$step_name});
+          }
+          if (e.detail.type == 'redirectedToUrl') {
+            gtag('event', 'form_url_redirect', {'form': 'Klaviyo form', 'form_id': e.detail.formId});
+          }
+          if (e.detail.type == 'close') {
+            gtag('event', 'form_close', {'form': 'Klaviyo form', 'form_id': e.detail.formId});
+          }
+        });
+      </script>
     </body>
   </html>
 {% endif %}
