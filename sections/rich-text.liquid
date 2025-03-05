@@ -30,11 +30,19 @@
               font-weight: {{ block.settings.text_font_weight_mob }};
               line-height: {{ block.settings.text_line_height_mob }}px;
             }
+            .rich-text.content-container .richtext-styles--{{ block.id }} {
+              margin-top: {{ block.settings.text_mt_mob }}px;
+              margin-bottom: {{ block.settings.text_mb_mob }}px;
+            }
             @media screen and (min-width: 750px) {
               .richtext-styles--{{ block.id }} p {
                 font-size: {{ block.settings.text_font_size }}px;
                 font-weight: {{ block.settings.text_font_weight }};
                 line-height: {{ block.settings.text_line_height }}px;
+              }
+              .rich-text.content-container .richtext-styles--{{ block.id }} {
+                margin-top: {{ block.settings.text_mt }}px;
+                margin-bottom: {{ block.settings.text_mb }}px;
               }
             }
         {% endcase %}
@@ -415,6 +423,26 @@
           "default": "28"
         },
         {
+          "type": "range",
+          "id": "text_mt",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "Desktop margin top",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "text_mb",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "Desktop margin bottom",
+          "default": 0
+        },
+        {
           "type": "header",
           "content": "Mobile styles"
         },
@@ -477,6 +505,26 @@
             },
           ],
           "default": "14"
+        },
+        {
+          "type": "range",
+          "id": "text_mt_mob",
+          "min": 0,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Mobile margin top",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "text_mb_mob",
+          "min": 0,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Mobile margin bottom",
+          "default": 0
         },
       ]
     },
