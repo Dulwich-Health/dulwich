@@ -75,6 +75,18 @@
         })(window,document,'script','dataLayer','GTM-NTQTLJLX');
       </script>
       <!-- End Google Tag Manager -->
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        window.addEventListener("klaviyoForms", function(e) { 
+          if (e.detail.type == 'submit') {
+            dataLayer.push({
+                'event' : 'klaviyo',
+                'formId' : e.detail.formId,
+                'formTitle' : e.detail.metaData.$source
+            });
+          }
+        });
+      </script>
       <title>{{ page_title }}</title>
       <meta name="title" content="{{ page_title | escape }}">
       {% if page_description %}
