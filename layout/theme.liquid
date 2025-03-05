@@ -75,6 +75,18 @@
         })(window,document,'script','dataLayer','GTM-NTQTLJLX');
       </script>
       <!-- End Google Tag Manager -->
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        window.addEventListener("klaviyoForms", function(e) { 
+          if (e.detail.type == 'submit') {
+            dataLayer.push({
+                'event' : 'klaviyo',
+                'formId' : e.detail.formId,
+                'formTitle' : e.detail.metaData.$source
+            });
+          }
+        });
+      </script>
       <title>{{ page_title }}</title>
       <meta name="title" content="{{ page_title | escape }}">
       {% if page_description %}
@@ -87,14 +99,6 @@
         {% else %}
         window.location = '/account/login?checkout_url='+returnUrl;
         {% endif %}
-      </script>
-
-      <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "qii41wob2f");
       </script>
     </head>
   {% endif %}
@@ -410,6 +414,14 @@
         if (Shopify.designMode) {
           document.documentElement.classList.add('shopify-design-mode');
         }
+      </script>
+
+      <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "qii41wob2f");
       </script>
     </head>
 
