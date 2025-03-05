@@ -30,11 +30,19 @@
               font-weight: {{ block.settings.text_font_weight_mob }};
               line-height: {{ block.settings.text_line_height_mob }}px;
             }
+            .richtext-styles--{{ block.id }} {
+              margin-top: {{ block.settings.text_mt_mob }}px;
+              margin-bottom: {{ block.settings.text_mb_mob }}px;
+            }
             @media screen and (min-width: 750px) {
               .richtext-styles--{{ block.id }} p {
                 font-size: {{ block.settings.text_font_size }}px;
                 font-weight: {{ block.settings.text_font_weight }};
                 line-height: {{ block.settings.text_line_height }}px;
+              }
+              .richtext-styles--{{ block.id }} {
+                margin-top: {{ block.settings.text_mt }}px;
+                margin-bottom: {{ block.settings.text_mb }}px;
               }
             }
         {% endcase %}
