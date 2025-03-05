@@ -126,9 +126,13 @@
             "text_font_size": "17",
             "text_font_weight": "400",
             "text_line_height": "28",
+            "text_mt": 0,
+            "text_mb": 0,
             "text_font_size_mob": "9",
             "text_font_weight_mob": "400",
-            "text_line_height_mob": "14"
+            "text_line_height_mob": "14",
+            "text_mt_mob": 0,
+            "text_mb_mob": 0
           }
         },
         "heading_kHj8Lj": {
@@ -145,9 +149,13 @@
             "text_font_size": "20",
             "text_font_weight": "400",
             "text_line_height": "28",
+            "text_mt": 10,
+            "text_mb": 14,
             "text_font_size_mob": "11",
             "text_font_weight_mob": "400",
-            "text_line_height_mob": "16"
+            "text_line_height_mob": "16",
+            "text_mt_mob": 6,
+            "text_mb_mob": 6
           }
         }
       },
@@ -248,9 +256,13 @@
             "text_font_size": "18",
             "text_font_weight": "400",
             "text_line_height": "28",
+            "text_mt": 0,
+            "text_mb": 0,
             "text_font_size_mob": "11",
             "text_font_weight_mob": "400",
-            "text_line_height_mob": "16"
+            "text_line_height_mob": "16",
+            "text_mt_mob": 0,
+            "text_mb_mob": 0
           }
         }
       },
@@ -569,9 +581,13 @@
             "text_font_size": "18",
             "text_font_weight": "500",
             "text_line_height": "28",
+            "text_mt": 0,
+            "text_mb": 0,
             "text_font_size_mob": "11",
             "text_font_weight_mob": "500",
-            "text_line_height_mob": "16"
+            "text_line_height_mob": "16",
+            "text_mt_mob": 0,
+            "text_mb_mob": 0
           }
         }
       },
