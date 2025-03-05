@@ -535,15 +535,23 @@
       </script>
 
       <script>
-        window.addEventListener('DOMContentLoaded', function() {
-          if (window.location.href.includes('contact_posted=true')) {
-            // If GA4 is set up via gtag
+        // Dulwich Health Contact Form Submission Tracking - Simplified
+        document.addEventListener('DOMContentLoaded', function() {
+          // Only run on contact page with the success parameter
+          if (window.location.pathname.includes('/pages/contact') &&
+              window.location.href.includes('contact_posted=true')) {
+
+            console.log('Dulwich Health contact form submission detected');
+
+            // Send the event to GA4
             if (typeof gtag === 'function') {
-              gtag('event', 'Contact Us Shopify', {
-                'form_name': 'contact_form',
-                'form_location': 'contact_page'
+              gtag('event', 'Contact_Form_Submission', {
+                'form': 'Contact form',
+                'form_location': 'Dulwich Health contact page'
               });
-              console.log('Contact Us Shopify event sent to GA4');
+              console.log('Contact form submission event sent to GA4');
+            } else {
+              console.log('gtag not found - GA4 event not sent');
             }
           }
         });
