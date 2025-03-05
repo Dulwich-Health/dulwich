@@ -515,7 +515,7 @@
       <script src="{{ 'carousel.js' | asset_url }}" defer="defer"></script>
 
       <script>
-        window.addEventListener("klaviyoForms", function(e) { 
+        window.addEventListener("klaviyoForms", function(e) {
           if (e.detail.type == 'open' || e.detail.type == 'embedOpen') {
             gtag('event', 'form_open', {'form': 'Klaviyo form', 'form_id': e.detail.formId});
           }
@@ -530,6 +530,21 @@
           }
           if (e.detail.type == 'close') {
             gtag('event', 'form_close', {'form': 'Klaviyo form', 'form_id': e.detail.formId});
+          }
+        });
+      </script>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          if (window.location.href.includes('contact_posted=true')) {
+            // If GA4 is set up via gtag
+            if (typeof gtag === 'function') {
+              gtag('event', 'contact_form_submission', {
+                'form_name': 'contact_form',
+                'form_location': 'contact_page'
+              });
+              console.log('Contact form submission event sent to GA4');
+            }
           }
         });
       </script>
