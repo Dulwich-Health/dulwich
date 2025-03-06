@@ -185,7 +185,7 @@
           "type": "carousel_block",
           "settings": {
             "image_desktop": "shopify://shop_images/Banner_OxyTech.png",
-            "image_mobile": "shopify://shop_images/Slide_1_mob.png",
+            "image_mobile": "shopify://shop_images/OxyTech_Mobile_Banner.png",
             "image_url": "shopify://collections/oxytech"
           }
         },
@@ -193,7 +193,7 @@
           "type": "carousel_block",
           "settings": {
             "image_desktop": "shopify://shop_images/Banner_AlliTech.png",
-            "image_mobile": "shopify://shop_images/Slide_2_mob.png",
+            "image_mobile": "shopify://shop_images/AlliTech_Mobile_Banner.png",
             "image_url": "shopify://collections/allitech"
           }
         }
