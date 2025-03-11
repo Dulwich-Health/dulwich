@@ -75,7 +75,7 @@
         "text_fbXLwd": {
           "type": "text",
           "settings": {
-            "text": "<p> <em>NOW also available in smaller version with 60 capsules</em></p>",
+            "text": "<p> <em>NOW also available in a smaller version with </em><a href=\"https://dulwichhealth.co.uk/products/oxytech-60-capsules\" title=\"https://dulwichhealth.co.uk/products/oxytech-60-capsules\"><em><strong>60 capsules</strong></em></a></p>",
             "text_color": "#60919f",
             "text_font_style": "italic",
             "text_style": "body",
