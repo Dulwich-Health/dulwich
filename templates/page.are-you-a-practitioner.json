@@ -58,23 +58,11 @@
             "text_mt_mob": 0,
             "text_mb_mob": 0
           }
-        },
-        "button_qLUewP": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "heading_bTdxjx",
-        "text_TWdgy3",
-        "button_qLUewP"
+        "text_TWdgy3"
       ],
       "settings": {
         "desktop_content_position": "center",
