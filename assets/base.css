@@ -3931,6 +3931,8 @@ shopify-accelerated-checkout-cart {
 
 .article-card .card__heading {
   margin-top: 8px;
+}
+.recent-blogs__section .article-card .card__heading {
   min-height: 48px;
 }
 .main-blog .card__content .card__information {
