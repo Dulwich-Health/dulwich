@@ -3199,11 +3199,13 @@ li.active a {
   .product-card .badge-capsule {
     font-size: 12px;
   }
+  .recommended-blogs .splide__arrow--prev,
   .collection .splide__arrow--prev,
   .testimonial-section .splide__arrow--prev,
   .related-products .splide__arrow--prev {
       left: -5.4%;
   }
+  .recommended-blogs .splide__arrow--next,
   .collection .splide__arrow--next,
   .testimonial-section .splide__arrow--next,
   .related-products .splide__arrow--next {
@@ -3516,15 +3518,18 @@ footer .copyright__content a {
   }
 }
 @media (min-width: 990px) and (max-width: 1200px) {
+  .recommended-blogs .page-width,
   .collection.page-width,
   .related-products.page-width {
     padding-left: 60px;
     padding-right: 60px;
   }
+  .recommended-blogs .splide__arrow--next,
   .related-products .splide__arrow--next,
   .collection .splide__arrow--next {
     right: -5%;
   }
+  .recommended-blogs .splide__arrow--prev,
   .related-products .splide__arrow--prev,
   .collection .splide__arrow--prev {
     left: -5%;

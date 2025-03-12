@@ -20,7 +20,7 @@
 {% endstyle %}
 
 <div class="recommended-blogs recent-blogs padding-{{ section.id }} color-{{ section.settings.color_scheme }}">
-  <div class="collection page-width">
+  <div class="page-width">
     <div class="recent-blogs__section">
       {% if section.settings.blog_heading != blank %}
         <div class="tw-font-primary tw-text-[19px] md:tw-text-[41px] tw-font-light md:tw-font-normal tw-leading-[27px] md:tw-leading-[58px] tw-mb-[11px] md:tw-mb-[24px] tw-w-full tw-text-{{ section.settings.Section_heading_alignment }} tw-text-[rgb(var(--color-button))]">
@@ -28,6 +28,24 @@
         </div>
       {% endif %}
       <div class="hero--banner--container">
+        {%- assign current_tags = article.tags -%}
+        {%- assign match_count = 0 -%}
+
+        {%- for related_article in blog.articles -%}
+          {%- if related_article.id != article.id -%}
+            {%- assign has_match = false -%}
+
+            {%- for tag in current_tags -%}
+              {%- if related_article.tags contains tag -%}
+                {%- assign has_match = true -%}
+              {%- endif -%}
+            {%- endfor -%}
+
+            {%- if has_match -%}
+              {%- assign match_count = match_count | plus: 1 -%}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
         <carousel-component
           id="slideshow--{{ section.id }}"
           class="splide"
@@ -35,12 +53,11 @@
           data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 | default: 3000 }}"
           data-desktopPerPage="{{ section.settings.desktop_per_page }}"
           data-mobilePerPage="{{ section.settings.mobile_per_page }}"
-          data-showArrows="{{ section.settings.show_arrows }}"
-          data-showarrowsonmobile="{{ section.settings.show_arrows }}"
+          data-showArrows="{% if section.settings.show_arrows and match_count > 4 %}true{% else %}false{% endif %}"
+          data-showarrowsonmobile="{% if section.settings.show_arrows and match_count > 4 %}true{% else %}false{% endif %}"
           data-showDots="{{ section.settings.show_dots }}"
           data-showdotsonmobile="{{ section.settings.show_dots }}"
           data-gapBetweenSlides="1rem"
-          data-focus="left"
           data-enableonmobile="{{ section.settings.enable_splider}}"
           {% if section.settings.enable_carousel_looping %}
             data-type="loop"
@@ -52,8 +69,6 @@
               class="splide__list"
               role="list"
             >
-              {% assign current_tags = article.tags %}
-
               {% for related_article in blog.articles %}
                 {% if related_article.id != article.id %}
                   {% assign matching_tags = false %}

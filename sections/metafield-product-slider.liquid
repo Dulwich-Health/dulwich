@@ -31,6 +31,10 @@
 <div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden">
   <div class="metafield-products collection {% if section.settings.page_width %} lg:tw-px-[147px] page-width page-width-lg-slider{% endif %} padding-{{ section.id }} isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {% assign product_list = section.settings.product_list %}
+    {% assign product_count = 0 %}
+    {% for product in product_list %}
+      {% assign product_count = product_count | plus: 1 %}
+    {% endfor %}
     {% if product_list != blank %}
       {%- if section.settings.title != blank -%}
         <h2 class="featured-collection-hd tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[19px] md:tw-text-[41px] tw-font-light tw-leading-[27px] md:tw-leading-[58px] tw-mb-[11px] md:tw-mb-[32px] tw-text-{{ section.settings.heading_position }} {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
@@ -43,8 +47,8 @@
         data-mobilePerPage="{{ section.settings.mobile_per_page }}"
         data-autoplay="{{ section.settings.enable_autoplay | default: false }}"
         data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 | default: 3000 }}"
-        data-showArrows="{{ section.settings.show_arrows }}"
-        data-showArrowsOnMobile="{{ section.settings.show_arrows_on_mobile }}"
+        data-showArrows="{% if product_count > 4 and section.settings.show_arrows %}true{% else %}false{% endif %}"
+        data-showArrowsOnMobile="{% if product_count > 4 and section.settings.show_arrows_on_mobile %}true{% else %}false{% endif %}"
         data-showDots="{{ section.settings.show_dots }}"
         data-showDotsOnMobile="{{ section.settings.show_dots_on_mobile }}"
         data-gapBetweenSlides="{{ section.settings.gap_between_slides_on_desktop | append: 'rem' }}"
