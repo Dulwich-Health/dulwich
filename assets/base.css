@@ -3928,3 +3928,21 @@ shopify-accelerated-checkout-cart {
   display: flex !important;
   align-items: center;
 }
+
+.article-card .card__heading {
+  margin-top: 8px;
+  min-height: 48px;
+}
+.main-blog .card__content .card__information {
+  text-align: left;
+}
+.main-blog {
+  --grid-desktop-horizontal-spacing: 20px;
+  --grid-desktop-vertical-spacing: 34px;
+}
+@media screen and (max-width: 749px) {
+  .main-blog {
+    --grid-mobile-horizontal-spacing: 10px;
+    --grid-mobile-vertical-spacing: 20px;
+  }
+}
