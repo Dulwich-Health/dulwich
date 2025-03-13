@@ -1,0 +1,405 @@
+{%- style -%}
+  .padding-{{ section.id }} {
+      padding-top: {{ section.settings.mobile_padding_top | append: 'px' }};
+      padding-bottom: {{ section.settings.mobile_padding_bottom | append: 'px' }};
+  }
+  @media screen and (min-width: 750px) {
+      .padding-{{ section.id }} {
+          padding-top: {{ section.settings.desktop_padding_top | append: 'px' }};
+          padding-bottom: {{ section.settings.desktop_padding_bottom | append: 'px' }};
+      }
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign products_to_display = section.settings.products_to_show
+  assign columns_mobile_int = section.settings.mobile_per_page | plus: 0
+  assign show_mobile_slider = false
+  if section.settings.enable_mobile_slider and products_to_display > columns_mobile_int
+    assign show_mobile_slider = true
+  endif
+  assign show_desktop_slider = false
+  if section.settings.enable_desktop_slider and products_to_display > section.settings.desktop_per_page
+    assign show_desktop_slider = true
+  endif
+-%}
+
+{%- if show_mobile_slider or show_desktop_slider -%}
+  <script src="{{ 'carousel.js' | asset_url }}" defer="defer"></script>
+{% endif -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden">
+  <div class="metafield-products collection {% if section.settings.page_width %} lg:tw-px-[147px] page-width page-width-lg-slider{% endif %} padding-{{ section.id }} isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    {% assign product_list = section.settings.product_list %}
+    {% assign product_count = 0 %}
+    {% for product in product_list %}
+      {% assign product_count = product_count | plus: 1 %}
+    {% endfor %}
+    {% if product_list != blank %}
+      {%- if section.settings.title != blank -%}
+        <h2 class="featured-collection-hd tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[19px] md:tw-text-[41px] tw-font-light tw-leading-[27px] md:tw-leading-[58px] tw-mb-[11px] md:tw-mb-[32px] tw-text-{{ section.settings.heading_position }} {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          {{ section.settings.title }}
+        </h2>
+      {%- endif -%}
+      <carousel-component
+        id="carousel--{{ section.id }}"
+        data-desktopPerPage="{{ section.settings.desktop_per_page }}"
+        data-mobilePerPage="{{ section.settings.mobile_per_page }}"
+        data-autoplay="{{ section.settings.enable_autoplay | default: false }}"
+        data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 | default: 3000 }}"
+        data-showArrows="{% if product_count > 4 and section.settings.show_arrows %}true{% else %}false{% endif %}"
+        data-showArrowsOnMobile="{% if product_count > 4 and section.settings.show_arrows_on_mobile %}true{% else %}false{% endif %}"
+        data-showDots="{{ section.settings.show_dots }}"
+        data-showDotsOnMobile="{{ section.settings.show_dots_on_mobile }}"
+        data-gapBetweenSlides="{{ section.settings.gap_between_slides_on_desktop | append: 'rem' }}"
+        data-gapBetweenSlidesOnMobile="{{ section.settings.gap_between_slides_on_mobile | append: 'rem' }}"
+        data-mobilePaddingLeft="{{ section.settings.mobile_padding_left | append: '%' }}"
+        data-mobilePaddingRight="{{ section.settings.mobile_padding_right | append: '%' }}"
+        data-desktopPaddingLeft="{{ section.settings.desktop_padding_left | append: '%' }}"
+        data-desktopPaddingRight="{{ section.settings.desktop_padding_right | append: '%' }}"
+        data-enableOnMobile="{{ show_mobile_slider }}"
+        data-enableOnDesktop="{{ show_desktop_slider }}"
+        class="
+          {%- if show_mobile_slider or show_desktop_slider -%}
+            splide
+          {%- endif -%}
+          {%- if settings.animations_reveal_on_scroll -%}
+            scroll-trigger animate--slide-in
+          {%- endif -%}
+        "
+      >
+        <div class="splide__track">
+          <ul
+            class="
+              {%- if show_mobile_slider or show_desktop_slider -%}
+                 splide__list
+              {%- else -%}
+                 grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down
+              {%- endif -%}
+            "
+            role="list"
+          >
+            {% for product in product_list %}
+              <li class="grid__item splide__slide {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+                {% render 'product-card', product: product, forloop: forloop, show_quick_view: false %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% render 'custom-splide-arrows' %}
+      </carousel-component>
+      <div class="tw-flex tw-justify-center tw-mt-[24px] md:tw-mt-[30px] navigation-button {% if section.settings.hide_button_mobile %} tw-hidden {% else %} tw-flex {% endif %} {% if section.settings.hide_button_desktop %} md:tw-hidden {% else %} md:tw-flex {% endif %}">
+        {% if section.settings.button_url != blank %}
+          <a href="{{ section.settings.button_url }}">
+            <button class="tw-flex tw-justify-center tw-items-center tw-font-primary tw-text-[12px] tw-text-[rgb(var(--color-button))] md:tw-text-[21px] tw-font-normal tw-underline">
+              {{ section.settings.button_label }}
+            </button>
+          </a>
+        {% else %}
+          <button class="tw-flex tw-justify-center tw-items-center tw-font-primary tw-text-[12px] tw-text-[rgb(var(--color-button))] md:tw-text-[21px] tw-font-normal tw-underline">
+            {{ section.settings.button_label }}
+          </button>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Metafield Products",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_position",
+      "label": "Heading position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "product_list",
+      "id": "product_list",
+      "label": "Select Products"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 2,
+      "max": 10,
+      "step": 1,
+      "default": 4,
+      "label": "t:sections.related-products.settings.products_to_show.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "page_width",
+      "label": "Enable page width",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Grid Settings"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 4,
+      "label": "t:sections.related-products.settings.columns_desktop.label"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "default": "2",
+      "label": "t:sections.related-products.settings.columns_mobile.label",
+      "options": [
+        {
+          "value": "1",
+          "label": "t:sections.related-products.settings.columns_mobile.options__1.label"
+        },
+        {
+          "value": "2",
+          "label": "t:sections.related-products.settings.columns_mobile.options__2.label"
+        }
+      ]
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "info": "t:sections.all.colors.has_cards_info",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "Carousel Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_mobile_slider",
+      "label": "Enable carousel on Mobile",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_desktop_slider",
+      "label": "Enable carousel on desktop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrows",
+      "label": "Show arrows on desktop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrows_on_mobile",
+      "label": "Show arrows on mobile",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dots",
+      "label": "Show dots on desktop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dots_on_mobile",
+      "label": "Show dots on mobile",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_autoplay",
+      "label": "Autoplay",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": "Autoplay interval",
+      "min": 2,
+      "max": 6,
+      "default": 3,
+      "step": 1,
+      "info": "Default 3s"
+    },
+    {
+      "type": "range",
+      "id": "desktop_per_page",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "unit": "itm",
+      "label": "Carousal items on desktop",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "mobile_per_page",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "unit": "itm",
+      "label": "Carousal items on mobile",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "desktop_padding_left",
+      "min": 0,
+      "max": 80,
+      "step": 1,
+      "unit": "rem",
+      "label": "Slight left gap for previous item peek on desktop",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "desktop_padding_right",
+      "min": 0,
+      "max": 80,
+      "step": 1,
+      "unit": "rem",
+      "label": "Slight right gap for next item peek on desktop",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_left",
+      "min": 0,
+      "max": 80,
+      "step": 1,
+      "unit": "%",
+      "label": "Slight left gap for previous item peek on mobile",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_right",
+      "min": 0,
+      "max": 80,
+      "step": 1,
+      "unit": "%",
+      "label": "Slight right gap for next item peek on mobile",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "gap_between_slides_on_desktop",
+      "min": 0,
+      "max": 4,
+      "step": 0.1,
+      "unit": "rem",
+      "label": "Gap between slides on desktop",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "gap_between_slides_on_mobile",
+      "min": 0,
+      "max": 4,
+      "step": 0.1,
+      "unit": "rem",
+      "label": "Gap between slides on mobile",
+      "default": 2
+    },
+    {
+      "type": "header",
+      "content": "Button settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_button_desktop",
+      "label": "Hide button in desktop",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_button_mobile",
+      "label": "Hide button in mobile",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button text",
+      "default": "Discover More"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button url"
+    },
+    {
+      "type": "header",
+      "content": "Section padding settings"
+    },
+    {
+      "type": "range",
+      "id": "desktop_padding_top",
+      "label": "Padding top (Desktop)",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "desktop_padding_bottom",
+      "label": "Padding bottom (Desktop)",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "label": "Padding top (Mobile)",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "label": "Padding bottom (Mobile)",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    }
+  ],
+  "presets": [
+    {
+      "name": "Metafield Products"
+    }
+  ]
+}
+{% endschema %}

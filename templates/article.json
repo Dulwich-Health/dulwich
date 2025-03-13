@@ -40,9 +40,72 @@
         "content"
       ],
       "settings": {}
+    },
+    "recommended_blogs_VVHzJ7": {
+      "type": "recommended-blogs",
+      "settings": {
+        "blog_heading": "Recommended Blogs",
+        "Section_heading_alignment": "left",
+        "color_scheme": "scheme-9da49f90-5b84-4957-b185-c2b04dcfcf9e",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_excerpt": false,
+        "show_read_more": true,
+        "enable_splider": true,
+        "show_arrows": true,
+        "show_dots": false,
+        "enable_autoplay": false,
+        "autoplay_speed": 3,
+        "desktop_per_page": 4,
+        "mobile_per_page": 1,
+        "section_padding_top": 20,
+        "section_padding_bottom": 30,
+        "mobile_padding_top": 32,
+        "mobile_padding_bottom": 32
+      }
+    },
+    "metafield_product_slider_cTeJw3": {
+      "type": "metafield-product-slider",
+      "settings": {
+        "title": "Recommended Products",
+        "heading_position": "left",
+        "product_list": "{{ article.metafields.custom.recommended_products.value }}",
+        "products_to_show": 10,
+        "page_width": true,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-9da49f90-5b84-4957-b185-c2b04dcfcf9e",
+        "enable_mobile_slider": true,
+        "enable_desktop_slider": true,
+        "show_arrows": true,
+        "show_arrows_on_mobile": true,
+        "show_dots": false,
+        "show_dots_on_mobile": false,
+        "enable_autoplay": false,
+        "autoplay_speed": 3,
+        "desktop_per_page": 4,
+        "mobile_per_page": 2,
+        "desktop_padding_left": 0,
+        "desktop_padding_right": 0,
+        "mobile_padding_left": 0,
+        "mobile_padding_right": 0,
+        "gap_between_slides_on_desktop": 2,
+        "gap_between_slides_on_mobile": 2,
+        "hide_button_desktop": true,
+        "hide_button_mobile": true,
+        "button_label": "View all",
+        "button_url": "",
+        "desktop_padding_top": 30,
+        "desktop_padding_bottom": 60,
+        "mobile_padding_top": 30,
+        "mobile_padding_bottom": 70
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "recommended_blogs_VVHzJ7",
+    "metafield_product_slider_cTeJw3"
   ]
 }

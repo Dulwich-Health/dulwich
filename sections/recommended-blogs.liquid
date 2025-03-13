@@ -1,0 +1,276 @@
+{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+  .padding-{{ section.id }} {
+      padding-top: {{ section.settings.mobile_padding_top | append: 'px' }};
+      padding-bottom: {{ section.settings.mobile_padding_bottom | append: 'px' }};
+  }
+  @media screen and (min-width: 750px) {
+      .padding-{{ section.id }} {
+          padding-top: {{ section.settings.section_padding_top | append: 'px' }};
+          padding-bottom: {{ section.settings.section_padding_bottom | append: 'px' }};
+      }
+  }
+  {% if section.settings.show_image == false %}
+      .recent-blogs .card__inner.ratio:before {
+          padding-bottom: 0;
+      }
+  {% endif %}
+{% endstyle %}
+
+<div class="recommended-blogs recent-blogs padding-{{ section.id }} color-{{ section.settings.color_scheme }}">
+  <div class="page-width">
+    <div class="recent-blogs__section">
+      {% if section.settings.blog_heading != blank %}
+        <div class="tw-font-primary tw-text-[19px] md:tw-text-[41px] tw-font-light md:tw-font-normal tw-leading-[27px] md:tw-leading-[58px] tw-mb-[11px] md:tw-mb-[24px] tw-w-full tw-text-{{ section.settings.Section_heading_alignment }} tw-text-[rgb(var(--color-button))]">
+          {{ section.settings.blog_heading }}
+        </div>
+      {% endif %}
+      <div class="hero--banner--container">
+        {%- assign current_tags = article.tags -%}
+        {%- assign match_count = 0 -%}
+
+        {%- for related_article in blog.articles -%}
+          {%- if related_article.id != article.id -%}
+            {%- assign has_match = false -%}
+
+            {%- for tag in current_tags -%}
+              {%- if related_article.tags contains tag -%}
+                {%- assign has_match = true -%}
+              {%- endif -%}
+            {%- endfor -%}
+
+            {%- if has_match -%}
+              {%- assign match_count = match_count | plus: 1 -%}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+        <carousel-component
+          id="slideshow--{{ section.id }}"
+          class="splide"
+          data-autoplay="{{ section.settings.enable_autoplay }}"
+          data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 | default: 3000 }}"
+          data-desktopPerPage="{{ section.settings.desktop_per_page }}"
+          data-mobilePerPage="{{ section.settings.mobile_per_page }}"
+          data-showArrows="{% if section.settings.show_arrows and match_count > 4 %}true{% else %}false{% endif %}"
+          data-showarrowsonmobile="{% if section.settings.show_arrows and match_count > 4 %}true{% else %}false{% endif %}"
+          data-showDots="{{ section.settings.show_dots }}"
+          data-showdotsonmobile="{{ section.settings.show_dots }}"
+          data-gapBetweenSlides="1rem"
+          data-enableonmobile="{{ section.settings.enable_splider}}"
+          {% if section.settings.enable_carousel_looping %}
+            data-type="loop"
+            data-refresh="true"
+          {% endif %}
+        >
+          <div class="splide__track">
+            <ul
+              class="splide__list"
+              role="list"
+            >
+              {% for related_article in blog.articles %}
+                {% if related_article.id != article.id %}
+                  {% assign matching_tags = false %}
+
+                  {% for tag in current_tags %}
+                    {% if related_article.tags contains tag %}
+                      {% assign matching_tags = true %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% if matching_tags %}
+                    <li class="splide__slide">
+                      {% render 'article-card',
+                        blog: section.settings.blog,
+                        article: related_article,
+                        media_aspect_ratio: 1.66,
+                        show_image: section.settings.show_image,
+                        show_date: section.settings.show_date,
+                        show_author: section.settings.show_author,
+                        show_excerpt: section.settings.show_excerpt,
+                        show_read_more: section.settings.show_read_more
+                      %}
+                    </li>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        </carousel-component>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Recommended blogs",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Blog heading",
+      "id": "blog_heading",
+      "default": "Blogs"
+    },
+    {
+      "type": "select",
+      "id": "Section_heading_alignment",
+      "label": "Section heading alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Middle"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "default": "scheme_1",
+      "label": "Color Scheme"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_image",
+      "default": true,
+      "label": "Show Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "default": true,
+      "label": "Show date"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "default": false,
+      "label": "Show author"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_excerpt",
+      "label": "Show excerpt",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_read_more",
+      "label": "Show read more",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_splider",
+      "label": "Enable splider on mobile",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Carousel Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrows",
+      "label": "Show arrows",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dots",
+      "label": "Show dots",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_autoplay",
+      "label": "Autoplay",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": "Autoplay interval",
+      "min": 2,
+      "max": 6,
+      "default": 3,
+      "info": "Default 3s"
+    },
+    {
+      "type": "range",
+      "id": "desktop_per_page",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "unit": "itm",
+      "label": "Carousal items on desktop",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "mobile_per_page",
+      "min": 1,
+      "max": 2,
+      "step": 0.5,
+      "unit": "itm",
+      "label": "Carousal items on mobile",
+      "default": 2
+    },
+    {
+      "type": "header",
+      "content": "Section padding settings"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Padding top (Desktop)",
+      "default": 80,
+      "min": 0,
+      "max": 100,
+      "step": 2
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Padding bottom (Desktop)",
+      "default": 80,
+      "min": 0,
+      "max": 100,
+      "step": 2
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "label": "Padding top (Mobile)",
+      "default": 32,
+      "min": 0,
+      "max": 100,
+      "step": 2
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "label": "Padding bottom (Mobile)",
+      "default": 32,
+      "min": 0,
+      "max": 100,
+      "step": 2
+    }
+  ],
+  "presets": [
+    {
+      "name": "Recommended blogs"
+    }
+  ]
+}
+{% endschema %}

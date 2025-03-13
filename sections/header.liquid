@@ -360,7 +360,8 @@
 
     onScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop >= 36) {
+      const AnnouncementBarHeight = document.querySelector('.custom-announcement-bar').offsetHeight;
+      if (scrollTop >= AnnouncementBarHeight) {
         this.header.classList.add('scrolled-past-header');
         document.querySelector(".drawer.cart-notification-drawer").classList.add('header-cart-drawer-sticky');
       }

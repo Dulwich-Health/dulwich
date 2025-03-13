@@ -28,17 +28,20 @@ media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
 .splide__pagination__page.is-active[type=button] {
     background: #000;
 }
+.recommended-blogs .splide__arrow--prev,
 .collection .splide__arrow--prev,
 .testimonial-section .splide__arrow--prev,
 .related-products .splide__arrow--prev {
     left: -8.4%;
 }
+.recommended-blogs .splide__arrow--next,
 .collection .splide__arrow--next,
 .testimonial-section .splide__arrow--next,
 .related-products .splide__arrow--next {
     right: -8.4%;
 }
 .hero-banner-slider .splide__arrow svg,
+.recommended-blogs .splide__arrow svg,
 .collection .splide__arrow svg,
 .testimonial-section .splide__arrow svg,
 .related-products .splide__arrow svg {
@@ -47,6 +50,7 @@ media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
     width: 44px;
 }
 .hero-banner-slider button.splide__arrow,
+.recommended-blogs button.splide__arrow,
 .collection button.splide__arrow,
 .testimonial-section button.splide__arrow,
 .related-products button.splide__arrow {
@@ -72,16 +76,19 @@ media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
     fill: #fff;
 }
 @media screen and (max-width: 990px) {
+    .recommended-blogs .splide__arrow--prev,
     .collection .splide__arrow--prev,
     .testimonial-section .splide__arrow--prev,
     .related-products .splide__arrow--prev {
         left: -3.5%;
     }
+    .recommended-blogs .splide__arrow--next,
     .collection .splide__arrow--next,
     .testimonial-section .splide__arrow--next,
     .related-products .splide__arrow--next {
         right: -3.5%;
     }
+    .recommended-blogs .splide__arrow svg,
     .hero-banner-slider .splide__arrow svg,
     .collection .splide__arrow svg,
     .testimonial-section .splide__arrow svg,
@@ -91,11 +98,13 @@ media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
     }
 }
 @media screen and (max-width: 750px) {
+    .recommended-blogs .splide__arrow--prev,
     .collection .splide__arrow--prev,
     .testimonial-section .splide__arrow--prev,
     .related-products .splide__arrow--prev {
         left: -25px;
     }
+    .recommended-blogs .splide__arrow--next,
     .collection .splide__arrow--next,
     .testimonial-section .splide__arrow--next,
     .related-products .splide__arrow--next {
