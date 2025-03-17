@@ -500,7 +500,6 @@
         "list_block_PAbnmx",
         "media_wwNhkf"
       ],
-      "disabled": true,
       "settings": {
         "tab_name": "{{ product.metafields.custom.product_description_header_tabs.value.tab_1.value }}",
         "desktop_padding_top": 30,
