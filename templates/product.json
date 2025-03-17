@@ -341,18 +341,21 @@
       "blocks": {
         "text_eanV6W": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "tab_name": "Description"
           }
         },
         "text_6HRxnV": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "tab_name": "Additional Information"
           }
         },
         "text_AdWaU3": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "tab_name": "Delivery costs & Returns"
           }
@@ -363,6 +366,7 @@
         "text_6HRxnV",
         "text_AdWaU3"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "padding_top": 60,
