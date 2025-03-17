@@ -471,6 +471,7 @@
         },
         "list_block_PAbnmx": {
           "type": "list_block",
+          "disabled": true,
           "source": "{{ product.metafields.custom.list_block.value }}",
           "settings": {
             "list_heading": "{{ product.metafields.custom.list_block.value.list_heading.value }}",
@@ -481,6 +482,7 @@
         },
         "media_wwNhkf": {
           "type": "media",
+          "disabled": true,
           "source": "{{ product.metafields.custom.media_block.value }}",
           "settings": {
             "video": "{{ product.metafields.custom.media_block.value.video.value }}",
