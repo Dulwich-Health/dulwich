@@ -327,6 +327,7 @@
     },
     "product_description_V9WMtJ": {
       "type": "product-description",
+      "disabled": true,
       "settings": {
         "show_description": true,
         "desktop_padding_top": 30,
@@ -346,14 +347,12 @@
         },
         "text_6HRxnV": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "tab_name": "Additional Information"
           }
         },
         "text_AdWaU3": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "tab_name": "Delivery costs & Returns"
           }
@@ -364,7 +363,6 @@
         "text_6HRxnV",
         "text_AdWaU3"
       ],
-      "disabled": true,
       "settings": {
         "heading": "",
         "padding_top": 60,
