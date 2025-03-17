@@ -48,14 +48,14 @@
   {% endif %}
 {%- endstyle -%}
 
-<div data-title="{{ section.settings.tab_name |  handleize }}" class="hidden tw-hidden lg:tw-block tab-switch-page-width tw-px-[25px] md:tw-px-[147px] page-width mobile-accordian-content">
+<div data-title="{{ section.settings.tab_name |  handleize }}" class="lg:tw-block tab-switch-page-width tw-px-[25px] md:tw-px-[147px] tw-py-[10px] md:tw-py-[30px] page-width mobile-accordian-content" id="product_tabs_content">
   <div class="tab-switch-content">
     {% if section.blocks.size > 0 %}
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'text' -%}
             {% if block.settings.text != blank %}
-              <h1 class="tw-font-primary tw-text-[22px] lg:tw-text-[38px] lg:tw-mb-[50px] tw-my-[20px] lg:tw-my-[50px] tw-text-bright-red tw-font-semibold blg:tw-leading-[30px]">{{ block.settings.text | replace: '<p>', '' | replace: '</p>', '' }}</h1>
+              <h1 class="tw-font-primary tw-text-[18px] lg:tw-text-[24px] lg:tw-mb-[50px] blg:tw-my-[20px] tw-text-bright-red tw-font-semibold blg:tw-leading-[30px]">{{ block.settings.text | replace: '<p>', '' | replace: '</p>', '' }}</h1>
             {% endif %}
 
           {%- when 'ingredients' -%}
@@ -76,11 +76,11 @@
                   {% if block.settings.ingredients_heading != blank or block.settings.ingredients_para != blank  %}
                     <div class="ingredients-block-order">
                       <h4 class="tw-font-primary tw-text-center tw-text-white tw-bg-bright-red tw-text-[16px] lg:tw-text-[22px] tw-font-semibold tw-py-[14px] lg:tw-py-[20px] tw-rounded-t-[20px] md:tw-rounded-t-[41px]">{{ block.settings.ingredients_heading }}</h4>
-                      <p class="tw-font-primary tw-text-[13px] lg:tw-text-[16px] tw-font-medium tw-leading-[22px] lg:tw-leading-[28px] tw-p-[20px] lg:tw-p-[30px] tw-text-black tw-bg-white tw-rounded-b-[20px] md:tw-rounded-b-[41px]">{{ block.settings.ingredients_para | replace: '<p>', '' | replace: '</p>', '' }}</p>
+                      <p class="tw-font-primary tw-text-[13px] lg:tw-text-[16px] tw-bg-[#E6F9FF] tw-font-medium tw-leading-[22px] lg:tw-leading-[28px] tw-p-[20px] lg:tw-p-[30px] tw-text-black tw-rounded-b-[20px] md:tw-rounded-b-[41px]">{{ block.settings.ingredients_para | replace: '<p>', '' | replace: '</p>', '' }}</p>
                     </div>
                   {% endif %}
                   {% if block.settings.informations_table != blank %}
-                    <div class="tw-bg-white tw-rounded-[20px] md:tw-rounded-[41px] information-block-order">
+                    <div class="tw-bg-[#E6F9FF] tw-rounded-[20px] md:tw-rounded-[41px] information-block-order">
                       {% if block.settings.informations_heading != blank %}
                         <h4 class="tw-font-primary tw-text-center tw-text-white tw-bg-bright-red tw-text-[16px] lg:tw-text-[22px] tw-font-semibold tw-py-[14px] lg:tw-py-[20px] tw-rounded-t-[20px] md:tw-rounded-t-[41px]">{{ block.settings.informations_heading }}</h4>
                       {% endif %}
@@ -199,7 +199,7 @@
                     | split: '[' | join: '<span class="red-color">'
                     | split: ']' | join: '</span>'
                   %}
-                  <div class="tw-flex-grow lg:tw-w-[47.8%] tw-w-full tw-font-secondary tw-text-[14px] lg:tw-text-[18px] tw-font-normal tw-not-italic tw-p-[20px] lg:tw-p-[44px] tw-rounded-[20px] md:tw-rounded-[40px] tw-leading-[24px] lg:tw-leading-[30px] tw-bg-white tw-text-black tw-flex tw-items-center">
+                  <div class="tw-bg-[#E6F9FF] tw-flex-grow lg:tw-w-[47.8%] tw-w-full tw-font-secondary tw-text-[14px] lg:tw-text-[18px] tw-font-normal tw-not-italic tw-p-[20px] lg:tw-p-[44px] tw-rounded-[20px] md:tw-rounded-[40px] tw-leading-[24px] lg:tw-leading-[30px] tw-text-black tw-flex tw-items-center">
                     {{ formatted_review | replace: '<p>', '' | replace: '</p>', '' | replace: '<br>', '' }}
                   </div>
                 {% endif %}
@@ -236,7 +236,7 @@
                     <div class="importance-block-order tw-font-secondary tw-text-[14px] lg:tw-text-[18px] tw-font-normal tw-leading-[22px] lg:tw-leading-[32px] tw-text-black">{{ importance_text | replace: '<p>', '' | replace: '</p>', '' }}</div>
                   {% endif %}
                   {% if disclaimer != blank %}
-                    <div class="disclaimer-block-order tw-font-secondary tw-text-[14px] lg:tw-text-[18px] tw-italic tw-leading-[22px] lg:tw-leading-[32px] tw-font-normal tw-text-black tw-border-4 tw-border-solid tw-border-bright-red tw-rounded-[20px] md:tw-rounded-[40px] tw-px-[26px] lg:tw-px-[40px] tw-py-[30px] lg:tw-py-[38px]">{{ disclaimer | replace: '<p>', '' | replace: '</p>', '' }}</div>
+                    <div class="disclaimer-block-order tw-bg-[#E6F9FF] tw-font-secondary tw-text-[14px] lg:tw-text-[18px] tw-italic tw-leading-[22px] lg:tw-leading-[32px] tw-font-normal tw-text-black tw-border-4 tw-border-solid tw-border-bright-red tw-rounded-[20px] md:tw-rounded-[40px] tw-px-[26px] lg:tw-px-[40px] tw-py-[30px] lg:tw-py-[38px]">{{ disclaimer | replace: '<p>', '' | replace: '</p>', '' }}</div>
                   {% endif %}
                   {% if block.settings.news_content != blank %}
                     <div class="news-block-order tw-px-[20px] lg:tw-px-[44px] tw-py-[24px] lg:tw-py-[54px] tw-bg-white tw-rounded-[20px] md:tw-rounded-[40px]">
@@ -255,6 +255,11 @@
                       <div class="tw-font-secondary tw-text-[#595959] tw-text-[13px] lg:tw-text-[18px] tw-not-italic tw-font-normal tw-leading-[22px] lg:tw-leading-[32px] tw-mt-[12px]">{{ block.settings.news_content | replace: '<p>', '' | replace: '</p>', '' }}</div>
                     </div>
                   {% endif %}
+                  {% if block.settings.reviews_image != blank %}
+                    <div class="usp-img-block-order">
+                      <img src="{{ block.settings.reviews_image | img_url: '' }}" alt='reviews_image' />
+                    </div>
+                  {% endif %}
                 </div>
               {% endif %}
               {% if instructions_desc != blank or block.settings.footer_text != blank or block.settings.usp_img != blank %}
@@ -262,7 +267,7 @@
                   {% if instructions_desc != blank %}
                     <div class="instructions-block-order">
                       <h4 class="tw-font-primary tw-text-center tw-text-white tw-bg-bright-red tw-text-[16px] lg:tw-text-[22px] tw-font-semibold tw-py-[14px] lg:tw-py-[20px] tw-rounded-t-[20px] md:tw-rounded-t-[41px]">{{ block.settings.instructions_heading }}</h4>
-                      <div class="tw-font-secondary tw-bg-white tw-text-[#595959] tw-text-[14px] lg:tw-text-[18px] tw-font-normal tw-leading-[22px] lg:tw-leading-[30px] tw-p-[20px] lg:tw-p-[37px] tw-rounded-b-[20px] md:tw-rounded-b-[41px]">{{ instructions_desc | replace: '<p>', '' | replace: '</p>', '' }}</div>
+                      <div class="tw-font-secondary tw-bg-[#E6F9FF] tw-text-[#595959] tw-text-[14px] lg:tw-text-[18px] tw-font-normal tw-leading-[22px] lg:tw-leading-[30px] tw-p-[20px] lg:tw-p-[37px] tw-rounded-b-[20px] md:tw-rounded-b-[41px]">{{ instructions_desc | replace: '<p>', '' | replace: '</p>', '' }}</div>
                     </div>
                   {% endif %}
                   {% if block.settings.usp_img != blank %}
@@ -752,6 +757,12 @@
             }
           ],
           "default": "3"
+        },
+        {
+          "type": "image_picker",
+          "id": "reviews_image",
+          "label": "Reviews image",
+          "info": "Recommended image dimenisions: 1026 x 534 pixels"
         },
         {
           "type": "header",

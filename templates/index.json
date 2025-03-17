@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "custom_collection_slider_3PGxde": {
@@ -122,7 +113,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<h3><strong>Wellcome to our new look website.</strong></h3>",
+            "text": "<h3><strong>Wellcome to our new look website.<\/strong><\/h3>",
             "text_font_size": "17",
             "text_font_weight": "400",
             "text_line_height": "28",
@@ -138,14 +129,14 @@
         "heading_kHj8Lj": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Welcome to our new look website</strong>",
+            "heading": "<strong>Welcome to our new look website<\/strong>",
             "heading_size": "h2"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<h5><strong>If you had an account with us before just login using your<br/> email and we'll send you a code to confirm it's you.</strong></h5>",
+            "text": "<h5><strong>If you had an account with us before just login using your<br\/> email and we'll send you a code to confirm it's you.<\/strong><\/h5>",
             "text_font_size": "20",
             "text_font_weight": "400",
             "text_line_height": "28",
@@ -184,17 +175,17 @@
         "00eb27cf-4970-4b8b-80a9-caf265729feb": {
           "type": "carousel_block",
           "settings": {
-            "image_desktop": "shopify://shop_images/Banner_OxyTech.png",
-            "image_mobile": "shopify://shop_images/OxyTech_Mobile_Banner.png",
-            "image_url": "shopify://collections/oxytech"
+            "image_desktop": "shopify:\/\/shop_images\/Banner_OxyTech.png",
+            "image_mobile": "shopify:\/\/shop_images\/OxyTech_Mobile_Banner.png",
+            "image_url": "shopify:\/\/collections\/oxytech"
           }
         },
         "26cad0da-0c18-4f04-9211-f8aa7a4a094c": {
           "type": "carousel_block",
           "settings": {
-            "image_desktop": "shopify://shop_images/Banner_AlliTech.png",
-            "image_mobile": "shopify://shop_images/AlliTech_Mobile_Banner.png",
-            "image_url": "shopify://collections/allitech"
+            "image_desktop": "shopify:\/\/shop_images\/Banner_AlliTech.png",
+            "image_mobile": "shopify:\/\/shop_images\/AlliTech_Mobile_Banner.png",
+            "image_url": "shopify:\/\/collections\/allitech"
           }
         }
       },
@@ -252,7 +243,7 @@
         "text_TNCErP": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Delivery to Europe?</strong>  We are excited to announce that EU deliveries are once again available.</p>",
+            "text": "<p><strong>Delivery to Europe?<\/strong>  We are excited to announce that EU deliveries are once again available.<\/p>",
             "text_font_size": "18",
             "text_font_weight": "400",
             "text_line_height": "28",
@@ -324,7 +315,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "Jean B",
-            "review_text": "<p>“A very good company with an excellent product I use regularly and have done for the past 11 years and trust it completely – highly recommended.”</p>",
+            "review_text": "<p>“A very good company with an excellent product I use regularly and have done for the past 11 years and trust it completely – highly recommended.”<\/p>",
             "star_rating": 5,
             "review_star_caption": "From Our Website"
           }
@@ -334,7 +325,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "Toni Michelle",
-            "review_text": "<p>“I always have a great buying experience with Dulwich Health. The products are ourstanding. The staff are friendly and efficient. The products  always arrive the following day. I cannot recommend Dulwich Health highly enough.”</p>",
+            "review_text": "<p>“I always have a great buying experience with Dulwich Health. The products are ourstanding. The staff are friendly and efficient. The products  always arrive the following day. I cannot recommend Dulwich Health highly enough.”<\/p>",
             "star_rating": 5,
             "review_star_caption": "From Our Website"
           }
@@ -344,7 +335,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "Annette H",
-            "review_text": "<p>“Excellent products for health & well being , delivery next day every time ?”</p>",
+            "review_text": "<p>“Excellent products for health & well being , delivery next day every time ?”<\/p>",
             "star_rating": 5,
             "review_star_caption": "From Our Website"
           }
@@ -354,7 +345,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "Jane",
-            "review_text": "<p>“Excellent delivery and easy to use website.”</p>",
+            "review_text": "<p>“Excellent delivery and easy to use website.”<\/p>",
             "star_rating": 5,
             "review_star_caption": "From Our Website"
           }
@@ -364,7 +355,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "Polly Rachelle",
-            "review_text": "<p>“Fabulous service. Very professional and very speedy delivery.”</p>",
+            "review_text": "<p>“Fabulous service. Very professional and very speedy delivery.”<\/p>",
             "star_rating": 5,
             "review_star_caption": "From Our Website"
           }
@@ -374,7 +365,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "A Harrison",
-            "review_text": "<p>“OxyTech is an amazing product which works like nothing else I’ve ever taken.”</p>",
+            "review_text": "<p>“OxyTech is an amazing product which works like nothing else I’ve ever taken.”<\/p>",
             "star_rating": 5,
             "review_star_caption": "From Our Website"
           }
@@ -384,7 +375,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "Suzanne Brooker",
-            "review_text": "<p>“Can’t recommend the AlliTech highly enough, helped to change my life for the better!”</p>",
+            "review_text": "<p>“Can’t recommend the AlliTech highly enough, helped to change my life for the better!”<\/p>",
             "star_rating": 5,
             "review_star_caption": "On Facebook"
           }
@@ -394,7 +385,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "Kaz Stevens",
-            "review_text": "<p>“This is the best medical and wellness company in the entire world, lovely friendly helpful staff headed by Rolf Gordon who is a genius and one of the most knowledgeable guys you will ever come across.”</p>",
+            "review_text": "<p>“This is the best medical and wellness company in the entire world, lovely friendly helpful staff headed by Rolf Gordon who is a genius and one of the most knowledgeable guys you will ever come across.”<\/p>",
             "star_rating": 5,
             "review_star_caption": "On Facebook"
           }
@@ -404,7 +395,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "S Small",
-            "review_text": "<p>“Harmoniser improved radiation levels in me massively. For mobile phones and those that suffer with Geopathic Stress. Electromagnetic,</p>",
+            "review_text": "<p>“Harmoniser improved radiation levels in me massively. For mobile phones and those that suffer with Geopathic Stress. Electromagnetic,<\/p>",
             "star_rating": 5,
             "review_star_caption": "On Google"
           }
@@ -414,7 +405,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "Maurizia Ferrari",
-            "review_text": "<p>“I have used your RadiTech for 20 years and it’s been the best money I spent in my lifetime!  Thank you for your work.”</p>",
+            "review_text": "<p>“I have used your RadiTech for 20 years and it’s been the best money I spent in my lifetime!  Thank you for your work.”<\/p>",
             "star_rating": 5,
             "review_star_caption": "On Facebook"
           }
@@ -424,7 +415,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "Michael H",
-            "review_text": "<p>“Very helpful & courtious staff and amazingly prompt delivery together with excellent products. Thank you.”</p>",
+            "review_text": "<p>“Very helpful & courtious staff and amazingly prompt delivery together with excellent products. Thank you.”<\/p>",
             "star_rating": 5,
             "review_star_caption": "From Our Website"
           }
@@ -434,7 +425,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "Linda",
-            "review_text": "<p>“I’ve used Dulwich Health for a long time, they were recommended by a good friend. I find them to be very knowledgeable on the quality products they sell. Orders always arrive well packed and on time. Service with a smile.”</p>",
+            "review_text": "<p>“I’ve used Dulwich Health for a long time, they were recommended by a good friend. I find them to be very knowledgeable on the quality products they sell. Orders always arrive well packed and on time. Service with a smile.”<\/p>",
             "star_rating": 5,
             "review_star_caption": "From Our Website"
           }
@@ -444,7 +435,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "Susie W",
-            "review_text": "<p>“As always a pleasure to come to Dulwich Health for their great products… great customer service – always very helpful. Thank you.”</p>",
+            "review_text": "<p>“As always a pleasure to come to Dulwich Health for their great products… great customer service – always very helpful. Thank you.”<\/p>",
             "star_rating": 5,
             "review_star_caption": "From Our Website"
           }
@@ -454,7 +445,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "S Small",
-            "review_text": "<p>“Love their products. They really do work and made to highest standard. You’re getting money’s worth as not full of bulking agents like many others out there.”</p>",
+            "review_text": "<p>“Love their products. They really do work and made to highest standard. You’re getting money’s worth as not full of bulking agents like many others out there.”<\/p>",
             "star_rating": 5,
             "review_star_caption": "On Google"
           }
@@ -464,7 +455,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "Sara-Lea Small",
-            "review_text": "<p>“Communication is always excellent and very prompt. The products are great too and I wish it was advertised more than the pharmaceutical industry. There are so many more positive outcomes from these kinds of complementary remedies. Highly recommend.”</p>",
+            "review_text": "<p>“Communication is always excellent and very prompt. The products are great too and I wish it was advertised more than the pharmaceutical industry. There are so many more positive outcomes from these kinds of complementary remedies. Highly recommend.”<\/p>",
             "star_rating": 5,
             "review_star_caption": "From Trustpilot"
           }
@@ -474,7 +465,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "Christina",
-            "review_text": "<p>“Excellent products and advice. I can’t praise them enough !!!“</p>",
+            "review_text": "<p>“Excellent products and advice. I can’t praise them enough !!!“<\/p>",
             "star_rating": 5,
             "review_star_caption": "On Trustpilot"
           }
@@ -522,36 +513,36 @@
         "usp_PVCwXA": {
           "type": "usp",
           "settings": {
-            "usp_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"97\" height=\"97\" viewbox=\"0 0 97 97\" fill=\"none\">\n  <path d=\"M43.8044 18.1631H14.6584C13.1124 18.1631 11.6297 18.7772 10.5365 19.8704C9.44337 20.9636 8.8292 22.4463 8.8292 23.9923V76.4551L3 93.9427L26.3168 88.1135H72.9504C74.4963 88.1135 75.9793 87.4991 77.0722 86.4061C78.1652 85.3132 78.7796 83.8302 78.7796 82.2843V53.1383\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M64.7898 46.7528L47.3022 49.9006L50.2168 32.1798L77.7892 4.72427C78.3307 4.1779 78.9754 3.74424 79.686 3.4483C80.396 3.15236 81.1579 3 81.9279 3C82.6974 3 83.4593 3.15236 84.1693 3.4483C84.8798 3.74424 85.5245 4.1779 86.0667 4.72427L92.2456 10.9032C92.7918 11.4451 93.2255 12.0899 93.5216 12.8002C93.8172 13.5105 93.9699 14.2724 93.9699 15.0419C93.9699 15.8115 93.8172 16.5734 93.5216 17.2837C93.2255 17.9941 92.7918 18.6388 92.2456 19.1807L64.7898 46.7528Z\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "usp_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"97\" height=\"97\" viewbox=\"0 0 97 97\" fill=\"none\">\n  <path d=\"M43.8044 18.1631H14.6584C13.1124 18.1631 11.6297 18.7772 10.5365 19.8704C9.44337 20.9636 8.8292 22.4463 8.8292 23.9923V76.4551L3 93.9427L26.3168 88.1135H72.9504C74.4963 88.1135 75.9793 87.4991 77.0722 86.4061C78.1652 85.3132 78.7796 83.8302 78.7796 82.2843V53.1383\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M64.7898 46.7528L47.3022 49.9006L50.2168 32.1798L77.7892 4.72427C78.3307 4.1779 78.9754 3.74424 79.686 3.4483C80.396 3.15236 81.1579 3 81.9279 3C82.6974 3 83.4593 3.15236 84.1693 3.4483C84.8798 3.74424 85.5245 4.1779 86.0667 4.72427L92.2456 10.9032C92.7918 11.4451 93.2255 12.0899 93.5216 12.8002C93.8172 13.5105 93.9699 14.2724 93.9699 15.0419C93.9699 15.8115 93.8172 16.5734 93.5216 17.2837C93.2255 17.9941 92.7918 18.6388 92.2456 19.1807L64.7898 46.7528Z\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
             "usp_title": "Our Blog",
-            "usp_link": "shopify://blogs/blog",
+            "usp_link": "shopify:\/\/blogs\/blog",
             "color_scheme_block": "scheme-d7ecc7bc-9e19-479f-8d05-4d34e1ea3721"
           }
         },
         "usp_qRqb7J": {
           "type": "usp",
           "settings": {
-            "usp_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"104\" height=\"101\" viewbox=\"0 0 104 101\" fill=\"none\">\n  <path d=\"M36.9195 39.716C47.3266 39.716 55.7633 31.4968 55.7633 21.358C55.7633 11.2192 47.3266 3 36.9195 3C26.5124 3 18.0757 11.2192 18.0757 21.358C18.0757 31.4968 26.5124 39.716 36.9195 39.716Z\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M70.1318 50.7285C68.0504 50.7285 66.363 52.3724 66.363 54.4001V64.7267H55.7634C53.682 64.7267 51.9946 66.3705 51.9946 68.3983V80.3308C51.9946 82.359 53.682 84.0024 55.7634 84.0024H66.363V94.3291C66.363 96.3566 68.0504 98.0007 70.1318 98.0007H82.3803C84.4614 98.0007 86.149 96.3566 86.149 94.3291V84.0024H96.749C98.8302 84.0024 100.518 82.359 100.518 80.3308V68.3983C100.518 66.3705 98.8302 64.7267 96.749 64.7267H86.149V54.4001C86.149 52.3724 84.4614 50.7285 82.3803 50.7285H70.1318Z\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M40.6658 91.1036H3V87.1228C3.06001 81.5258 4.57517 76.0346 7.40395 71.1627C10.2328 66.2908 14.2829 62.1969 19.1761 59.2634C24.0693 56.3298 29.6458 54.6523 35.3848 54.3876C37.4552 54.2922 39.5224 54.3817 41.5613 54.6511\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "usp_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"104\" height=\"101\" viewbox=\"0 0 104 101\" fill=\"none\">\n  <path d=\"M36.9195 39.716C47.3266 39.716 55.7633 31.4968 55.7633 21.358C55.7633 11.2192 47.3266 3 36.9195 3C26.5124 3 18.0757 11.2192 18.0757 21.358C18.0757 31.4968 26.5124 39.716 36.9195 39.716Z\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M70.1318 50.7285C68.0504 50.7285 66.363 52.3724 66.363 54.4001V64.7267H55.7634C53.682 64.7267 51.9946 66.3705 51.9946 68.3983V80.3308C51.9946 82.359 53.682 84.0024 55.7634 84.0024H66.363V94.3291C66.363 96.3566 68.0504 98.0007 70.1318 98.0007H82.3803C84.4614 98.0007 86.149 96.3566 86.149 94.3291V84.0024H96.749C98.8302 84.0024 100.518 82.359 100.518 80.3308V68.3983C100.518 66.3705 98.8302 64.7267 96.749 64.7267H86.149V54.4001C86.149 52.3724 84.4614 50.7285 82.3803 50.7285H70.1318Z\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M40.6658 91.1036H3V87.1228C3.06001 81.5258 4.57517 76.0346 7.40395 71.1627C10.2328 66.2908 14.2829 62.1969 19.1761 59.2634C24.0693 56.3298 29.6458 54.6523 35.3848 54.3876C37.4552 54.2922 39.5224 54.3817 41.5613 54.6511\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
             "usp_title": "Health Suggestions",
-            "usp_link": "shopify://pages/health-suggestions",
+            "usp_link": "shopify:\/\/pages\/health-suggestions",
             "color_scheme_block": "scheme-d7ecc7bc-9e19-479f-8d05-4d34e1ea3721"
           }
         },
         "usp_FeM89t": {
           "type": "usp",
           "settings": {
-            "usp_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"92\" height=\"92\" viewbox=\"0 0 92 92\" fill=\"none\">\n  <path d=\"M65.3679 81.5129C74.2868 81.5129 81.5171 74.2833 81.5171 65.3638C81.5171 56.4451 74.2868 49.2148 65.3679 49.2148C56.449 49.2148 49.2188 56.4451 49.2188 65.3638C49.2188 74.2833 56.449 81.5129 65.3679 81.5129Z\" stroke=\"white\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M87.9714 87.9994L76.7961 76.8242\" stroke=\"white\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M45.9878 13.6895C45.9878 8.33816 41.6497 4 36.2983 4H4V68.5964H36.2983\" stroke=\"white\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M45.9878 13.6924V42.7609\" stroke=\"white\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M45.9878 13.6895C45.9878 8.33812 50.3259 4 55.6773 4H87.9756V49.2192\" stroke=\"white\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "usp_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"92\" height=\"92\" viewbox=\"0 0 92 92\" fill=\"none\">\n  <path d=\"M65.3679 81.5129C74.2868 81.5129 81.5171 74.2833 81.5171 65.3638C81.5171 56.4451 74.2868 49.2148 65.3679 49.2148C56.449 49.2148 49.2188 56.4451 49.2188 65.3638C49.2188 74.2833 56.449 81.5129 65.3679 81.5129Z\" stroke=\"white\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M87.9714 87.9994L76.7961 76.8242\" stroke=\"white\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M45.9878 13.6895C45.9878 8.33816 41.6497 4 36.2983 4H4V68.5964H36.2983\" stroke=\"white\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M45.9878 13.6924V42.7609\" stroke=\"white\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M45.9878 13.6895C45.9878 8.33812 50.3259 4 55.6773 4H87.9756V49.2192\" stroke=\"white\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
             "usp_title": "Case Histories",
-            "usp_link": "shopify://pages/case-histories",
+            "usp_link": "shopify:\/\/pages\/case-histories",
             "color_scheme_block": "scheme-d7ecc7bc-9e19-479f-8d05-4d34e1ea3721"
           }
         },
         "usp_BVefNt": {
           "type": "usp",
           "settings": {
-            "usp_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"90\" height=\"90\" viewbox=\"0 0 90 90\" fill=\"none\">\n  <path d=\"M45 87.0001C68.1963 87.0001 87.0001 68.1963 87.0001 45C87.0001 21.8041 68.1963 3 45 3C21.8041 3 3 21.8041 3 45C3 68.1963 21.8041 87.0001 45 87.0001Z\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M33.7827 67.4316H56.2166\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M44.9995 67.4326V41.2598H37.5215\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M45.0008 24.4392C43.9684 24.4392 43.1313 23.6022 43.1313 22.5697C43.1313 21.5372 43.9684 20.7002 45.0008 20.7002\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M44.999 24.4392C46.0315 24.4392 46.8685 23.6022 46.8685 22.5697C46.8685 21.5372 46.0315 20.7002 44.999 20.7002\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "usp_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"90\" height=\"90\" viewbox=\"0 0 90 90\" fill=\"none\">\n  <path d=\"M45 87.0001C68.1963 87.0001 87.0001 68.1963 87.0001 45C87.0001 21.8041 68.1963 3 45 3C21.8041 3 3 21.8041 3 45C3 68.1963 21.8041 87.0001 45 87.0001Z\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M33.7827 67.4316H56.2166\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M44.9995 67.4326V41.2598H37.5215\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M45.0008 24.4392C43.9684 24.4392 43.1313 23.6022 43.1313 22.5697C43.1313 21.5372 43.9684 20.7002 45.0008 20.7002\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M44.999 24.4392C46.0315 24.4392 46.8685 23.6022 46.8685 22.5697C46.8685 21.5372 46.0315 20.7002 44.999 20.7002\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
             "usp_title": "About Us",
-            "usp_link": "shopify://pages/about-us",
+            "usp_link": "shopify:\/\/pages\/about-us",
             "color_scheme_block": "scheme-d7ecc7bc-9e19-479f-8d05-4d34e1ea3721"
           }
         }
@@ -577,7 +568,7 @@
         "template--21525248213314__6aa12a9d-c825-4264-ba7b-3b0978633bbf-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Remember that supplements are not meant to replace a varied diet and otherwise healthy lifestyle.</p>",
+            "text": "<p>Remember that supplements are not meant to replace a varied diet and otherwise healthy lifestyle.<\/p>",
             "text_font_size": "18",
             "text_font_weight": "500",
             "text_line_height": "28",
@@ -646,14 +637,14 @@
         "paragraph_KTNGjJ": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Enter your email to receive our newsletter with lots of health information and news about Dulwich Health.</p>"
+            "text": "<p>Enter your email to receive our newsletter with lots of health information and news about Dulwich Health.<\/p>"
           }
         },
         "paragraph_rK7ed4": {
           "type": "paragraph",
           "disabled": true,
           "settings": {
-            "text": "<p>We use MailChimp to handle our subscribers and you can update your preferences or unsubscribe from receiving our newsletters at any time.</p>"
+            "text": "<p>We use MailChimp to handle our subscribers and you can update your preferences or unsubscribe from receiving our newsletters at any time.<\/p>"
           }
         },
         "email_form_zFTA3L": {
