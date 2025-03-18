@@ -318,7 +318,6 @@
     },
     "product_description_V9WMtJ": {
       "type": "product-description",
-      "disabled": true,
       "settings": {
         "show_description": true,
         "desktop_padding_top": 30,
@@ -452,7 +451,7 @@
             "news_title": "{{ product.metafields.custom.disclaimer_and_instructions_block.value.news_title.value }}",
             "news_content": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.news_content | metafield_tag }}<\/p>",
             "news_order": "3",
-            "reviews_image": "shopify:\/\/shop_images\/trustpilot-review-622a98e331617ac0e482ca9c-510x266.jpg",
+            "reviews_image": "{{ product.metafields.custom.disclaimer_and_instructions_block.value.reviews_image.value }}",
             "instructions_heading": "{{ product.metafields.custom.disclaimer_and_instructions_block.value.instructions_heading.value }}",
             "instructions_desc": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.instructions_content | metafield_tag }}<\/p>",
             "instructions_order": "1",
