@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "custom_liquid_8mVibE": {
@@ -15,7 +6,7 @@
         "iframe {width: 100%;}"
       ],
       "settings": {
-        "custom_liquid": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.0815044623505!2d-0.10880792395408212!3d51.41992941709024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876015100000001%3A0x8e97bb5a7eb87736!2sDulwich%20Health!5e0!3m2!1sen!2sin!4v1735496869354!5m2!1sen!2sin\" width=\"800\" height=\"600\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+        "custom_liquid": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d2488.0815044623505!2d-0.10880792395408212!3d51.41992941709024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876015100000001%3A0x8e97bb5a7eb87736!2sDulwich%20Health!5e0!3m2!1sen!2sin!4v1735496869354!5m2!1sen!2sin\" width=\"800\" height=\"600\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"><\/iframe>",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -46,7 +37,7 @@
           "settings": {
             "heading": "What are the delivery charges for orders from the Online Shop?",
             "icon": "check_mark",
-            "row_content": "<p>Our shipping and handling costs are added to your order amount at the check out once we know where you want the item delivered.</p><p></p><p><strong>UK Standard Postage<br/></strong>£3.50 per order unless otherwise stated below.<br/><strong>Books: </strong>FREE OF CHARGE<strong><br/>RadiTech:</strong> £15 (each)<br/><strong>Rebounder:</strong> £18 (plus £18 for each add-on)</p><p></p><p><strong>Europe Airmail Postage<br/>Books: </strong>£8 (plus £3 for each add-on)<strong><br/>G-Oyster:</strong> £15 (plus £8 for each add-on) <strong><br/>RadiTech: </strong>£65 (each, plus £25 for each add-on) <br/><strong>Rebounder: </strong>Not for sale in Europe<br/><strong>Supplements:</strong> £8 (each, plus £3 for each add-on) </p><p></p><p><strong>World Zone 1 Airmail Postage<br/>Books: </strong>£12 (plus £4 for each add-on)<strong><br/>G-Oyster: </strong>£20 (plus £10 for each add-on)<strong><br/>RadiTech: </strong>£78 (each, plus £40 for each add-on) <strong><br/>Rebounder: </strong>Not for sale in World Zone 1<strong><br/>Supplements: </strong>£12 (each, plus £4 for each add-on) </p><p></p><p><strong>World Zone 2 Airmail Postage<br/>Books: </strong>£15 (plus £5 for each add-on)<strong><br/>G-Oyster: </strong>£25 (plus £12 for each add-on)<strong><br/>RadiTech: </strong>£85 (plus £45 for each add-on)<strong><br/>Rebounder: </strong>Not for sale in World Zone 2<br/><strong>Supplements:</strong> £15 (plus £5 for each add-on)</p>",
+            "row_content": "<p>Our shipping and handling costs are added to your order amount at the check out once we know where you want the item delivered.<\/p><p><\/p><p><strong>UK Standard Postage<br\/><\/strong>£3.50 per order unless otherwise stated below.<br\/><strong>Books: <\/strong>FREE OF CHARGE<strong><br\/>RadiTech:<\/strong> £15 (each)<br\/><strong>Rebounder:<\/strong> £18 (plus £18 for each add-on)<\/p><p><\/p><p><strong>Europe Airmail Postage<br\/>Books: <\/strong>£8 (plus £3 for each add-on)<strong><br\/>G-Oyster:<\/strong> £15 (plus £8 for each add-on) <strong><br\/>RadiTech: <\/strong>£65 (each, plus £25 for each add-on) <br\/><strong>Rebounder: <\/strong>Not for sale in Europe<br\/><strong>Supplements:<\/strong> £8 (each, plus £3 for each add-on) <\/p><p><\/p><p><strong>World Zone 1 Airmail Postage<br\/>Books: <\/strong>£12 (plus £4 for each add-on)<strong><br\/>G-Oyster: <\/strong>£20 (plus £10 for each add-on)<strong><br\/>RadiTech: <\/strong>£78 (each, plus £40 for each add-on) <strong><br\/>Rebounder: <\/strong>Not for sale in World Zone 1<strong><br\/>Supplements: <\/strong>£12 (each, plus £4 for each add-on) <\/p><p><\/p><p><strong>World Zone 2 Airmail Postage<br\/>Books: <\/strong>£15 (plus £5 for each add-on)<strong><br\/>G-Oyster: <\/strong>£25 (plus £12 for each add-on)<strong><br\/>RadiTech: <\/strong>£85 (plus £45 for each add-on)<strong><br\/>Rebounder: <\/strong>Not for sale in World Zone 2<br\/><strong>Supplements:<\/strong> £15 (plus £5 for each add-on)<\/p>",
             "page": ""
           }
         },
@@ -55,7 +46,7 @@
           "settings": {
             "heading": "Which payment methods are accepted in our Online Shop?",
             "icon": "check_mark",
-            "row_content": "<p>We accept <strong>PayPal</strong>, <strong>Visa, Visa Debit, Visa Electron, Mastercard and MasterCard Debit payments all secured though Opayo*<br/></strong></p><p>We do not charge for any items until they are ready to ship. Back ordered items are not charged until they are shipped. You may send your credit or debit card information via phone, fax, snail mail but not by email please as it is not secure, but we believe shopping using SagePay is far more secure.</p><p></p><p><strong>*Opayo</strong> is the new name for <strong>Sage Pay</strong>. They are one of the UK’s most trusted payments providers, helping businesses grow and accept payments from customers. In 2019, their gateway processed £40bn worth of card payments for over 50,000 merchants, online and in-store. </p>",
+            "row_content": "<p>We accept <strong>PayPal<\/strong>, <strong>Visa, Visa Debit, Visa Electron, Mastercard and MasterCard Debit payments all secured though Opayo*<br\/><\/strong><\/p><p>We do not charge for any items until they are ready to ship. Back ordered items are not charged until they are shipped. You may send your credit or debit card information via phone, fax, snail mail but not by email please as it is not secure, but we believe shopping using SagePay is far more secure.<\/p><p><\/p><p><strong>*Opayo<\/strong> is the new name for <strong>Sage Pay<\/strong>. They are one of the UK’s most trusted payments providers, helping businesses grow and accept payments from customers. In 2019, their gateway processed £40bn worth of card payments for over 50,000 merchants, online and in-store. <\/p>",
             "page": ""
           }
         },
@@ -64,7 +55,7 @@
           "settings": {
             "heading": "How long will delivery take?",
             "icon": "check_mark",
-            "row_content": "<p>We endeavour to dispatch 95% of all your orders within 24 hrs for next day delivery in the UK. (Europe: 2-5 days)</p><p></p><p>All orders received by 4:00 pm (2:30 pm for Parcel Force orders) are despatched on the same day. Orders received after this time are despatched within 24 hours.</p><p></p><p>Depending on your location, orders take varying times to arrive. </p><p></p><p><strong>Note: </strong>If you live in an area experiencing an unexpected service delay (severe weather, natural disasters, unscheduled events, etc.), please add at least 2 to 3 business days to the estimated delivery date of your order.</p>",
+            "row_content": "<p>We endeavour to dispatch 95% of all your orders within 24 hrs for next day delivery in the UK. (Europe: 2-5 days)<\/p><p><\/p><p>All orders received by 4:00 pm (2:30 pm for Parcel Force orders) are despatched on the same day. Orders received after this time are despatched within 24 hours.<\/p><p><\/p><p>Depending on your location, orders take varying times to arrive. <\/p><p><\/p><p><strong>Note: <\/strong>If you live in an area experiencing an unexpected service delay (severe weather, natural disasters, unscheduled events, etc.), please add at least 2 to 3 business days to the estimated delivery date of your order.<\/p>",
             "page": ""
           }
         },
@@ -73,7 +64,7 @@
           "settings": {
             "heading": "How secure is shopping in the Online Shop? Is my data protected?",
             "icon": "check_mark",
-            "row_content": "<p>Our credit card payments, use <strong>Opayo</strong> (new name for SagePay) which is simple, fast and very secure.</p><p></p><p><strong>Confidential information is not kept on our computers, neither are Credit/Debit Card details and our mailing lists will never be rented or sold.</strong></p><p></p><p><strong>Purchases</strong><br/>You can pay by any of the credit cards you see at the base of this page.<br/>If you wish to purchase over the phone then please feel free to call one of our friendly operators on <strong>+44 208 670 5883</strong></p>",
+            "row_content": "<p>Our credit card payments, use <strong>Opayo<\/strong> (new name for SagePay) which is simple, fast and very secure.<\/p><p><\/p><p><strong>Confidential information is not kept on our computers, neither are Credit\/Debit Card details and our mailing lists will never be rented or sold.<\/strong><\/p><p><\/p><p><strong>Purchases<\/strong><br\/>You can pay by any of the credit cards you see at the base of this page.<br\/>If you wish to purchase over the phone then please feel free to call one of our friendly operators on <strong>+44 208 670 5883<\/strong><\/p>",
             "page": ""
           }
         },
@@ -82,7 +73,7 @@
           "settings": {
             "heading": "What exactly happens after ordering?",
             "icon": "check_mark",
-            "row_content": "<p>We endeavor to dispatch 95% of all your orders within 24 hrs for next day delivery in the UK. (Europe: 2-5 days)</p><p></p><p>When you receive confirmation of your order by email, this indicates that we have received your order. It does not indicate that a contract exists between us.</p><p></p><p>We will indicate acceptance of your order, and hence a contract between us, when we send you an invoice, by email. We have included this term to protect us in the case that a mistake has been made in pricing, we have inadvertently under-priced goods, or we are no longer able to supply a particular product for some reason. In the case of a change of price, we will always contact you first to ensure that the price is acceptable.</p>",
+            "row_content": "<p>We endeavor to dispatch 95% of all your orders within 24 hrs for next day delivery in the UK. (Europe: 2-5 days)<\/p><p><\/p><p>When you receive confirmation of your order by email, this indicates that we have received your order. It does not indicate that a contract exists between us.<\/p><p><\/p><p>We will indicate acceptance of your order, and hence a contract between us, when we send you an invoice, by email. We have included this term to protect us in the case that a mistake has been made in pricing, we have inadvertently under-priced goods, or we are no longer able to supply a particular product for some reason. In the case of a change of price, we will always contact you first to ensure that the price is acceptable.<\/p>",
             "page": ""
           }
         },
@@ -91,7 +82,7 @@
           "settings": {
             "heading": "Will I receive an invoice with my order?",
             "icon": "check_mark",
-            "row_content": "<p>A confirmation of your order and an invoice will automatically be sent to you by email. (it won’t be included with the order as standard.) If you would like to receive an invoice with your items, please state this in the ‘Special Instructions’ field of the shopping cart.</p><p></p><p>You will also receive a packing slip with your purchase, that includes your order number. </p><p></p><p>Email is our preferred method of communication. If you don’t have an email, you can request that we send your invoice and packing slip with your order.</p>",
+            "row_content": "<p>A confirmation of your order and an invoice will automatically be sent to you by email. (it won’t be included with the order as standard.) If you would like to receive an invoice with your items, please state this in the ‘Special Instructions’ field of the shopping cart.<\/p><p><\/p><p>You will also receive a packing slip with your purchase, that includes your order number. <\/p><p><\/p><p>Email is our preferred method of communication. If you don’t have an email, you can request that we send your invoice and packing slip with your order.<\/p>",
             "page": ""
           }
         }
@@ -107,7 +98,7 @@
       "disabled": true,
       "settings": {
         "caption": "",
-        "heading": "Please read these FAQ or visit our <a href=\"/pages/help-and-information\" target=\"_blank\" title=\"help-and-information\">Help & Information</a> page before sending us a message.",
+        "heading": "Please read these FAQ or visit our <a href=\"\/pages\/help-and-information\" target=\"_blank\" title=\"help-and-information\">Help & Information<\/a> page before sending us a message.",
         "heading_size": "h2",
         "heading_alignment": "center",
         "layout": "none",
@@ -127,42 +118,42 @@
           "type": "faq_item",
           "settings": {
             "faq_header": "What are the delivery charges for orders from the Online Shop?",
-            "faq_message": "<h3><strong>Delivery Costs</strong></h3><p>Our delivery and handling costs are added to your order amount at the check out once we know where you want the item delivered.</p><h3><br/><strong>UK Standard Postage</strong></h3><p><strong>Royal Mail 48:</strong>£3.5<br/><strong>Royal Mail Special Delivery:</strong>£9<br/><strong>Books:</strong>FREE OF CHARGE<br/><strong>RadiTech:</strong>£15 + £7.5 for each additional item<br/><br/></p><h3><strong>Europe Postage</strong></h3><p><strong>Supplements/Books:</strong>£10 + £1 for each additional item<br/><strong>RadiTech:</strong>£25 + £5 for each additional item<br/><br/></p><h3><strong>International Postage</strong></h3><p><strong>Supplements/Books:</strong>£15 + £1 for each additional item<br/><strong>RadiTech:</strong>£45 + £20 for each additional item<br/><br/></p><h3><strong>30 Day No Quibbles Returns</strong></h3><p>You can return products for a refund within 30 days of delivery if not suitable. We hope you understand that we cannot accept returns on products where the seal or packaging has been broken.<br/><strong>Of course we will replace any faulty item free of charge.</strong></p>"
+            "faq_message": "<h3><strong>Delivery Costs<\/strong><\/h3><p>Our delivery and handling costs are added to your order amount at the check out once we know where you want the item delivered.<\/p><h3><br\/><strong>UK Standard Postage<\/strong><\/h3><p><strong>Royal Mail 48:<\/strong>£3.5<br\/><strong>Royal Mail Special Delivery:<\/strong>£9<br\/><strong>Books:<\/strong>FREE OF CHARGE<br\/><strong>RadiTech:<\/strong>£15 + £7.5 for each additional item<br\/><br\/><\/p><h3><strong>Europe Postage<\/strong><\/h3><p><strong>Supplements\/Books:<\/strong>£10 + £1 for each additional item<br\/><strong>RadiTech:<\/strong>£25 + £5 for each additional item<br\/><br\/><\/p><h3><strong>International Postage<\/strong><\/h3><p><strong>Supplements\/Books:<\/strong>£15 + £1 for each additional item<br\/><strong>RadiTech:<\/strong>£45 + £20 for each additional item<br\/><br\/><\/p><h3><strong>30 Day No Quibbles Returns<\/strong><\/h3><p>You can return products for a refund within 30 days of delivery if not suitable. We hope you understand that we cannot accept returns on products where the seal or packaging has been broken.<br\/><strong>Of course we will replace any faulty item free of charge.<\/strong><\/p>"
           }
         },
         "faq_item_CqHcgA": {
           "type": "faq_item",
           "settings": {
             "faq_header": "Which payment methods are accepted in our Online Shop?",
-            "faq_message": "<p>We accept <strong>PayPal</strong>, <strong>Visa, Visa Debit, Visa Electron, Mastercard and MasterCard Debit payments all secured though Opayo*<br/></strong></p><p>We do not charge for any items until they are ready to ship. Back ordered items are not charged until they are shipped. You may send your credit or debit card information via phone, fax, snail mail but not by email please as it is not secure, but we believe shopping using SagePay is far more secure.</p><p></p><p><strong>*Opayo</strong> is the new name for <strong>Sage Pay</strong>. They are one of the UK’s most trusted payments providers, helping businesses grow and accept payments from customers. In 2019, their gateway processed £40bn worth of card payments for over 50,000 merchants, online and in-store. </p>"
+            "faq_message": "<p>We accept <strong>PayPal<\/strong>, <strong>Visa, Visa Debit, Visa Electron, Mastercard and MasterCard Debit payments all secured though Opayo*<br\/><\/strong><\/p><p>We do not charge for any items until they are ready to ship. Back ordered items are not charged until they are shipped. You may send your credit or debit card information via phone, fax, snail mail but not by email please as it is not secure, but we believe shopping using SagePay is far more secure.<\/p><p><\/p><p><strong>*Opayo<\/strong> is the new name for <strong>Sage Pay<\/strong>. They are one of the UK’s most trusted payments providers, helping businesses grow and accept payments from customers. In 2019, their gateway processed £40bn worth of card payments for over 50,000 merchants, online and in-store. <\/p>"
           }
         },
         "faq_item_4GwanR": {
           "type": "faq_item",
           "settings": {
             "faq_header": "How long will delivery take?",
-            "faq_message": "<p>We endeavour to dispatch 95% of all your orders within 24 hrs for next day delivery in the UK. (Europe: 2-5 days)</p><p></p><p>All orders received by 4:00 pm (2:30 pm for Parcel Force orders) are despatched on the same day. Orders received after this time are despatched within 24 hours.</p><p></p><p>Depending on your location, orders take varying times to arrive. </p><p></p><p><strong>Note: </strong>If you live in an area experiencing an unexpected service delay (severe weather, natural disasters, unscheduled events, etc.), please add at least 2 to 3 business days to the estimated delivery date of your order.</p>"
+            "faq_message": "<p>We endeavour to dispatch 95% of all your orders within 24 hrs for next day delivery in the UK. (Europe: 2-5 days)<\/p><p><\/p><p>All orders received by 4:00 pm (2:30 pm for Parcel Force orders) are despatched on the same day. Orders received after this time are despatched within 24 hours.<\/p><p><\/p><p>Depending on your location, orders take varying times to arrive. <\/p><p><\/p><p><strong>Note: <\/strong>If you live in an area experiencing an unexpected service delay (severe weather, natural disasters, unscheduled events, etc.), please add at least 2 to 3 business days to the estimated delivery date of your order.<\/p>"
           }
         },
         "faq_item_fA88fx": {
           "type": "faq_item",
           "settings": {
             "faq_header": "How secure is shopping in the Online Shop? Is my data protected?",
-            "faq_message": "<p>Our credit card payments, use <strong>Opayo</strong> (new name for SagePay) which is simple, fast and very secure.</p><p></p><p><strong>Confidential information is not kept on our computers, neither are Credit/Debit Card details and our mailing lists will never be rented or sold.</strong></p><p></p><p><strong>Purchases</strong><br/>You can pay by any of the credit cards you see at the base of this page.<br/>If you wish to purchase over the phone then please feel free to call one of our friendly operators on <strong>+44 208 670 5883</strong></p>"
+            "faq_message": "<p>Our credit card payments, use <strong>Opayo<\/strong> (new name for SagePay) which is simple, fast and very secure.<\/p><p><\/p><p><strong>Confidential information is not kept on our computers, neither are Credit\/Debit Card details and our mailing lists will never be rented or sold.<\/strong><\/p><p><\/p><p><strong>Purchases<\/strong><br\/>You can pay by any of the credit cards you see at the base of this page.<br\/>If you wish to purchase over the phone then please feel free to call one of our friendly operators on <strong>+44 208 670 5883<\/strong><\/p>"
           }
         },
         "faq_item_QeGyxb": {
           "type": "faq_item",
           "settings": {
             "faq_header": "What exactly happens after ordering?",
-            "faq_message": "<p>We endeavor to dispatch 95% of all your orders within 24 hrs for next day delivery in the UK. (Europe: 2-5 days)</p><p></p><p>When you receive confirmation of your order by email, this indicates that we have received your order. It does not indicate that a contract exists between us.</p><p></p><p>We will indicate acceptance of your order, and hence a contract between us, when we send you an invoice, by email. We have included this term to protect us in the case that a mistake has been made in pricing, we have inadvertently under-priced goods, or we are no longer able to supply a particular product for some reason. In the case of a change of price, we will always contact you first to ensure that the price is acceptable.</p>"
+            "faq_message": "<p>We endeavor to dispatch 95% of all your orders within 24 hrs for next day delivery in the UK. (Europe: 2-5 days)<\/p><p><\/p><p>When you receive confirmation of your order by email, this indicates that we have received your order. It does not indicate that a contract exists between us.<\/p><p><\/p><p>We will indicate acceptance of your order, and hence a contract between us, when we send you an invoice, by email. We have included this term to protect us in the case that a mistake has been made in pricing, we have inadvertently under-priced goods, or we are no longer able to supply a particular product for some reason. In the case of a change of price, we will always contact you first to ensure that the price is acceptable.<\/p>"
           }
         },
         "faq_item_GVLH6d": {
           "type": "faq_item",
           "settings": {
             "faq_header": "Will I receive an invoice with my order?",
-            "faq_message": "<p>A confirmation of your order and an invoice will automatically be sent to you by email. (it won’t be included with the order as standard.) If you would like to receive an invoice with your items, please state this in the ‘Special Instructions’ field of the shopping cart.</p><p></p><p>You will also receive a packing slip with your purchase, that includes your order number. </p><p></p><p>Email is our preferred method of communication. If you don’t have an email, you can request that we send your invoice and packing slip with your order.</p>"
+            "faq_message": "<p>A confirmation of your order and an invoice will automatically be sent to you by email. (it won’t be included with the order as standard.) If you would like to receive an invoice with your items, please state this in the ‘Special Instructions’ field of the shopping cart.<\/p><p><\/p><p>You will also receive a packing slip with your purchase, that includes your order number. <\/p><p><\/p><p>Email is our preferred method of communication. If you don’t have an email, you can request that we send your invoice and packing slip with your order.<\/p>"
           }
         }
       },
@@ -175,8 +166,8 @@
         "faq_item_GVLH6d"
       ],
       "settings": {
-        "section_heading": "<p>Please read these FAQ or visit our <a href=\"/pages/help-and-information\" target=\"_blank\" title=\"help-and-information\">Help & Information</a> page before sending us a message.</p>",
-        "section_subheading": "<p></p><p></p>",
+        "section_heading": "<p>Please read these FAQ or visit our <a href=\"\/pages\/help-and-information\" target=\"_blank\" title=\"help-and-information\">Help & Information<\/a> page before sending us a message.<\/p>",
+        "section_subheading": "<p><\/p><p><\/p>",
         "heading_alignment": "center",
         "color_scheme": "",
         "padding_top": 36,

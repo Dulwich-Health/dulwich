@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "name": "t:sections.header.name",
   "type": "header",
@@ -20,7 +11,7 @@
         "show_social_icons": true,
         "color_scheme": "background-1",
         "faq_text": "FAQ",
-        "faq_text_link": "shopify://pages/help-and-information",
+        "faq_text_link": "shopify:\/\/pages\/help-and-information",
         "text_alignment": "tw-justify-between",
         "padding_top": 4,
         "padding_bottom": 2
@@ -32,28 +23,28 @@
         "block_zGBAMG": {
           "type": "block",
           "settings": {
-            "block_value": "<p>Trusted Since 1986</p>",
+            "block_value": "<p>Trusted Since 1986<\/p>",
             "link": ""
           }
         },
         "block_A4JBjf": {
           "type": "block",
           "settings": {
-            "block_value": "<p>With over 30,000 customers</p>",
+            "block_value": "<p>With over 30,000 customers<\/p>",
             "link": ""
           }
         },
         "block_6C3eTF": {
           "type": "block",
           "settings": {
-            "block_value": "<p>30 Day No Quibbles Returns</p>",
+            "block_value": "<p>30 Day No Quibbles Returns<\/p>",
             "link": ""
           }
         },
         "block_MP7GNt": {
           "type": "block",
           "settings": {
-            "block_value": "<p>Fast Delivery</p>",
+            "block_value": "<p>Fast Delivery<\/p>",
             "link": ""
           }
         }
@@ -120,7 +111,7 @@
         "enable_country_selector": false,
         "enable_language_selector": false,
         "margin_bottom": 0,
-        "wishlist_page_url": "shopify://pages/wishlist",
+        "wishlist_page_url": "shopify:\/\/pages\/wishlist",
         "padding_top": 0,
         "padding_bottom": 0,
         "padding_top_mob": 0,
@@ -132,7 +123,7 @@
       "settings": {
         "menu": "mobile-main-menu",
         "padding_top": 40,
-        "contact_phone_number": "<p>Call us on <strong>+44 (0)20 8670 5883</strong></p>",
+        "contact_phone_number": "<p>Call us on <strong>+44 (0)20 8670 5883<\/strong><\/p>",
         "padding_bottom": 52
       }
     },
@@ -220,9 +211,9 @@
         "heading": "Main Heading",
         "subheading": "Main Subheading",
         "image_heading": "Heading",
-        "image_subheading": "<p>Subheading</p>",
+        "image_subheading": "<p>Subheading<\/p>",
         "image_button_text": "Click",
-        "image_button_link": "shopify://collections/all"
+        "image_button_link": "shopify:\/\/collections\/all"
       }
     },
     "7a146f3f-997d-4b81-882f-6acfbd99a2c1": {
@@ -261,28 +252,28 @@
         "block_p7ntLj": {
           "type": "block",
           "settings": {
-            "block_value": "<p>Trusted Since 1986</p>",
+            "block_value": "<p>Trusted Since 1986<\/p>",
             "link": ""
           }
         },
         "block_NcPLYD": {
           "type": "block",
           "settings": {
-            "block_value": "<p>With over 30,000 customers</p>",
+            "block_value": "<p>With over 30,000 customers<\/p>",
             "link": ""
           }
         },
         "block_FGUnCL": {
           "type": "block",
           "settings": {
-            "block_value": "<p>30 Day No Quibbles Returns</p>",
+            "block_value": "<p>30 Day No Quibbles Returns<\/p>",
             "link": ""
           }
         },
         "block_wbmLQ8": {
           "type": "block",
           "settings": {
-            "block_value": "<p>Fast Delivery</p>",
+            "block_value": "<p>Fast Delivery<\/p>",
             "link": ""
           }
         }

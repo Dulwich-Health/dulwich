@@ -135,7 +135,7 @@
           "type": "scroll_to_section_block",
           "settings": {
             "button_text_link": "Full Description +",
-            "target_section_id": "pdp_product_description"
+            "target_section_id": "product_tabs_content"
           }
         },
         "price": {
@@ -327,6 +327,7 @@
     },
     "product_description_V9WMtJ": {
       "type": "product-description",
+      "disabled": true,
       "settings": {
         "show_description": true,
         "desktop_padding_top": 30,
@@ -460,6 +461,7 @@
             "news_title": "{{ product.metafields.custom.disclaimer_and_instructions_block.value.news_title.value }}",
             "news_content": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.news_content | metafield_tag }}</p>",
             "news_order": "3",
+            "reviews_image": "{{ product.metafields.custom.disclaimer_and_instructions_block.value.reviews_image.value }}",
             "instructions_heading": "{{ product.metafields.custom.disclaimer_and_instructions_block.value.instructions_heading.value }}",
             "instructions_desc": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.instructions_content | metafield_tag }}</p>",
             "instructions_order": "1",
@@ -471,6 +473,7 @@
         },
         "list_block_PAbnmx": {
           "type": "list_block",
+          "disabled": true,
           "source": "{{ product.metafields.custom.list_block.value }}",
           "settings": {
             "list_heading": "{{ product.metafields.custom.list_block.value.list_heading.value }}",
@@ -481,6 +484,7 @@
         },
         "media_wwNhkf": {
           "type": "media",
+          "disabled": true,
           "source": "{{ product.metafields.custom.media_block.value }}",
           "settings": {
             "video": "{{ product.metafields.custom.media_block.value.video.value }}",
@@ -500,7 +504,6 @@
         "list_block_PAbnmx",
         "media_wwNhkf"
       ],
-      "disabled": true,
       "settings": {
         "tab_name": "{{ product.metafields.custom.product_description_header_tabs.value.tab_1.value }}",
         "desktop_padding_top": 30,

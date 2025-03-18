@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -16,7 +7,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>{{ product.vendor }}</p>",
+            "text": "<p>{{ product.vendor }}<\/p>",
             "text_color": "",
             "text_font_style": "normal",
             "text_style": "uppercase",
@@ -39,7 +30,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>{{ product.metafields.descriptors.subtitle.value }}</p>",
+            "text": "<p>{{ product.metafields.descriptors.subtitle.value }}<\/p>",
             "text_color": "",
             "text_font_style": "normal",
             "text_style": "subtitle",
@@ -57,7 +48,7 @@
         "text_MUQWEr": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.product_description.value.text_1 | metafield_tag }}</p>",
+            "text": "<p>{{ product.metafields.custom.product_description.value.text_1 | metafield_tag }}<\/p>",
             "text_color": "#000000",
             "text_font_style": "normal",
             "text_style": "subtitle",
@@ -75,7 +66,7 @@
         "text_KqPYKy": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.product_description.value.text_3 | metafield_tag }}</p>",
+            "text": "<p>{{ product.metafields.custom.product_description.value.text_3 | metafield_tag }}<\/p>",
             "text_color": "#363636",
             "text_font_style": "italic",
             "text_style": "subtitle",
@@ -93,7 +84,7 @@
         "text_zrNWkt": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.product_description.value.text_4 | metafield_tag }}</p>",
+            "text": "<p>{{ product.metafields.custom.product_description.value.text_4 | metafield_tag }}<\/p>",
             "text_color": "",
             "text_font_style": "normal",
             "text_style": "body",
@@ -112,7 +103,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>{{ product.metafields.custom.product_description.value.text_5 | metafield_tag }}</p>",
+            "text": "<p>{{ product.metafields.custom.product_description.value.text_5 | metafield_tag }}<\/p>",
             "text_color": "",
             "text_font_style": "normal",
             "text_style": "body",
@@ -128,14 +119,14 @@
           }
         },
         "reviews_io_reviewsio_rating_output_wdzPXD": {
-          "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-output/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "settings": {}
         },
         "scroll_to_section_block_dcGqJi": {
           "type": "scroll_to_section_block",
           "settings": {
             "button_text_link": "Full Description +",
-            "target_section_id": "pdp_product_description"
+            "target_section_id": "product_tabs_content"
           }
         },
         "price": {
@@ -155,7 +146,7 @@
           "type": "popup_block",
           "settings": {
             "popup_text": "Delivery Costs & Returns +",
-            "popup_content": "<h2><strong>[* Delivery Costs *]</strong></h2><p></p><p>Our delivery and handling costs are added to your order amount at the check out once we know where you want the item delivered.</p><h2><br/><strong>[* UK Standard Postage*]</strong></h2><p><strong>Royal Mail 48: </strong>£3.5<br/><strong>Royal Mail Special Delivery: </strong>£9<br/><strong>Books: </strong>FREE OF CHARGE<br/><strong>RadiTech: </strong>£15 + £7.5 for each additional item<br/><br/></p><h2><strong>[*Europe Postage *]</strong></h2><p><strong>Supplements/Books: </strong>£10 + £1 for each additional item<br/><strong>RadiTech: </strong>£25 + £5 for each additional item<br/><br/></p><h2><strong>[*International Postage*]</strong></h2><p><strong>Supplements/Books: </strong>£15 + £1 for each additional item<br/><strong>RadiTech: </strong>£45 + £20 for each additional item<br/><br/></p><h2><strong>[*30 Day No Quibbles Returns*]</strong></h2><p>You can return products for a refund within 30 days of delivery if not suitable. We hope you understand that we cannot accept returns on products where the seal or packaging has been broken.<br/><strong>Of course we will replace any faulty item free of charge.</strong></p>"
+            "popup_content": "<h2><strong>[* Delivery Costs *]<\/strong><\/h2><p><\/p><p>Our delivery and handling costs are added to your order amount at the check out once we know where you want the item delivered.<\/p><h2><br\/><strong>[* UK Standard Postage*]<\/strong><\/h2><p><strong>Royal Mail 48: <\/strong>£3.5<br\/><strong>Royal Mail Special Delivery: <\/strong>£9<br\/><strong>Books: <\/strong>FREE OF CHARGE<br\/><strong>RadiTech: <\/strong>£15 + £7.5 for each additional item<br\/><br\/><\/p><h2><strong>[*Europe Postage *]<\/strong><\/h2><p><strong>Supplements\/Books: <\/strong>£10 + £1 for each additional item<br\/><strong>RadiTech: <\/strong>£25 + £5 for each additional item<br\/><br\/><\/p><h2><strong>[*International Postage*]<\/strong><\/h2><p><strong>Supplements\/Books: <\/strong>£15 + £1 for each additional item<br\/><strong>RadiTech: <\/strong>£45 + £20 for each additional item<br\/><br\/><\/p><h2><strong>[*30 Day No Quibbles Returns*]<\/strong><\/h2><p>You can return products for a refund within 30 days of delivery if not suitable. We hope you understand that we cannot accept returns on products where the seal or packaging has been broken.<br\/><strong>Of course we will replace any faulty item free of charge.<\/strong><\/p>"
           }
         },
         "buy_buttons": {
@@ -168,7 +159,7 @@
         "text_DpBRNX": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Dulwich Heath Trusted Since 1986 | With over 30,000 customers</strong></p>",
+            "text": "<p><strong>Dulwich Heath Trusted Since 1986 | With over 30,000 customers<\/strong><\/p>",
             "text_color": "#60919f",
             "text_font_style": "normal",
             "text_style": "body",
@@ -186,7 +177,7 @@
         "text_fj3ike": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>30 Day No Quibbles Returns </strong></p>",
+            "text": "<p><strong>30 Day No Quibbles Returns <\/strong><\/p>",
             "text_color": "#60919f",
             "text_font_style": "normal",
             "text_style": "body",
@@ -204,7 +195,7 @@
         "text_PrWUqf": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Next Day UK Delivery Available</strong></p>",
+            "text": "<p><strong>Next Day UK Delivery Available<\/strong><\/p>",
             "text_color": "#60919f",
             "text_font_style": "normal",
             "text_style": "body",
@@ -399,21 +390,21 @@
         "text_HK7pjR": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.product_details_heading | metafield_tag }}</p>"
+            "text": "<p>{{ product.metafields.custom.product_details_heading | metafield_tag }}<\/p>"
           }
         },
         "ingredients_9PNbVR": {
           "type": "ingredients",
           "source": "{{ product.metafields.custom.ingredients_block.value }}",
           "settings": {
-            "multiline_text": "<p>{{ product.metafields.custom.ingredients_block.value.multiline_text | metafield_tag }}</p>",
+            "multiline_text": "<p>{{ product.metafields.custom.ingredients_block.value.multiline_text | metafield_tag }}<\/p>",
             "ingredients_blocks_swap": false,
             "ingredients_heading": "{{ product.metafields.custom.ingredients_block.value.ingredients_heading.value }}",
-            "ingredients_para": "<p>{{ product.metafields.custom.ingredients_block.value.ingredients_details | metafield_tag }}</p>",
+            "ingredients_para": "<p>{{ product.metafields.custom.ingredients_block.value.ingredients_details | metafield_tag }}<\/p>",
             "ingredients_order": "1",
             "informations_heading": "{{ product.metafields.custom.ingredients_block.value.product_information_heading.value }}",
-            "informations_table": "<p>{{ product.metafields.custom.ingredients_block.value.product_information_table | metafield_tag }}</p>",
-            "table_desc": "<p>{{ product.metafields.custom.ingredients_block.value.table_description | metafield_tag }}</p>",
+            "informations_table": "<p>{{ product.metafields.custom.ingredients_block.value.product_information_table | metafield_tag }}<\/p>",
+            "table_desc": "<p>{{ product.metafields.custom.ingredients_block.value.table_description | metafield_tag }}<\/p>",
             "information_order": "1",
             "button_text": "{{ product.metafields.custom.ingredients_block.value.button_text.value }}",
             "button_link": "{{ product.metafields.custom.ingredients_block.value.button_link.value }}",
@@ -423,7 +414,7 @@
         "banner_text_YXN9gg": {
           "type": "banner_text",
           "settings": {
-            "banner_text": "<p>{{ product.metafields.custom.product_description_banner_text | metafield_tag }}</p>"
+            "banner_text": "<p>{{ product.metafields.custom.product_description_banner_text | metafield_tag }}<\/p>"
           }
         },
         "faq_block_TTMx7t": {
@@ -431,18 +422,18 @@
           "source": "{{ product.metafields.custom.faq_block.value }}",
           "settings": {
             "faq_heading": "{{ product.metafields.custom.faq_block.value.heading.value }}",
-            "faq_left_box": "<p>{{ product.metafields.custom.faq_block.value.left_container_text | metafield_tag }}</p>",
-            "faq_right_box": "<p>{{ product.metafields.custom.faq_block.value.right_container_text | metafield_tag }}</p>"
+            "faq_left_box": "<p>{{ product.metafields.custom.faq_block.value.left_container_text | metafield_tag }}<\/p>",
+            "faq_right_box": "<p>{{ product.metafields.custom.faq_block.value.right_container_text | metafield_tag }}<\/p>"
           }
         },
         "reviews_block_qNfQ89": {
           "type": "reviews_block",
           "source": "{{ product.metafields.custom.reviews_block.value }}",
           "settings": {
-            "review_1": "<p>{{ product.metafields.custom.reviews_block.value.review_1 | metafield_tag }}</p>",
-            "review_2": "<p>{{ product.metafields.custom.reviews_block.value.review_2 | metafield_tag }}</p>",
-            "review_3": "<p>{{ product.metafields.custom.reviews_block.value.review_3 | metafield_tag }}</p>",
-            "review_4": "<p>{{ product.metafields.custom.reviews_block.value.review_4 | metafield_tag }}</p>"
+            "review_1": "<p>{{ product.metafields.custom.reviews_block.value.review_1 | metafield_tag }}<\/p>",
+            "review_2": "<p>{{ product.metafields.custom.reviews_block.value.review_2 | metafield_tag }}<\/p>",
+            "review_3": "<p>{{ product.metafields.custom.reviews_block.value.review_3 | metafield_tag }}<\/p>",
+            "review_4": "<p>{{ product.metafields.custom.reviews_block.value.review_4 | metafield_tag }}<\/p>"
           }
         },
         "instructions_disclaimer_WWBR3y": {
@@ -450,37 +441,40 @@
           "source": "{{ product.metafields.custom.disclaimer_and_instructions_block.value }}",
           "settings": {
             "disclaimer_blocks_swap": false,
-            "importance_text": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.importance_content | metafield_tag }}</p>",
+            "importance_text": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.importance_content | metafield_tag }}<\/p>",
             "importance_order": "1",
-            "disclaimer": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.disclaimer | metafield_tag }}</p>",
+            "disclaimer": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.disclaimer | metafield_tag }}<\/p>",
             "disclaimer_order": "2",
             "news_logo": "{{ product.metafields.custom.disclaimer_and_instructions_block.value.news_logo.value }}",
             "news_heading": "{{ product.metafields.custom.disclaimer_and_instructions_block.value.news_heading.value }}",
-            "news_date_author": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.news_author_and_date | metafield_tag }}</p>",
+            "news_date_author": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.news_author_and_date | metafield_tag }}<\/p>",
             "news_title": "{{ product.metafields.custom.disclaimer_and_instructions_block.value.news_title.value }}",
-            "news_content": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.news_content | metafield_tag }}</p>",
+            "news_content": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.news_content | metafield_tag }}<\/p>",
             "news_order": "3",
+            "reviews_image": "shopify:\/\/shop_images\/trustpilot-review-622a98e331617ac0e482ca9c-510x266.jpg",
             "instructions_heading": "{{ product.metafields.custom.disclaimer_and_instructions_block.value.instructions_heading.value }}",
-            "instructions_desc": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.instructions_content | metafield_tag }}</p>",
+            "instructions_desc": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.instructions_content | metafield_tag }}<\/p>",
             "instructions_order": "1",
             "usp_img": "{{ product.metafields.custom.disclaimer_and_instructions_block.value.usp_image.value }}",
             "usp_img_order": "2",
-            "footer_text": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.footer_text | metafield_tag }}</p>",
+            "footer_text": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.footer_text | metafield_tag }}<\/p>",
             "footer_text_order": "3"
           }
         },
         "list_block_PAbnmx": {
           "type": "list_block",
+          "disabled": true,
           "source": "{{ product.metafields.custom.list_block.value }}",
           "settings": {
             "list_heading": "{{ product.metafields.custom.list_block.value.list_heading.value }}",
-            "list_content_1": "<p>{{ product.metafields.custom.list_block.value.list_content | metafield_tag }}</p>",
-            "list_content_2": "<p>{{ product.metafields.custom.list_block.value.list_content_2 | metafield_tag }}</p>",
-            "list_content_3": "<p>{{ product.metafields.custom.list_block.value.list_content_3 | metafield_tag }}</p>"
+            "list_content_1": "<p>{{ product.metafields.custom.list_block.value.list_content | metafield_tag }}<\/p>",
+            "list_content_2": "<p>{{ product.metafields.custom.list_block.value.list_content_2 | metafield_tag }}<\/p>",
+            "list_content_3": "<p>{{ product.metafields.custom.list_block.value.list_content_3 | metafield_tag }}<\/p>"
           }
         },
         "media_wwNhkf": {
           "type": "media",
+          "disabled": true,
           "source": "{{ product.metafields.custom.media_block.value }}",
           "settings": {
             "video": "{{ product.metafields.custom.media_block.value.video.value }}",
@@ -516,7 +510,7 @@
           "type": "faq_block",
           "settings": {
             "faq_heading": "",
-            "faq_left_box": "<p>{{ product.metafields.custom.additional_information | metafield_tag }}</p>",
+            "faq_left_box": "<p>{{ product.metafields.custom.additional_information | metafield_tag }}<\/p>",
             "faq_right_box": ""
           }
         }
@@ -540,7 +534,7 @@
           "type": "faq_block",
           "settings": {
             "faq_heading": "",
-            "faq_left_box": "<h2><strong>[* Delivery Costs *]</strong></h2><p></p><p>Our delivery and handling costs are added to your order amount at the check out once we know where you want the item delivered.</p><h2><br/><strong>[* UK Standard Postage*]</strong></h2><p><strong>Royal Mail 48: </strong>£3.5<br/><strong>Royal Mail Special Delivery: </strong>£9<br/><strong>Books: </strong>FREE OF CHARGE<br/><strong>RadiTech: </strong>£15 + £7.5 for each additional item<br/><br/></p><h2><strong>[*Europe Postage *]</strong></h2><p><strong>Supplements/Books: </strong>£10 + £1 for each additional item<br/><strong>RadiTech: </strong>£25 + £5 for each additional item<br/><br/></p><h2><strong>[*International Postage*]</strong></h2><p><strong>Supplements/Books: </strong>£15 + £1 for each additional item<br/><strong>RadiTech: </strong>£45 + £20 for each additional item<br/><br/></p><h2><strong>[*30 Day No Quibbles Returns*]</strong></h2><p>You can return products for a refund within 30 days of delivery if not suitable. We hope you understand that we cannot accept returns on products where the seal or packaging has been broken.<br/><strong>Of course we will replace any faulty item free of charge.</strong></p>",
+            "faq_left_box": "<h2><strong>[* Delivery Costs *]<\/strong><\/h2><p><\/p><p>Our delivery and handling costs are added to your order amount at the check out once we know where you want the item delivered.<\/p><h2><br\/><strong>[* UK Standard Postage*]<\/strong><\/h2><p><strong>Royal Mail 48: <\/strong>£3.5<br\/><strong>Royal Mail Special Delivery: <\/strong>£9<br\/><strong>Books: <\/strong>FREE OF CHARGE<br\/><strong>RadiTech: <\/strong>£15 + £7.5 for each additional item<br\/><br\/><\/p><h2><strong>[*Europe Postage *]<\/strong><\/h2><p><strong>Supplements\/Books: <\/strong>£10 + £1 for each additional item<br\/><strong>RadiTech: <\/strong>£25 + £5 for each additional item<br\/><br\/><\/p><h2><strong>[*International Postage*]<\/strong><\/h2><p><strong>Supplements\/Books: <\/strong>£15 + £1 for each additional item<br\/><strong>RadiTech: <\/strong>£45 + £20 for each additional item<br\/><br\/><\/p><h2><strong>[*30 Day No Quibbles Returns*]<\/strong><\/h2><p>You can return products for a refund within 30 days of delivery if not suitable. We hope you understand that we cannot accept returns on products where the seal or packaging has been broken.<br\/><strong>Of course we will replace any faulty item free of charge.<\/strong><\/p>",
             "faq_right_box": ""
           }
         }
@@ -590,7 +584,7 @@
         "hide_button_desktop": false,
         "hide_button_mobile": false,
         "button_label": "VIEW ALL",
-        "button_url": "shopify://collections/all",
+        "button_url": "shopify:\/\/collections\/all",
         "desktop_padding_top": 94,
         "desktop_padding_bottom": 100,
         "mobile_padding_top": 54,
@@ -617,7 +611,7 @@
       "type": "apps",
       "blocks": {
         "reviews_io_reviewsio_polaris_NfwCmY": {
-          "type": "shopify://apps/reviews-io/blocks/reviewsio-polaris/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "settings": {
             "star": "#000000",
             "review_type": "product_review,questions",
