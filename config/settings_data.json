@@ -244,14 +244,6 @@
           "enable_syndication": false
         }
       },
-      "10557767768680663964": {
-        "type": "shopify://apps/recurpay-subscriptions-app/blocks/recurpay-widget/c600a513-dad8-4030-8697-de47c18881f2",
-        "disabled": false,
-        "settings": {
-          "multiply_price_with_quantity": true,
-          "show_price_in_frequency_dropdown": true
-        }
-      },
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,

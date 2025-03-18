@@ -327,6 +327,7 @@
     },
     "product_description_V9WMtJ": {
       "type": "product-description",
+      "disabled": true,
       "settings": {
         "show_description": true,
         "desktop_padding_top": 30,
