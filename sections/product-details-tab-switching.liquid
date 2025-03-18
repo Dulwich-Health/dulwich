@@ -65,7 +65,7 @@
               | split: '[' | join: '<span class="red-color">'
               | split: ']' | join: '</span>'
             %}            
-            <div class="tw-flex {% if block.settings.ingredients_para != blank or block.settings.informations_table != blank %}{% if block.settings.ingredients_blocks_swap == true %}lg:tw-flex-row-reverse{% else %}lg:tw-flex-row{% endif %} {% endif %}tw-flex-col lg:tw-gap-x-[4.4%] tw-mt-[20px] tw-my-[20px] lg:tw-my-[50px] blg:tw-gap-y-[20px]">
+            <div class="tw-flex {% if block.settings.ingredients_para != blank or block.settings.informations_table != blank %}{% if block.settings.ingredients_blocks_swap == true %}lg:tw-flex-row-reverse{% else %}lg:tw-flex-row{% endif %} {% endif %}tw-flex-col lg:tw-gap-x-[4.4%] tw-mt-[20px] tw-my-[20px] lg:tw-my-[50px] tw-gap-y-[20px]">
               {% if multiline_text != blank %}
                 <div class="lg:tw-basis-[50%] tw-basis-[100%] tw-flex-grow tw-font-secondary tw-text-black tw-text-[15px] lg:tw-text-[18px] tw-leading-[22px] lg:tw-leading-[28px]">
                   {{ multiline_text | replace: '<p>', '' | replace: '</p>', '' }}
