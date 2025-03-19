@@ -72,6 +72,24 @@
             "mobile_text_bottom_spacing": 9
           }
         },
+        "text_fWYi8t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.product_description.value.text_2 | metafield_tag }}</p>",
+            "text_color": "#60919f",
+            "text_font_style": "italic",
+            "text_style": "body",
+            "text_bg_color": "",
+            "text_font_size": "15",
+            "text_font_weight": "500",
+            "text_top_spacing": 20,
+            "text_bottom_spacing": 10,
+            "mobile_text_font_size": "14",
+            "mobile_text_font_weight": "400",
+            "mobile_text_top_spacing": 9,
+            "mobile_text_bottom_spacing": 12
+          }
+        },
         "text_KqPYKy": {
           "type": "text",
           "settings": {
@@ -286,6 +304,7 @@
         "title",
         "caption",
         "text_MUQWEr",
+        "text_fWYi8t",
         "text_KqPYKy",
         "text_zrNWkt",
         "text_4h8pwe",
