@@ -1,0 +1,148 @@
+<section class="page-width">
+  <div class="practitioner-grid">
+    <div class="grid">
+      <!-- Left Side: Rich Text -->
+      <div class="grid__item rich-text-container practitioner-left-wrapper">
+        {% for block in section.blocks %}
+          {% if block.type == 'richtext' %}
+            <div class="rich-text">{{ block.settings.text_content }}</div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <!-- Right Side: App Blocks -->
+      <div class="grid__item app-container practitioner-right-wrapper">
+        {% for block in section.blocks %}
+          {% if block.type == '@app' %}
+            {% render block %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Practitioner Grid Section",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "include_margins",
+      "default": true,
+      "label": "Include Margins"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    {
+      "type": "richtext",
+      "name": "Rich Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text_content",
+          "label": "Text Content",
+          "default": "<p>Add your text here.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Practitioner Grid Section",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "richtext"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .practitioner-grid {
+    padding: 60px 0px;
+  }
+
+  .practitioner-left-wrapper  h1 {
+      color: #60919f;
+      margin-bottom: 50px;
+  }
+  .practitioner-right-wrapper {
+    padding-top: 100px;
+  }
+
+  .practitioner-right-wrapper section,
+  .practitioner-right-wrapper section._formHeader_1nihh_19 {
+    text-align: left !important;
+  }
+
+  h2._textHeading_2aowh_35 {
+      text-align: left;
+  }
+
+  .practitioner-left-wrapper .rich-text p {
+      margin: 10px 0px;
+      line-height: 26px;
+      color: #000;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0;
+  }
+
+   .practitioner-left-wrapper .rich-text ul {
+        list-style: disc;
+        padding-left: 28px;
+   }
+
+   .practitioner-left-wrapper .rich-text ul  li {
+      line-height: normal;
+      font-weight: bold;
+      font-size: 18px;
+      color: #000;
+      font-style: italic;
+      padding: 3px 0px;
+   }
+
+  .practitioner-right-wrapper > form > * {
+      font-family: 'Poppins' !important;
+  }
+
+  @media (max-width: 767px) {
+    .practitioner-grid .grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .practitioner-left-wrapper h1 {
+        margin-bottom: 30px;
+    }
+
+    .practitioner-grid .grid .grid__item {
+        width: 100% !important;
+        max-width: 100%;
+      }
+
+    .practitioner-right-wrapper {
+        padding-top: 20px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .practitioner-left-wrapper .rich-text p {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .practitioner-left-wrapper .rich-text ul li {
+      font-size: 18px;
+    }
+  }
+</style>
