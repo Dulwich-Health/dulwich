@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -12,7 +21,7 @@
       "type": "apps",
       "blocks": {
         "advanced_registration_advanced_registration_3E6kcr": {
-          "type": "shopify:\/\/apps\/advanced-registration\/blocks\/advanced-registration\/a64c4b10-b618-4bd2-915b-dbb6662c9253",
+          "type": "shopify://apps/advanced-registration/blocks/advanced-registration/a64c4b10-b618-4bd2-915b-dbb6662c9253",
           "settings": {}
         }
       },
@@ -37,7 +46,7 @@
         "text_TWdgy3": {
           "type": "text",
           "settings": {
-            "text": "<p>Why not think about becoming one of Dulwich Health’s many registered practitioners?<\/p><h3><strong>• Get discounted prices<\/strong><\/h3><h3><strong>• Practitioner only deals<\/strong><\/h3><h3><strong>• Drop shipping directly to your clients<\/strong><\/h3><h3><strong>• Information updates and much much more!<\/strong><\/h3><p>To become a register practitioner or healthcare professional with Dulwich Health you just need to show proof of working as a practitioner and any qualifications and\/or certificates you may have.<\/p><p>Your Practice Insurance Certificate is our preferred document, as we believe you wouldn’t practice as healthcare professional without this certificate.<\/p><p>You can simply register here by using the form below.<\/p><p>Please attach copies of your proof of working as a practitioner or healthcare professional. (photos, scans or PDF’s).<\/p><p>Other sort of proof we may except:<\/p><p>Practice Registration, Company Registration, or Qualification Certificate etc.<\/p><p><\/p><p>We will review your application and get back to you as soon as possible so that you can enjoy the benefits.<\/p>",
+            "text": "<p>Why not think about becoming one of Dulwich Health’s many registered practitioners?</p><h3><strong>• Get discounted prices</strong></h3><h3><strong>• Practitioner only deals</strong></h3><h3><strong>• Drop shipping directly to your clients</strong></h3><h3><strong>• Information updates and much much more!</strong></h3><p>To become a register practitioner or healthcare professional with Dulwich Health you just need to show proof of working as a practitioner and any qualifications and/or certificates you may have.</p><p>Your Practice Insurance Certificate is our preferred document, as we believe you wouldn’t practice as healthcare professional without this certificate.</p><p>You can simply register here by using the form below.</p><p>Please attach copies of your proof of working as a practitioner or healthcare professional. (photos, scans or PDF’s).</p><p>Other sort of proof we may except:</p><p>Practice Registration, Company Registration, or Qualification Certificate etc.</p><p></p><p>We will review your application and get back to you as soon as possible so that you can enjoy the benefits.</p>",
             "text_font_size": "17",
             "text_font_weight": "400",
             "text_line_height": "28",
@@ -55,6 +64,7 @@
         "heading_bTdxjx",
         "text_TWdgy3"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -73,7 +83,7 @@
       "type": "apps",
       "blocks": {
         "forms_inline_LeJVGx": {
-          "type": "shopify:\/\/apps\/forms\/blocks\/inline\/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
           "settings": {
             "form_id": "333956",
             "text_color": "#202020",
@@ -93,6 +103,42 @@
       "block_order": [
         "forms_inline_LeJVGx"
       ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "practitioner_grid_section_f449xQ": {
+      "type": "practitioner-grid-section",
+      "blocks": {
+        "richtext_Wz3GJh": {
+          "type": "richtext",
+          "settings": {
+            "text_content": "<h1>Are You A Practitioner?<br/></h1><p>Why not think about becoming one of Dulwich Health’s many registered practitioners?<br/></p><ul><li>Get discounted prices</li><li>Practitioner only deals</li><li>Drop shipping directly to your clients</li><li>Information updates and much much more!</li></ul><p>To become a register practitioner or healthcare professional with Dulwich Health you just need to show proof of working as a practitioner and any qualifications and/or certificates you may have.</p><p>Your Practice Insurance Certificate is our preferred document, as we believe you wouldn’t practice as healthcare professional without this certificate.</p><p>You can simply register here by using the form below.</p><p>Please attach copies of your proof of working as a practitioner or healthcare professional. (photos, scans or PDF’s).</p><p>Other sort of proof we may except:</p><p>Practice Registration, Company Registration, or Qualification Certificate etc.</p><p></p><p>We will review your application and get back to you as soon as possible so that you can enjoy the benefits.</p>"
+          }
+        },
+        "forms_inline_weHyaf": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "333956",
+            "text_color": "#202020",
+            "button_background_color": "#60919f",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#1878B9",
+            "errors_color": "#E02229",
+            "text_alignment": "left",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "richtext_Wz3GJh",
+        "forms_inline_weHyaf"
+      ],
       "settings": {
         "include_margins": true
       }
@@ -102,6 +148,7 @@
     "main",
     "1735563144c8e709de",
     "rich_text_39r6qF",
-    "17386737200d477f3d"
+    "17386737200d477f3d",
+    "practitioner_grid_section_f449xQ"
   ]
 }
