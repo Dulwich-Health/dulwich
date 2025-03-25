@@ -52,98 +52,98 @@
           "type": "faq_item",
           "settings": {
             "faq_header": "How do I order online?",
-            "faq_message": "<p>Making a purchase could not be easier. Just browse our online shop, and add any items that you wish to buy into the cart. To order an item, simply click on the <em>“add to cart”<\/em> link next to the product and it will appear in your shopping cart. Once you have finished, you can review the contents of your cart by click on the “cart” on the top right. You can also checkout here, where you will be asked for a few details that we need to be able to complete the order.<\/p><p><\/p><p>All products displayed on the web site are in stock. Orders are despatched the same day by Royal Mail First Class post.<\/p><p><\/p><p>We accept credit card or debit card payment secured though <strong>Opayo<\/strong> (Formerly SagePay*. If you are shopping from North America or anywhere else, place your order and your credit card company will convert the transaction to US Dollars or your own currency.<\/p><p><\/p><p>Your card is not charged until your order has been picked, packed and is ready for despatch. UK delivery time is usually 1-2 days, and international delivery time 3-7 days.<\/p><p><\/p><p><strong>Your Shipping Costs<\/strong><br\/>Please note that our shipping and handling costs are added to your order amount at the check out once we know where you want the item delivered.<\/p><p><\/p><p>Every parcel that we send out is insured against loss, theft or damage, so you can order with confidence – in the unlikely event that you do not receive your order, or receive an order which is damaged, then we will either refund you or resend the order free of charge.<\/p><p><\/p><p>If you’re in London, you can also visit our office where we have the whole range of our products that we have on our web site.<\/p><p><\/p><p><strong>The small print<\/strong><br\/>When confirmation of order is received, this is to indicate that we have received your order. It does not indicate that a contract exists between us. We will indicate acceptance of your order, and hence a contract between us, when we send you an invoice. We have included this term to protect us in the case that a mistake has been made in pricing, we have inadvertently under-priced goods, or we are no longer able to supply a particular product for some reason. In the case of a change of price, we will always contact you first to ensure that the price is acceptable.<\/p><p><\/p><p><strong>*Opayo <\/strong>is the new name for SagePay. Who are one of the UK’s most trusted payment service provider (PSP). In 2019, their gateway processed £40bn worth of card payments for over 50,000 merchants, online and in-store. They changed their name because they were acquired by Elavon – a big name in payments and a subsidiary of U.S. Bank. <\/p>"
+            "faq_message": "<p>Making a purchase could not be easier. Just browse our online shop, and add any items that you wish to buy into the cart. To order an item, simply click on the <em>“add to cart”</em> link next to the product and it will appear in your shopping cart. Once you have finished, you can review the contents of your cart by click on the “cart” on the top right. You can also checkout here, where you will be asked for a few details that we need to be able to complete the order.</p><p></p><p>All products displayed on the web site are in stock. Orders are despatched the same day by Royal Mail First Class post.</p><p></p><p>We accept credit card or debit card payment secured though <strong>Opayo</strong> (Formerly SagePay*. If you are shopping from North America or anywhere else, place your order and your credit card company will convert the transaction to US Dollars or your own currency.</p><p></p><p>Your card is not charged until your order has been picked, packed and is ready for despatch. UK delivery time is usually 1-2 days, and international delivery time 3-7 days.</p><p></p><p><strong>Your Shipping Costs</strong><br/>Please note that our shipping and handling costs are added to your order amount at the check out once we know where you want the item delivered.</p><p></p><p>Every parcel that we send out is insured against loss, theft or damage, so you can order with confidence – in the unlikely event that you do not receive your order, or receive an order which is damaged, then we will either refund you or resend the order free of charge.</p><p></p><p>If you’re in London, you can also visit our office where we have the whole range of our products that we have on our web site.</p><p></p><p><strong>The small print</strong><br/>When confirmation of order is received, this is to indicate that we have received your order. It does not indicate that a contract exists between us. We will indicate acceptance of your order, and hence a contract between us, when we send you an invoice. We have included this term to protect us in the case that a mistake has been made in pricing, we have inadvertently under-priced goods, or we are no longer able to supply a particular product for some reason. In the case of a change of price, we will always contact you first to ensure that the price is acceptable.</p><p></p><p><strong>*Opayo </strong>is the new name for SagePay. Who are one of the UK’s most trusted payment service provider (PSP). In 2019, their gateway processed £40bn worth of card payments for over 50,000 merchants, online and in-store. They changed their name because they were acquired by Elavon – a big name in payments and a subsidiary of U.S. Bank. </p>"
           }
         },
         "faq_item_LyaRBW": {
           "type": "faq_item",
           "settings": {
             "faq_header": "I am having problems using the shopping cart - what should I do?",
-            "faq_message": "<p>The main reasons why customers may encounter problems using the shopping cart are that (a) customers are ordering from within a firewalled company network, or (b) ordering from a non-standard PC\/Mac unit (eg a games console). In both these cases, the shopping cart may not function properly, so we recommend using a normal stand-alone PC\/Mac where possible. Another possible source of problems is that the security settings on your web browser are set at maximum, which prevents your computer communicating with our server properly. If using Internet Explorer, adjust the security level slider to a medium setting.<\/p><p><\/p><p>For other browsers, “Java”, “JavaScript” and “Cookies” should all be enabled in the browser options.<\/p>"
+            "faq_message": "<p>The main reasons why customers may encounter problems using the shopping cart are that (a) customers are ordering from within a firewalled company network, or (b) ordering from a non-standard PC/Mac unit (eg a games console). In both these cases, the shopping cart may not function properly, so we recommend using a normal stand-alone PC/Mac where possible. Another possible source of problems is that the security settings on your web browser are set at maximum, which prevents your computer communicating with our server properly. If using Internet Explorer, adjust the security level slider to a medium setting.</p><p></p><p>For other browsers, “Java”, “JavaScript” and “Cookies” should all be enabled in the browser options.</p>"
           }
         },
         "faq_item_bWrFRV": {
           "type": "faq_item",
           "settings": {
             "faq_header": "How do I know if an item is in stock?",
-            "faq_message": "<p>All products listed are in stock, and our web site is updated in real time to ensure that stock levels are as accurate as possible. Very occasionally, an item may be subject to a stock level error – if this occurs, we will e-mail you to notify you of the unavailable item, and you will not be charged for it.<\/p>"
+            "faq_message": "<p>All products listed are in stock, and our web site is updated in real time to ensure that stock levels are as accurate as possible. Very occasionally, an item may be subject to a stock level error – if this occurs, we will e-mail you to notify you of the unavailable item, and you will not be charged for it.</p>"
           }
         },
         "faq_item_Yryabj": {
           "type": "faq_item",
           "settings": {
             "faq_header": "How do I know you have received my order?",
-            "faq_message": "<p>You will receive an immediate e-mail confirmation of each order from<strong>Dulwich Health<\/strong>, stating the items ordered and the total cost, followed by a second email from<strong>SagePay<\/strong>confirming payment details<\/p>"
+            "faq_message": "<p>You will receive an immediate e-mail confirmation of each order from<strong>Dulwich Health</strong>, stating the items ordered and the total cost, followed by a second email from<strong>SagePay</strong>confirming payment details</p>"
           }
         },
         "faq_item_tGNqn3": {
           "type": "faq_item",
           "settings": {
             "faq_header": "Do you have a shop I can visit?",
-            "faq_message": "<p>Yes –<em><strong>BUT<\/strong><\/em>we would prefer you ordered online, you can visit our office at<strong>2 Grecian Crescent, London SE19 3HH<\/strong>. Where we will be happy to help.(Between 9am – 5pm weekdays)<\/p>"
+            "faq_message": "<p>Yes –<em><strong>BUT</strong></em>we would prefer you ordered online, you can visit our office at<strong>2 Grecian Crescent, London SE19 3HH</strong>. Where we will be happy to help.(Between 9am – 5pm weekdays)</p>"
           }
         },
         "faq_item_tmjFJH": {
           "type": "faq_item",
           "settings": {
             "faq_header": "Is it possible to collect my order from your offices, instead of having it mailed?",
-            "faq_message": "<p>Yes – <em><strong>BUT<\/strong><\/em><strong> <\/strong>you must call us first on <strong>020 8670 5883<\/strong> to place your order and state that you wish to arrange a collection. Otherwise your order will be sent in the post, and you will be charged for postage!<\/p><p><\/p><p>You can collect your order from our office at <strong>2 Grecian Crescent, London SE19 3HH<\/strong>.<\/p>"
+            "faq_message": "<p>Yes – <em><strong>BUT</strong></em><strong> </strong>you must call us first on <strong>020 8670 5883</strong> to place your order and state that you wish to arrange a collection. Otherwise your order will be sent in the post, and you will be charged for postage!</p><p></p><p>You can collect your order from our office at <strong>2 Grecian Crescent, London SE19 3HH</strong>.</p>"
           }
         },
         "faq_item_f38nRK": {
           "type": "faq_item",
           "settings": {
             "faq_header": "Can I order by telephone?",
-            "faq_message": "<p>Yes – <em><strong>BUT<\/strong><\/em> we would prefer you ordered online, all orders can be placed by telephone on <strong>020 8670 5883 <\/strong>between 9am – 5pm weekdays.<\/p><p><\/p><p>We don’t man the phones at weekends or public holidays.<\/p>"
+            "faq_message": "<p>Yes – <em><strong>BUT</strong></em> we would prefer you ordered online, all orders can be placed by telephone on <strong>020 8670 5883 </strong>between 9am – 5pm weekdays.</p><p></p><p>We don’t man the phones at weekends or public holidays.</p>"
           }
         },
         "faq_item_DpBEtB": {
           "type": "faq_item",
           "settings": {
             "faq_header": "How are the delivery made for orders from the Online Shop?",
-            "faq_message": "<p>All orders are despatched by Royal Mail 48 tracked the same day, as long as the order is received by 3pm. Larger orders will be dispatched by other couriers, as long as they are received by 2pm. Orders received after this time are despatched within 24 hours.<\/p>"
+            "faq_message": "<p>All orders are despatched by Royal Mail 48 tracked the same day, as long as the order is received by 3pm. Larger orders will be dispatched by other couriers, as long as they are received by 2pm. Orders received after this time are despatched within 24 hours.</p>"
           }
         },
         "faq_item_pTcUNQ": {
           "type": "faq_item",
           "settings": {
             "faq_header": "Can I place an order now for despatch at a later date?",
-            "faq_message": "<p>Sorry, we don’t really offer this facility online – all orders are despatched as soon as possible after they are received.<\/p><p><\/p><p><em><strong>BUT<\/strong><\/em> with phones orders you are welcome to ask for a delay in despatch. Please contact our telephone sales department on <strong>020 8670 5883<\/strong> between 9am – 5pm weekdays.<\/p>"
+            "faq_message": "<p>Sorry, we don’t really offer this facility online – all orders are despatched as soon as possible after they are received.</p><p></p><p><em><strong>BUT</strong></em> with phones orders you are welcome to ask for a delay in despatch. Please contact our telephone sales department on <strong>020 8670 5883</strong> between 9am – 5pm weekdays.</p>"
           }
         },
         "faq_item_C9KEAQ": {
           "type": "faq_item",
           "settings": {
             "faq_header": "Will I receive an invoice with my order?",
-            "faq_message": "<p>A confirmation of your order and an invoice will automatically be sent to you by email. (it won’t be included with the order as standard.) If you would like to receive an invoice with your items, please state this in the ‘Special Instructions’ field of the shopping cart.<\/p><p><\/p><p>You will also receive a packing slip with your purchase, that includes your order number. <\/p><p><\/p><p>Email is our preferred method of communication. If you don’t have an email, you can request that we send your invoice and packing slip with your order.<\/p>"
+            "faq_message": "<p>A confirmation of your order and an invoice will automatically be sent to you by email. (it won’t be included with the order as standard.) If you would like to receive an invoice with your items, please state this in the ‘Special Instructions’ field of the shopping cart.</p><p></p><p>You will also receive a packing slip with your purchase, that includes your order number. </p><p></p><p>Email is our preferred method of communication. If you don’t have an email, you can request that we send your invoice and packing slip with your order.</p>"
           }
         },
         "faq_item_xrcDCg": {
           "type": "faq_item",
           "settings": {
             "faq_header": "An item I saw recently on the web site is no longer listed - can I still order it?",
-            "faq_message": "<p>Our listings are updated in real-time to show only in-stock items, so if an item goes out of stock, it will no longer appear and cannot be ordered. We don’t back-order out-of-stock items for customers.<\/p>"
+            "faq_message": "<p>Our listings are updated in real-time to show only in-stock items, so if an item goes out of stock, it will no longer appear and cannot be ordered. We don’t back-order out-of-stock items for customers.</p>"
           }
         },
         "faq_item_4XRJAH": {
           "type": "faq_item",
           "settings": {
             "faq_header": "If a product is not listed, can you order it in for me?",
-            "faq_message": "<p>Sorry, no – we don’t currently place special orders for customers.<\/p>"
+            "faq_message": "<p>Sorry, no – we don’t currently place special orders for customers.</p>"
           }
         },
         "faq_item_UbRPib": {
           "type": "faq_item",
           "settings": {
             "faq_header": "Can I add items to an order I have already placed?",
-            "faq_message": "<p>As we despatch orders very quickly, unfortunately it is not possible to add to an existing order. If you require further items, you must place a new order via the shopping cart. (The extra postage cost of sending two separate orders is relatively small.)<\/p>"
+            "faq_message": "<p>As we despatch orders very quickly, unfortunately it is not possible to add to an existing order. If you require further items, you must place a new order via the shopping cart. (The extra postage cost of sending two separate orders is relatively small.)</p>"
           }
         },
         "faq_item_9p3hwV": {
           "type": "faq_item",
           "settings": {
             "faq_header": "What exactly happens after ordering?",
-            "faq_message": "<p>We endeavor to dispatch 95% of all your orders within 24 hrs for next day delivery in the UK. (Europe: 2-5 days)<\/p><p><\/p><p>When you receive confirmation of your order by email, this indicates that we have received your order. It does not indicate that a contract exists between us.<\/p><p><\/p><p>We will indicate acceptance of your order, and hence a contract between us, when we send you an invoice, by email. We have included this term to protect us in the case that a mistake has been made in pricing, we have inadvertently under-priced goods, or we are no longer able to supply a particular product for some reason. In the case of a change of price, we will always contact you first to ensure that the price is acceptable.<\/p>"
+            "faq_message": "<p>We endeavor to dispatch 95% of all your orders within 24 hrs for next day delivery in the UK. (Europe: 2-5 days)</p><p></p><p>When you receive confirmation of your order by email, this indicates that we have received your order. It does not indicate that a contract exists between us.</p><p></p><p>We will indicate acceptance of your order, and hence a contract between us, when we send you an invoice, by email. We have included this term to protect us in the case that a mistake has been made in pricing, we have inadvertently under-priced goods, or we are no longer able to supply a particular product for some reason. In the case of a change of price, we will always contact you first to ensure that the price is acceptable.</p>"
           }
         }
       },
@@ -164,8 +164,8 @@
         "faq_item_9p3hwV"
       ],
       "settings": {
-        "section_heading": "<p>Dulwich Health Website - How It Works<\/p>",
-        "section_subheading": "<p><\/p><p><\/p>",
+        "section_heading": "<p>Dulwich Health Website - How It Works</p>",
+        "section_subheading": "<p></p><p></p>",
         "heading_alignment": "left",
         "color_scheme": "",
         "padding_top": 36,
@@ -180,7 +180,7 @@
           "settings": {
             "heading": "How do I order online?",
             "icon": "check_mark",
-            "row_content": "<p>Making a purchase could not be easier. Just browse our online shop, and add any items that you wish to buy into the cart. To order an item, simply click on the <em>“add to cart”<\/em> link next to the product and it will appear in your shopping cart. Once you have finished, you can review the contents of your cart by click on the “cart” on the top right. You can also checkout here, where you will be asked for a few details that we need to be able to complete the order.<\/p><p><\/p><p>All products displayed on the web site are in stock. Orders are despatched the same day by Royal Mail First Class post.<\/p><p><\/p><p>We accept credit card or debit card payment secured though <strong>Opayo<\/strong> (Formerly SagePay*. If you are shopping from North America or anywhere else, place your order and your credit card company will convert the transaction to US Dollars or your own currency.<\/p><p><\/p><p>Your card is not charged until your order has been picked, packed and is ready for despatch. UK delivery time is usually 1-2 days, and international delivery time 3-7 days.<\/p><p><\/p><p><strong>Your Shipping Costs<\/strong><br\/>Please note that our shipping and handling costs are added to your order amount at the check out once we know where you want the item delivered.<\/p><p><\/p><p>Every parcel that we send out is insured against loss, theft or damage, so you can order with confidence – in the unlikely event that you do not receive your order, or receive an order which is damaged, then we will either refund you or resend the order free of charge.<\/p><p><\/p><p>If you’re in London, you can also visit our office where we have the whole range of our products that we have on our web site.<\/p><p><\/p><p><strong>The small print<\/strong><br\/>When confirmation of order is received, this is to indicate that we have received your order. It does not indicate that a contract exists between us. We will indicate acceptance of your order, and hence a contract between us, when we send you an invoice. We have included this term to protect us in the case that a mistake has been made in pricing, we have inadvertently under-priced goods, or we are no longer able to supply a particular product for some reason. In the case of a change of price, we will always contact you first to ensure that the price is acceptable.<\/p><p><\/p><p><strong>*Opayo <\/strong>is the new name for SagePay. Who are one of the UK’s most trusted payment service provider (PSP). In 2019, their gateway processed £40bn worth of card payments for over 50,000 merchants, online and in-store. They changed their name because they were acquired by Elavon – a big name in payments and a subsidiary of U.S. Bank. <\/p>",
+            "row_content": "<p>Making a purchase could not be easier. Just browse our online shop, and add any items that you wish to buy into the cart. To order an item, simply click on the <em>“add to cart”</em> link next to the product and it will appear in your shopping cart. Once you have finished, you can review the contents of your cart by click on the “cart” on the top right. You can also checkout here, where you will be asked for a few details that we need to be able to complete the order.</p><p></p><p>All products displayed on the web site are in stock. Orders are despatched the same day by Royal Mail First Class post.</p><p></p><p>We accept credit card or debit card payment secured though <strong>Opayo</strong> (Formerly SagePay*. If you are shopping from North America or anywhere else, place your order and your credit card company will convert the transaction to US Dollars or your own currency.</p><p></p><p>Your card is not charged until your order has been picked, packed and is ready for despatch. UK delivery time is usually 1-2 days, and international delivery time 3-7 days.</p><p></p><p><strong>Your Shipping Costs</strong><br/>Please note that our shipping and handling costs are added to your order amount at the check out once we know where you want the item delivered.</p><p></p><p>Every parcel that we send out is insured against loss, theft or damage, so you can order with confidence – in the unlikely event that you do not receive your order, or receive an order which is damaged, then we will either refund you or resend the order free of charge.</p><p></p><p>If you’re in London, you can also visit our office where we have the whole range of our products that we have on our web site.</p><p></p><p><strong>The small print</strong><br/>When confirmation of order is received, this is to indicate that we have received your order. It does not indicate that a contract exists between us. We will indicate acceptance of your order, and hence a contract between us, when we send you an invoice. We have included this term to protect us in the case that a mistake has been made in pricing, we have inadvertently under-priced goods, or we are no longer able to supply a particular product for some reason. In the case of a change of price, we will always contact you first to ensure that the price is acceptable.</p><p></p><p><strong>*Opayo </strong>is the new name for SagePay. Who are one of the UK’s most trusted payment service provider (PSP). In 2019, their gateway processed £40bn worth of card payments for over 50,000 merchants, online and in-store. They changed their name because they were acquired by Elavon – a big name in payments and a subsidiary of U.S. Bank. </p>",
             "page": ""
           }
         },
@@ -189,7 +189,7 @@
           "settings": {
             "heading": "I am having problems using the shopping cart - what should I do?",
             "icon": "check_mark",
-            "row_content": "<p>The main reasons why customers may encounter problems using the shopping cart are that (a) customers are ordering from within a firewalled company network, or (b) ordering from a non-standard PC\/Mac unit (eg a games console). In both these cases, the shopping cart may not function properly, so we recommend using a normal stand-alone PC\/Mac where possible. Another possible source of problems is that the security settings on your web browser are set at maximum, which prevents your computer communicating with our server properly. If using Internet Explorer, adjust the security level slider to a medium setting.<\/p><p><\/p><p>For other browsers, “Java”, “JavaScript” and “Cookies” should all be enabled in the browser options.<\/p>",
+            "row_content": "<p>The main reasons why customers may encounter problems using the shopping cart are that (a) customers are ordering from within a firewalled company network, or (b) ordering from a non-standard PC/Mac unit (eg a games console). In both these cases, the shopping cart may not function properly, so we recommend using a normal stand-alone PC/Mac where possible. Another possible source of problems is that the security settings on your web browser are set at maximum, which prevents your computer communicating with our server properly. If using Internet Explorer, adjust the security level slider to a medium setting.</p><p></p><p>For other browsers, “Java”, “JavaScript” and “Cookies” should all be enabled in the browser options.</p>",
             "page": ""
           }
         },
@@ -198,7 +198,7 @@
           "settings": {
             "heading": "How do I know if an item is in stock?",
             "icon": "check_mark",
-            "row_content": "<p>All products listed are in stock, and our web site is updated in real time to ensure that stock levels are as accurate as possible. Very occasionally, an item may be subject to a stock level error – if this occurs, we will e-mail you to notify you of the unavailable item, and you will not be charged for it.<\/p>",
+            "row_content": "<p>All products listed are in stock, and our web site is updated in real time to ensure that stock levels are as accurate as possible. Very occasionally, an item may be subject to a stock level error – if this occurs, we will e-mail you to notify you of the unavailable item, and you will not be charged for it.</p>",
             "page": ""
           }
         },
@@ -207,7 +207,7 @@
           "settings": {
             "heading": "How do I know you have received my order?",
             "icon": "check_mark",
-            "row_content": "<p>You will receive an immediate e-mail confirmation of each order from<strong>Dulwich Health<\/strong>, stating the items ordered and the total cost, followed by a second email from<strong>SagePay<\/strong>confirming payment details<\/p>",
+            "row_content": "<p>You will receive an immediate e-mail confirmation of each order from<strong>Dulwich Health</strong>, stating the items ordered and the total cost, followed by a second email from<strong>SagePay</strong>confirming payment details</p>",
             "page": ""
           }
         },
@@ -216,7 +216,7 @@
           "settings": {
             "heading": "Do you have a shop I can visit?",
             "icon": "check_mark",
-            "row_content": "<p>Yes –<em><strong>BUT<\/strong><\/em>we would prefer you ordered online, you can visit our office at<strong>2 Grecian Crescent, London SE19 3HH<\/strong>. Where we will be happy to help.(Between 9am – 5pm weekdays)<\/p>",
+            "row_content": "<p>Yes –<em><strong>BUT</strong></em>we would prefer you ordered online, you can visit our office at<strong>2 Grecian Crescent, London SE19 3HH</strong>. Where we will be happy to help.(Between 9am – 5pm weekdays)</p>",
             "page": ""
           }
         },
@@ -225,7 +225,7 @@
           "settings": {
             "heading": "Is it possible to collect my order from your offices, instead of having it mailed?",
             "icon": "check_mark",
-            "row_content": "<p>Yes – <em><strong>BUT<\/strong><\/em><strong> <\/strong>you must call us first on <strong>020 8670 5883<\/strong> to place your order and state that you wish to arrange a collection. Otherwise your order will be sent in the post, and you will be charged for postage!<\/p><p><\/p><p>You can collect your order from our office at <strong>2 Grecian Crescent, London SE19 3HH<\/strong>.<\/p>",
+            "row_content": "<p>Yes – <em><strong>BUT</strong></em><strong> </strong>you must call us first on <strong>020 8670 5883</strong> to place your order and state that you wish to arrange a collection. Otherwise your order will be sent in the post, and you will be charged for postage!</p><p></p><p>You can collect your order from our office at <strong>2 Grecian Crescent, London SE19 3HH</strong>.</p>",
             "page": ""
           }
         },
@@ -234,7 +234,7 @@
           "settings": {
             "heading": "Can I order by telephone?",
             "icon": "check_mark",
-            "row_content": "<p>Yes – <em><strong>BUT<\/strong><\/em> we would prefer you ordered online, all orders can be placed by telephone on <strong>020 8670 5883 <\/strong>between 9am – 5pm weekdays.<\/p><p><\/p><p>We don’t man the phones at weekends or public holidays.<\/p>",
+            "row_content": "<p>Yes – <em><strong>BUT</strong></em> we would prefer you ordered online, all orders can be placed by telephone on <strong>020 8670 5883 </strong>between 9am – 5pm weekdays.</p><p></p><p>We don’t man the phones at weekends or public holidays.</p>",
             "page": ""
           }
         },
@@ -243,7 +243,7 @@
           "settings": {
             "heading": "How are the delivery made for orders from the Online Shop?",
             "icon": "check_mark",
-            "row_content": "<p>All orders are despatched by Royal Mail 48 tracked the same day, as long as the order is received by 3pm. Larger orders will be dispatched by other couriers, as long as they are received by 2pm. Orders received after this time are despatched within 24 hours.<\/p>",
+            "row_content": "<p>All orders are despatched by Royal Mail 48 tracked the same day, as long as the order is received by 3pm. Larger orders will be dispatched by other couriers, as long as they are received by 2pm. Orders received after this time are despatched within 24 hours.</p>",
             "page": ""
           }
         },
@@ -252,7 +252,7 @@
           "settings": {
             "heading": "Can I place an order now for despatch at a later date?",
             "icon": "check_mark",
-            "row_content": "<p>Sorry, we don’t really offer this facility online – all orders are despatched as soon as possible after they are received.<\/p><p><\/p><p><em><strong>BUT<\/strong><\/em> with phones orders you are welcome to ask for a delay in despatch. Please contact our telephone sales department on <strong>020 8670 5883<\/strong> between 9am – 5pm weekdays.<\/p>",
+            "row_content": "<p>Sorry, we don’t really offer this facility online – all orders are despatched as soon as possible after they are received.</p><p></p><p><em><strong>BUT</strong></em> with phones orders you are welcome to ask for a delay in despatch. Please contact our telephone sales department on <strong>020 8670 5883</strong> between 9am – 5pm weekdays.</p>",
             "page": ""
           }
         },
@@ -261,7 +261,7 @@
           "settings": {
             "heading": "Will I receive an invoice with my order?",
             "icon": "check_mark",
-            "row_content": "<p>A confirmation of your order and an invoice will automatically be sent to you by email. (it won’t be included with the order as standard.) If you would like to receive an invoice with your items, please state this in the ‘Special Instructions’ field of the shopping cart.<\/p><p><\/p><p>You will also receive a packing slip with your purchase, that includes your order number. <\/p><p><\/p><p>Email is our preferred method of communication. If you don’t have an email, you can request that we send your invoice and packing slip with your order.<\/p>",
+            "row_content": "<p>A confirmation of your order and an invoice will automatically be sent to you by email. (it won’t be included with the order as standard.) If you would like to receive an invoice with your items, please state this in the ‘Special Instructions’ field of the shopping cart.</p><p></p><p>You will also receive a packing slip with your purchase, that includes your order number. </p><p></p><p>Email is our preferred method of communication. If you don’t have an email, you can request that we send your invoice and packing slip with your order.</p>",
             "page": ""
           }
         },
@@ -270,7 +270,7 @@
           "settings": {
             "heading": "An item I saw recently on the web site is no longer listed - can I still order it?",
             "icon": "check_mark",
-            "row_content": "<p>Our listings are updated in real-time to show only in-stock items, so if an item goes out of stock, it will no longer appear and cannot be ordered. We don’t back-order out-of-stock items for customers.<\/p>",
+            "row_content": "<p>Our listings are updated in real-time to show only in-stock items, so if an item goes out of stock, it will no longer appear and cannot be ordered. We don’t back-order out-of-stock items for customers.</p>",
             "page": ""
           }
         },
@@ -279,7 +279,7 @@
           "settings": {
             "heading": "If a product is not listed, can you order it in for me?",
             "icon": "check_mark",
-            "row_content": "<p>Sorry, no – we don’t currently place special orders for customers.<\/p>",
+            "row_content": "<p>Sorry, no – we don’t currently place special orders for customers.</p>",
             "page": ""
           }
         },
@@ -288,7 +288,7 @@
           "settings": {
             "heading": "Can I add items to an order I have already placed?",
             "icon": "check_mark",
-            "row_content": "<p>As we despatch orders very quickly, unfortunately it is not possible to add to an existing order. If you require further items, you must place a new order via the shopping cart. (The extra postage cost of sending two separate orders is relatively small.)<\/p>",
+            "row_content": "<p>As we despatch orders very quickly, unfortunately it is not possible to add to an existing order. If you require further items, you must place a new order via the shopping cart. (The extra postage cost of sending two separate orders is relatively small.)</p>",
             "page": ""
           }
         },
@@ -297,7 +297,7 @@
           "settings": {
             "heading": "What exactly happens after ordering?",
             "icon": "check_mark",
-            "row_content": "<p>We endeavor to dispatch 95% of all your orders within 24 hrs for next day delivery in the UK. (Europe: 2-5 days)<\/p><p><\/p><p>When you receive confirmation of your order by email, this indicates that we have received your order. It does not indicate that a contract exists between us.<\/p><p><\/p><p>We will indicate acceptance of your order, and hence a contract between us, when we send you an invoice, by email. We have included this term to protect us in the case that a mistake has been made in pricing, we have inadvertently under-priced goods, or we are no longer able to supply a particular product for some reason. In the case of a change of price, we will always contact you first to ensure that the price is acceptable.<\/p>",
+            "row_content": "<p>We endeavor to dispatch 95% of all your orders within 24 hrs for next day delivery in the UK. (Europe: 2-5 days)</p><p></p><p>When you receive confirmation of your order by email, this indicates that we have received your order. It does not indicate that a contract exists between us.</p><p></p><p>We will indicate acceptance of your order, and hence a contract between us, when we send you an invoice, by email. We have included this term to protect us in the case that a mistake has been made in pricing, we have inadvertently under-priced goods, or we are no longer able to supply a particular product for some reason. In the case of a change of price, we will always contact you first to ensure that the price is acceptable.</p>",
             "page": ""
           }
         }
@@ -341,42 +341,42 @@
           "type": "faq_item",
           "settings": {
             "faq_header": "What forms of payment do you accept?",
-            "faq_message": "<p>We accept <strong>PayPal<\/strong>, <strong>Visa, Visa Debit, Visa Electron, Mastercard and MasterCard Debit payments all secured though Opayo*<\/strong><\/p><p><\/p><p>We do not currently accept money orders, American Express or Diners Club cards.<\/p><p><\/p><p>Bank transfers can be accepted for larger orders – please contact our telephone sales department on <strong>020 8670 5883.<\/strong><\/p><p><\/p><p><strong>For telephone order only<\/strong><br\/>You may send your credit or debit card information via phone or snail mail but not by email please as it is not secure, but we believe shopping using SagePay* is far more secure.<\/p><p><\/p><p><strong>*Opayo <\/strong>is the new name for SagePay. Who are one of the UK’s most trusted payment service provider (PSP). In 2019, their gateway processed £40bn worth of card payments for over 50,000 merchants, online and in-store. They changed their name because they were acquired by Elavon – a big name in payments and a subsidiary of U.S. Bank. <\/p>"
+            "faq_message": "<p>We accept <strong>PayPal</strong>, <strong>Visa, Visa Debit, Visa Electron, Mastercard and MasterCard Debit payments all secured though Opayo*</strong></p><p></p><p>We do not currently accept money orders, American Express or Diners Club cards.</p><p></p><p>Bank transfers can be accepted for larger orders – please contact our telephone sales department on <strong>020 8670 5883.</strong></p><p></p><p><strong>For telephone order only</strong><br/>You may send your credit or debit card information via phone or snail mail but not by email please as it is not secure, but we believe shopping using SagePay* is far more secure.</p><p></p><p><strong>*Opayo </strong>is the new name for SagePay. Who are one of the UK’s most trusted payment service provider (PSP). In 2019, their gateway processed £40bn worth of card payments for over 50,000 merchants, online and in-store. They changed their name because they were acquired by Elavon – a big name in payments and a subsidiary of U.S. Bank. </p>"
           }
         },
         "faq_item_Q7NeaN": {
           "type": "faq_item",
           "settings": {
             "faq_header": "When will my card be charged?",
-            "faq_message": "<p>Unlike some web sites, we only charge it when the order is picked and ready to be despatched. The card is usually charged within 24 hours of the order being received.<\/p>"
+            "faq_message": "<p>Unlike some web sites, we only charge it when the order is picked and ready to be despatched. The card is usually charged within 24 hours of the order being received.</p>"
           }
         },
         "faq_item_g8mqM6": {
           "type": "faq_item",
           "settings": {
             "faq_header": "Is ordering from Dulwich Health's web site secure?",
-            "faq_message": "<p>Yes – the shopping cart area of the site is encrypted to ensure the security of all orders. You can view Dulwich Health’s security certificate by clicking on the padlock icon in your web browser, while in the shopping cart.<\/p><p><\/p><p>Our credit card payments, use <strong>Opayo<\/strong> which is simple, fast and very secure.<\/p><p><\/p><p><strong>Confidential information is not kept on our computers, neither are Credit\/Debit Card details and our mailing lists will never be rented or sold.<\/strong><\/p><p><\/p><p><strong>Purchases<\/strong><br\/>You can pay by any of the credit cards you see at the base of this page.<\/p><p><br\/>If you wish to purchase over the phone then please feel free to call one of our friendly operators on <strong>+44 208 670 5883<\/strong><\/p>"
+            "faq_message": "<p>Yes – the shopping cart area of the site is encrypted to ensure the security of all orders. You can view Dulwich Health’s security certificate by clicking on the padlock icon in your web browser, while in the shopping cart.</p><p></p><p>Our credit card payments, use <strong>Opayo</strong> which is simple, fast and very secure.</p><p></p><p><strong>Confidential information is not kept on our computers, neither are Credit/Debit Card details and our mailing lists will never be rented or sold.</strong></p><p></p><p><strong>Purchases</strong><br/>You can pay by any of the credit cards you see at the base of this page.</p><p><br/>If you wish to purchase over the phone then please feel free to call one of our friendly operators on <strong>+44 208 670 5883</strong></p>"
           }
         },
         "faq_item_m3bHiN": {
           "type": "faq_item",
           "settings": {
             "faq_header": "If I order from outside the UK, will I pay customs charges?",
-            "faq_message": "<p>If you are ordering from within the UK you will pay no customs charges.<\/p><p><\/p><p><strong>International shipping<\/strong> rates cover shipping <strong>only<\/strong>. You are responsible for any import duties, fees, or taxes incurred during delivery.<\/p><p><\/p><p>Now that we are no longer in the European Union, you may have to pay customs or charges and a handling fee in the receiving country before you can claim the parcel. <\/p><p><\/p><p>Within the European Union and most other countries small packages under a certain value our allow to be delivered without charge, but some charge customs duty – please contact your national customs office regarding this subject, as the customer <em>(not Dulwich Health)<\/em> is always liable for any such charges. However, even in these countries, it is possible to avoid customs taxes by ensuring that the value of the package is less than the local tax threshold.<\/p><p><\/p><p>Unfortunately Dulwich Health has to state the value of the items on the outside of the parcel with the custom declaration form.<\/p>"
+            "faq_message": "<p>If you are ordering from within the UK you will pay no customs charges.</p><p></p><p><strong>International shipping</strong> rates cover shipping <strong>only</strong>. You are responsible for any import duties, fees, or taxes incurred during delivery.</p><p></p><p>Now that we are no longer in the European Union, you may have to pay customs or charges and a handling fee in the receiving country before you can claim the parcel. </p><p></p><p>Within the European Union and most other countries small packages under a certain value our allow to be delivered without charge, but some charge customs duty – please contact your national customs office regarding this subject, as the customer <em>(not Dulwich Health)</em> is always liable for any such charges. However, even in these countries, it is possible to avoid customs taxes by ensuring that the value of the package is less than the local tax threshold.</p><p></p><p>Unfortunately Dulwich Health has to state the value of the items on the outside of the parcel with the custom declaration form.</p>"
           }
         },
         "faq_item_Pybcjc": {
           "type": "faq_item",
           "settings": {
             "faq_header": "I am ordering from outside the UK - will VAT be deducted from my order?",
-            "faq_message": "<p>Yes – When ordering online your delivery address with determine the tax implications. Please refer to the above question about custom.<\/p>"
+            "faq_message": "<p>Yes – When ordering online your delivery address with determine the tax implications. Please refer to the above question about custom.</p>"
           }
         },
         "faq_item_XLGF3E": {
           "type": "faq_item",
           "settings": {
             "faq_header": "I am ordering from a company inside the EU - can you deduct VAT from my order?",
-            "faq_message": "<p>No – unfortunately we cannot offer this service.<\/p>"
+            "faq_message": "<p>No – unfortunately we cannot offer this service.</p>"
           }
         }
       },
@@ -389,8 +389,8 @@
         "faq_item_XLGF3E"
       ],
       "settings": {
-        "section_heading": "<p>Card Payments, Charges & Tax<\/p>",
-        "section_subheading": "<p><\/p><p><\/p>",
+        "section_heading": "<p>Card Payments, Charges & Tax</p>",
+        "section_subheading": "<p></p><p></p>",
         "heading_alignment": "left",
         "color_scheme": "",
         "padding_top": 36,
@@ -405,7 +405,7 @@
           "settings": {
             "heading": "What forms of payment do you accept?",
             "icon": "check_mark",
-            "row_content": "<p>We accept <strong>PayPal<\/strong>, <strong>Visa, Visa Debit, Visa Electron, Mastercard and MasterCard Debit payments all secured though Opayo*<\/strong><\/p><p><\/p><p>We do not currently accept money orders, American Express or Diners Club cards.<\/p><p><\/p><p>Bank transfers can be accepted for larger orders – please contact our telephone sales department on <strong>020 8670 5883.<\/strong><\/p><p><\/p><p><strong>For telephone order only<\/strong><br\/>You may send your credit or debit card information via phone or snail mail but not by email please as it is not secure, but we believe shopping using SagePay* is far more secure.<\/p><p><\/p><p><strong>*Opayo <\/strong>is the new name for SagePay. Who are one of the UK’s most trusted payment service provider (PSP). In 2019, their gateway processed £40bn worth of card payments for over 50,000 merchants, online and in-store. They changed their name because they were acquired by Elavon – a big name in payments and a subsidiary of U.S. Bank. <\/p>",
+            "row_content": "<p>We accept <strong>PayPal</strong>, <strong>Visa, Visa Debit, Visa Electron, Mastercard and MasterCard Debit payments all secured though Opayo*</strong></p><p></p><p>We do not currently accept money orders, American Express or Diners Club cards.</p><p></p><p>Bank transfers can be accepted for larger orders – please contact our telephone sales department on <strong>020 8670 5883.</strong></p><p></p><p><strong>For telephone order only</strong><br/>You may send your credit or debit card information via phone or snail mail but not by email please as it is not secure, but we believe shopping using SagePay* is far more secure.</p><p></p><p><strong>*Opayo </strong>is the new name for SagePay. Who are one of the UK’s most trusted payment service provider (PSP). In 2019, their gateway processed £40bn worth of card payments for over 50,000 merchants, online and in-store. They changed their name because they were acquired by Elavon – a big name in payments and a subsidiary of U.S. Bank. </p>",
             "page": ""
           }
         },
@@ -414,7 +414,7 @@
           "settings": {
             "heading": "When will my card be charged?",
             "icon": "check_mark",
-            "row_content": "<p>Unlike some web sites, we only charge it when the order is picked and ready to be despatched. The card is usually charged within 24 hours of the order being received.<\/p>",
+            "row_content": "<p>Unlike some web sites, we only charge it when the order is picked and ready to be despatched. The card is usually charged within 24 hours of the order being received.</p>",
             "page": ""
           }
         },
@@ -423,7 +423,7 @@
           "settings": {
             "heading": "Is ordering from Dulwich Health's web site secure?",
             "icon": "check_mark",
-            "row_content": "<p>Yes – the shopping cart area of the site is encrypted to ensure the security of all orders. You can view Dulwich Health’s security certificate by clicking on the padlock icon in your web browser, while in the shopping cart.<\/p><p><\/p><p>Our credit card payments, use <strong>Opayo<\/strong> which is simple, fast and very secure.<\/p><p><\/p><p><strong>Confidential information is not kept on our computers, neither are Credit\/Debit Card details and our mailing lists will never be rented or sold.<\/strong><\/p><p><\/p><p><strong>Purchases<\/strong><br\/>You can pay by any of the credit cards you see at the base of this page.<\/p><p><br\/>If you wish to purchase over the phone then please feel free to call one of our friendly operators on <strong>+44 208 670 5883<\/strong><\/p>",
+            "row_content": "<p>Yes – the shopping cart area of the site is encrypted to ensure the security of all orders. You can view Dulwich Health’s security certificate by clicking on the padlock icon in your web browser, while in the shopping cart.</p><p></p><p>Our credit card payments, use <strong>Opayo</strong> which is simple, fast and very secure.</p><p></p><p><strong>Confidential information is not kept on our computers, neither are Credit/Debit Card details and our mailing lists will never be rented or sold.</strong></p><p></p><p><strong>Purchases</strong><br/>You can pay by any of the credit cards you see at the base of this page.</p><p><br/>If you wish to purchase over the phone then please feel free to call one of our friendly operators on <strong>+44 208 670 5883</strong></p>",
             "page": ""
           }
         },
@@ -432,7 +432,7 @@
           "settings": {
             "heading": "If I order from outside the UK, will I pay customs charges?",
             "icon": "check_mark",
-            "row_content": "<p>If you are ordering from within the UK you will pay no customs charges.<\/p><p><\/p><p><strong>International shipping<\/strong> rates cover shipping <strong>only<\/strong>. You are responsible for any import duties, fees, or taxes incurred during delivery.<\/p><p><\/p><p>Now that we are no longer in the European Union, you may have to pay customs or charges and a handling fee in the receiving country before you can claim the parcel. <\/p><p><\/p><p>Within the European Union and most other countries small packages under a certain value our allow to be delivered without charge, but some charge customs duty – please contact your national customs office regarding this subject, as the customer <em>(not Dulwich Health)<\/em> is always liable for any such charges. However, even in these countries, it is possible to avoid customs taxes by ensuring that the value of the package is less than the local tax threshold.<\/p><p><\/p><p>Unfortunately Dulwich Health has to state the value of the items on the outside of the parcel with the custom declaration form.<\/p>",
+            "row_content": "<p>If you are ordering from within the UK you will pay no customs charges.</p><p></p><p><strong>International shipping</strong> rates cover shipping <strong>only</strong>. You are responsible for any import duties, fees, or taxes incurred during delivery.</p><p></p><p>Now that we are no longer in the European Union, you may have to pay customs or charges and a handling fee in the receiving country before you can claim the parcel. </p><p></p><p>Within the European Union and most other countries small packages under a certain value our allow to be delivered without charge, but some charge customs duty – please contact your national customs office regarding this subject, as the customer <em>(not Dulwich Health)</em> is always liable for any such charges. However, even in these countries, it is possible to avoid customs taxes by ensuring that the value of the package is less than the local tax threshold.</p><p></p><p>Unfortunately Dulwich Health has to state the value of the items on the outside of the parcel with the custom declaration form.</p>",
             "page": ""
           }
         },
@@ -441,7 +441,7 @@
           "settings": {
             "heading": "I am ordering from outside the UK - will VAT be deducted from my order?",
             "icon": "check_mark",
-            "row_content": "<p>Yes – When ordering online your delivery address with determine the tax implications. Please refer to the above question about custom.<\/p>",
+            "row_content": "<p>Yes – When ordering online your delivery address with determine the tax implications. Please refer to the above question about custom.</p>",
             "page": ""
           }
         },
@@ -450,7 +450,7 @@
           "settings": {
             "heading": "I am ordering from a company inside the EU - can you deduct VAT from my order?",
             "icon": "check_mark",
-            "row_content": "<p>No – unfortunately we cannot offer this service.<\/p>",
+            "row_content": "<p>No – unfortunately we cannot offer this service.</p>",
             "page": ""
           }
         }
@@ -486,42 +486,42 @@
           "type": "faq_item",
           "settings": {
             "faq_header": "What are the Shipping Costs?",
-            "faq_message": "<h3><strong>Delivery Costs<\/strong><\/h3><p>Our delivery and handling costs are added to your order amount at the check out once we know where you want the item delivered.<\/p><p><\/p><h4><strong>UK Standard Postage<\/strong><\/h4><p><strong>Royal Mail 48:<\/strong> £3.5<br\/><strong>Royal Mail Special Delivery:<\/strong> £9<br\/><strong>Royal Mail Special Saturday Delivery:<\/strong> £11<br\/><strong>Books:<\/strong> FREE OF CHARGE<br\/><strong>RadiTech:<\/strong> £15 + £7.5 for each additional item<\/p><p><\/p><h4><strong>Europe Postage<\/strong><\/h4><p><strong>Supplements\/Books:<\/strong> £10 + £1 for each additional item<br\/><strong>RadiTech:<\/strong> £25 + £5 for each additional item<\/p><p><\/p><h4><strong>International Postage<\/strong><\/h4><p><strong>Supplements\/Books:<\/strong> £15 + £1 for each additional item<br\/><strong>RadiTech:<\/strong> £45 + £20 for each additional item<\/p>"
+            "faq_message": "<h3><strong>Delivery Costs</strong></h3><p>Our delivery and handling costs are added to your order amount at the check out once we know where you want the item delivered.</p><p></p><h4><strong>UK Standard Postage</strong></h4><p><strong>Royal Mail 48:</strong> £3.5<br/><strong>Royal Mail Special Delivery:</strong> £9<br/><strong>Books:</strong> FREE OF CHARGE<br/><strong>RadiTech:</strong> £15 + £7.5 for each additional item</p><p></p><h4><strong>Europe Postage</strong></h4><p><strong>Supplements/Books:</strong> £12 + £1 for each additional item<br/><strong>RadiTech:</strong> £25 + £5 for each additional item</p><p></p><h4><strong>International Postage</strong></h4><p><strong>Supplements/Books:</strong> £18 + £1 for each additional item<br/><strong>RadiTech:</strong> £45 + £20 for each additional item</p>"
           }
         },
         "faq_item_U6Cec8": {
           "type": "faq_item",
           "settings": {
             "faq_header": "Can I order from outside the UK?",
-            "faq_message": "<p>You can order and get our products from almost anywhere in the world.<\/p><p><\/p><p>The shipping costs are added to your order amount at the check out once we know where you want the item delivered.<\/p><p><\/p><p><strong>International shipping<\/strong> rates cover shipping <strong>only<\/strong>. You are responsible for any import duties, fees, or taxes incurred during delivery.<\/p><p><\/p><p><strong>Ordering within the European Union<br\/><\/strong>Now that the UK is no longer in the European Union, you may have to pay customs or charges and a handling fee in the receiving country before you can claim the parcel. <\/p><p><\/p><p>Within the European Union and most other countries small packages under a certain value our allow to be delivered without charge, but some charge customs duty – please contact your national customs office regarding this subject, as the customer <em>(not Dulwich Health)<\/em> is always liable for any such charges. However, even in these countries, it is possible to avoid customs taxes by ensuring that the value of the package is less than the local tax threshold.<\/p><p><\/p><p>Unfortunately Dulwich Health has to state the value of the items on the outside of the parcel with the custom declaration form.<\/p><p><\/p><p>Over the last 30 years our products have been exported to more than 45 countries worldwide.<\/p>"
+            "faq_message": "<p>You can order and get our products from almost anywhere in the world.</p><p></p><p>The shipping costs are added to your order amount at the check out once we know where you want the item delivered.</p><p></p><p><strong>International shipping</strong> rates cover shipping <strong>only</strong>. You are responsible for any import duties, fees, or taxes incurred during delivery.</p><p></p><p><strong>Ordering within the European Union<br/></strong>Now that the UK is no longer in the European Union, you may have to pay customs or charges and a handling fee in the receiving country before you can claim the parcel. </p><p></p><p>Within the European Union and most other countries small packages under a certain value our allow to be delivered without charge, but some charge customs duty – please contact your national customs office regarding this subject, as the customer <em>(not Dulwich Health)</em> is always liable for any such charges. However, even in these countries, it is possible to avoid customs taxes by ensuring that the value of the package is less than the local tax threshold.</p><p></p><p>Unfortunately Dulwich Health has to state the value of the items on the outside of the parcel with the custom declaration form.</p><p></p><p>Over the last 30 years our products have been exported to more than 45 countries worldwide.</p>"
           }
         },
         "faq_item_rH8mXW": {
           "type": "faq_item",
           "settings": {
             "faq_header": "When will the package be delivered?",
-            "faq_message": "<p>All orders received by 2:00 pm are despatched on the same day and orders received after this time are despatched the next business day.<\/p><p><\/p><p>UK orders are sent out by Royal Mail 48 and delivered within two to three working days. The option for the order to be sent Royal Mail Special Delivery can be selected at checkout and should be received the next day.<\/p><p><\/p><p>International orders take varying time depending on the country.<\/p><p><\/p><p>Depending on your location, orders take varying times to arrive.<\/p><p><\/p><p><strong>Note: <\/strong>If you live in an area experiencing an unexpected service delay (severe weather, natural disasters, unscheduled events, etc.), please add at least three to four business days to the estimated delivery date of your order.<\/p>"
+            "faq_message": "<p>All orders received by 2:00 pm are despatched on the same day and orders received after this time are despatched the next business day.</p><p></p><p>UK orders are sent out by Royal Mail 48 and delivered within two to three working days. The option for the order to be sent Royal Mail Special Delivery can be selected at checkout and should be received the next day.</p><p></p><p>International orders take varying time depending on the country.</p><p></p><p>Depending on your location, orders take varying times to arrive.</p><p></p><p><strong>Note: </strong>If you live in an area experiencing an unexpected service delay (severe weather, natural disasters, unscheduled events, etc.), please add at least three to four business days to the estimated delivery date of your order.</p>"
           }
         },
         "faq_item_eYVtkM": {
           "type": "faq_item",
           "settings": {
             "faq_header": "What if I receive a faulty product?",
-            "faq_message": "<p>You will receive an immediate e-mail confirmation of each order, stating the items ordered and the total cost.<\/p>"
+            "faq_message": "<p>You will receive an immediate e-mail confirmation of each order, stating the items ordered and the total cost.</p>"
           }
         },
         "faq_item_QiwFUr": {
           "type": "faq_item",
           "settings": {
             "faq_header": "Can you guarantee delivery on or by a particular date?",
-            "faq_message": "<p>Unfortunately not – we make all efforts to despatch orders as quickly as possible, but exact delivery dates are beyond our control.<\/p>"
+            "faq_message": "<p>Unfortunately not – we make all efforts to despatch orders as quickly as possible, but exact delivery dates are beyond our control.</p>"
           }
         },
         "faq_item_4iwdAM": {
           "type": "faq_item",
           "settings": {
             "faq_header": "I have ordered and have received only part of my order - why is this?",
-            "faq_message": "<p>Due to UK Post Office weight limits, we sometimes split larger orders into separate packages.<\/p><p><\/p><p>In the case of RadiTech orders, they are sometimes dispatched from a separate address.  <\/p><p><\/p><p>Often they will arrive simultaneously, but sometimes the second package will arrive a few days later. If the order is split in this way, we mark the invoice “Parcel 1 of 2” to show that the order has been split.<\/p>"
+            "faq_message": "<p>Due to UK Post Office weight limits, we sometimes split larger orders into separate packages.</p><p></p><p>In the case of RadiTech orders, they are sometimes dispatched from a separate address.  </p><p></p><p>Often they will arrive simultaneously, but sometimes the second package will arrive a few days later. If the order is split in this way, we mark the invoice “Parcel 1 of 2” to show that the order has been split.</p>"
           }
         }
       },
@@ -534,8 +534,8 @@
         "faq_item_4iwdAM"
       ],
       "settings": {
-        "section_heading": "<p>Postage & Delivery<\/p>",
-        "section_subheading": "<p><\/p><p><\/p>",
+        "section_heading": "<p>Postage & Delivery</p>",
+        "section_subheading": "<p></p><p></p>",
         "heading_alignment": "left",
         "color_scheme": "",
         "padding_top": 36,
@@ -550,7 +550,7 @@
           "settings": {
             "heading": "What are the Shipping Costs?",
             "icon": "check_mark",
-            "row_content": "<h3>Delivery Costs<\/h3><p>Our delivery and handling costs are added to your order amount at the check out once we know where you want the item delivered.<\/p><p><\/p><h4>UK Standard Postage<\/h4><p><strong>Royal Mail 48:<\/strong> £3.5<br\/><strong>Royal Mail Special Delivery:<\/strong> £9<br\/><strong>Royal Mail Special Saturday Delivery:<\/strong> £11<br\/><strong>Books:<\/strong> FREE OF CHARGE<br\/><strong>RadiTech:<\/strong> £15 + £7.5 for each additional item<\/p><p><\/p><h4>Europe Postage<\/h4><p><strong>Supplements\/Books:<\/strong> £10 + £1 for each additional item<br\/><strong>RadiTech:<\/strong> £25 + £5 for each additional item<\/p><p><\/p><h4>International Postage<\/h4><p><strong>Supplements\/Books:<\/strong> £15 + £1 for each additional item<br\/><strong>RadiTech:<\/strong> £45 + £20 for each additional item<\/p>",
+            "row_content": "<h3>Delivery Costs</h3><p>Our delivery and handling costs are added to your order amount at the check out once we know where you want the item delivered.</p><p></p><h4>UK Standard Postage</h4><p><strong>Royal Mail 48:</strong> £3.5<br/><strong>Royal Mail Special Delivery:</strong> £9<br/><strong>Royal Mail Special Saturday Delivery:</strong> £11<br/><strong>Books:</strong> FREE OF CHARGE<br/><strong>RadiTech:</strong> £15 + £7.5 for each additional item</p><p></p><h4>Europe Postage</h4><p><strong>Supplements/Books:</strong> £10 + £1 for each additional item<br/><strong>RadiTech:</strong> £25 + £5 for each additional item</p><p></p><h4>International Postage</h4><p><strong>Supplements/Books:</strong> £15 + £1 for each additional item<br/><strong>RadiTech:</strong> £45 + £20 for each additional item</p>",
             "page": ""
           }
         },
@@ -559,7 +559,7 @@
           "settings": {
             "heading": "Can I order from outside the UK?",
             "icon": "check_mark",
-            "row_content": "<p>You can order and get our products from almost anywhere in the world.<\/p><p><\/p><p>The shipping costs are added to your order amount at the check out once we know where you want the item delivered.<\/p><p><\/p><p><strong>International shipping<\/strong> rates cover shipping <strong>only<\/strong>. You are responsible for any import duties, fees, or taxes incurred during delivery.<\/p><p><\/p><p><strong>Ordering within the European Union<br\/><\/strong>Now that the UK is no longer in the European Union, you may have to pay customs or charges and a handling fee in the receiving country before you can claim the parcel. <\/p><p><\/p><p>Within the European Union and most other countries small packages under a certain value our allow to be delivered without charge, but some charge customs duty – please contact your national customs office regarding this subject, as the customer <em>(not Dulwich Health)<\/em> is always liable for any such charges. However, even in these countries, it is possible to avoid customs taxes by ensuring that the value of the package is less than the local tax threshold.<\/p><p><\/p><p>Unfortunately Dulwich Health has to state the value of the items on the outside of the parcel with the custom declaration form.<\/p><p><\/p><p>Over the last 30 years our products have been exported to more than 45 countries worldwide.<\/p>",
+            "row_content": "<p>You can order and get our products from almost anywhere in the world.</p><p></p><p>The shipping costs are added to your order amount at the check out once we know where you want the item delivered.</p><p></p><p><strong>International shipping</strong> rates cover shipping <strong>only</strong>. You are responsible for any import duties, fees, or taxes incurred during delivery.</p><p></p><p><strong>Ordering within the European Union<br/></strong>Now that the UK is no longer in the European Union, you may have to pay customs or charges and a handling fee in the receiving country before you can claim the parcel. </p><p></p><p>Within the European Union and most other countries small packages under a certain value our allow to be delivered without charge, but some charge customs duty – please contact your national customs office regarding this subject, as the customer <em>(not Dulwich Health)</em> is always liable for any such charges. However, even in these countries, it is possible to avoid customs taxes by ensuring that the value of the package is less than the local tax threshold.</p><p></p><p>Unfortunately Dulwich Health has to state the value of the items on the outside of the parcel with the custom declaration form.</p><p></p><p>Over the last 30 years our products have been exported to more than 45 countries worldwide.</p>",
             "page": ""
           }
         },
@@ -568,7 +568,7 @@
           "settings": {
             "heading": "When will the package be delivered?",
             "icon": "check_mark",
-            "row_content": "<p>All orders received by 2:00 pm are despatched on the same day and orders received after this time are despatched the next business day.<\/p><p><\/p><p>UK orders are sent out by Royal Mail 48 and delivered within two to three working days. The option for the order to be sent Royal Mail Special Delivery can be selected at checkout and should be received the next day.<\/p><p><\/p><p>International orders take varying time depending on the country.<\/p><p><\/p><p>Depending on your location, orders take varying times to arrive.<\/p><p><\/p><p><strong>Note: <\/strong>If you live in an area experiencing an unexpected service delay (severe weather, natural disasters, unscheduled events, etc.), please add at least three to four business days to the estimated delivery date of your order.<\/p>",
+            "row_content": "<p>All orders received by 2:00 pm are despatched on the same day and orders received after this time are despatched the next business day.</p><p></p><p>UK orders are sent out by Royal Mail 48 and delivered within two to three working days. The option for the order to be sent Royal Mail Special Delivery can be selected at checkout and should be received the next day.</p><p></p><p>International orders take varying time depending on the country.</p><p></p><p>Depending on your location, orders take varying times to arrive.</p><p></p><p><strong>Note: </strong>If you live in an area experiencing an unexpected service delay (severe weather, natural disasters, unscheduled events, etc.), please add at least three to four business days to the estimated delivery date of your order.</p>",
             "page": ""
           }
         },
@@ -577,7 +577,7 @@
           "settings": {
             "heading": "What if I receive a faulty product?",
             "icon": "check_mark",
-            "row_content": "<p>You will receive an immediate e-mail confirmation of each order, stating the items ordered and the total cost.<\/p>",
+            "row_content": "<p>You will receive an immediate e-mail confirmation of each order, stating the items ordered and the total cost.</p>",
             "page": ""
           }
         },
@@ -586,7 +586,7 @@
           "settings": {
             "heading": "Can you guarantee delivery on or by a particular date?",
             "icon": "check_mark",
-            "row_content": "<p>Unfortunately not – we make all efforts to despatch orders as quickly as possible, but exact delivery dates are beyond our control.<\/p>",
+            "row_content": "<p>Unfortunately not – we make all efforts to despatch orders as quickly as possible, but exact delivery dates are beyond our control.</p>",
             "page": ""
           }
         },
@@ -595,7 +595,7 @@
           "settings": {
             "heading": "I have ordered and have received only part of my order - why is this?",
             "icon": "check_mark",
-            "row_content": "<p>Due to UK Post Office weight limits, we sometimes split larger orders into separate packages.<\/p><p><\/p><p>In the case of RadiTech orders, they are sometimes dispatched from a separate address.  <\/p><p><\/p><p>Often they will arrive simultaneously, but sometimes the second package will arrive a few days later. If the order is split in this way, we mark the invoice “Parcel 1 of 2” to show that the order has been split.<\/p>",
+            "row_content": "<p>Due to UK Post Office weight limits, we sometimes split larger orders into separate packages.</p><p></p><p>In the case of RadiTech orders, they are sometimes dispatched from a separate address.  </p><p></p><p>Often they will arrive simultaneously, but sometimes the second package will arrive a few days later. If the order is split in this way, we mark the invoice “Parcel 1 of 2” to show that the order has been split.</p>",
             "page": ""
           }
         }
@@ -631,28 +631,28 @@
           "type": "faq_item",
           "settings": {
             "faq_header": "Can you supply wholesale orders to shops and distributors?",
-            "faq_message": "<p>We can offer wholesale accounts for most items. Contact us via email at <a href=\"mailto:shop@dulwichhealth.co.uk\"><em><strong>shop@dulwichhealth.co.uk<\/strong><\/em><\/a>  to discuss your requirements.<\/p>"
+            "faq_message": "<p>We can offer wholesale accounts for most items. Contact us via email at <a href=\"mailto:shop@dulwichhealth.co.uk\"><em><strong>shop@dulwichhealth.co.uk</strong></em></a>  to discuss your requirements.</p>"
           }
         },
         "faq_item_kw6t8V": {
           "type": "faq_item",
           "settings": {
             "faq_header": "Can you supply a pro-forma invoice before I order?",
-            "faq_message": "<p>No, we do not offer this service. However, by using the shopping cart you can see the total cost of your order before placing it.<\/p>"
+            "faq_message": "<p>No, we do not offer this service. However, by using the shopping cart you can see the total cost of your order before placing it.</p>"
           }
         },
         "faq_item_i9gU8k": {
           "type": "faq_item",
           "settings": {
             "faq_header": "Do you offer Practitioners Discounts?",
-            "faq_message": "<p>We do offer a discount schemes for Practitioners.<\/p><p><\/p><p>Practitioners should apply online to register for a discount. Click here for more details:  <a href=\"\/pages\/are-you-a-practitioner\" title=\"Are You A Practitioner?\"><strong>Are you a practitioner?<\/strong><\/a><\/p>"
+            "faq_message": "<p>We do offer a discount schemes for Practitioners.</p><p></p><p>Practitioners should apply online to register for a discount. Click here for more details:  <a href=\"/pages/are-you-a-practitioner\" title=\"Are You A Practitioner?\"><strong>Are you a practitioner?</strong></a></p>"
           }
         },
         "faq_item_KhwT6F": {
           "type": "faq_item",
           "settings": {
             "faq_header": "Do you give discounts for large orders?",
-            "faq_message": "<p>We do not operate any discount schemes for our products, but instead try to keep all prices as low as possible.<em><strong> (Apart from a 35% discount if you buy 5 or more copies of Rolf Gordon’s books)<\/strong><\/em><\/p><p><\/p><p>Practitioners should apply online to register for a discount. Click here for more details:  <a href=\"\/pages\/are-you-a-practitioner\" title=\"Are You A Practitioner?\"><strong>Are you a practitioner?<\/strong><\/a><\/p>"
+            "faq_message": "<p>We do not operate any discount schemes for our products, but instead try to keep all prices as low as possible.<em><strong> (Apart from a 35% discount if you buy 5 or more copies of Rolf Gordon’s books)</strong></em></p><p></p><p>Practitioners should apply online to register for a discount. Click here for more details:  <a href=\"/pages/are-you-a-practitioner\" title=\"Are You A Practitioner?\"><strong>Are you a practitioner?</strong></a></p>"
           }
         }
       },
@@ -663,8 +663,8 @@
         "faq_item_KhwT6F"
       ],
       "settings": {
-        "section_heading": "<p>Wholesale, Practitioner or Distributor Discount<\/p>",
-        "section_subheading": "<p><\/p><p><\/p>",
+        "section_heading": "<p>Wholesale, Practitioner or Distributor Discount</p>",
+        "section_subheading": "<p></p><p></p>",
         "heading_alignment": "left",
         "color_scheme": "",
         "padding_top": 36,
@@ -679,7 +679,7 @@
           "settings": {
             "heading": "Can you supply wholesale orders to shops and distributors?",
             "icon": "check_mark",
-            "row_content": "<p>We can offer wholesale accounts for most items. Contact us via email at <a href=\"mailto:shop@dulwichhealth.co.uk\"><em><strong>shop@dulwichhealth.co.uk<\/strong><\/em><\/a>  to discuss your requirements.<\/p>",
+            "row_content": "<p>We can offer wholesale accounts for most items. Contact us via email at <a href=\"mailto:shop@dulwichhealth.co.uk\"><em><strong>shop@dulwichhealth.co.uk</strong></em></a>  to discuss your requirements.</p>",
             "page": ""
           }
         },
@@ -688,7 +688,7 @@
           "settings": {
             "heading": "Can you supply a pro-forma invoice before I order?",
             "icon": "check_mark",
-            "row_content": "<p>No, we do not offer this service. However, by using the shopping cart you can see the total cost of your order before placing it.<\/p>",
+            "row_content": "<p>No, we do not offer this service. However, by using the shopping cart you can see the total cost of your order before placing it.</p>",
             "page": ""
           }
         },
@@ -697,7 +697,7 @@
           "settings": {
             "heading": "Do you offer Practitioners Discounts?",
             "icon": "check_mark",
-            "row_content": "<p>We do offer a discount schemes for Practitioners.<\/p><p><\/p><p>Practitioners should apply online to register for a discount. Click here for more details:  <a href=\"https:\/\/www.dulwichhealth.co.uk\/are-you-a-practitioner\/?v=13b5bfe96f3e\"><strong>Are you a practitioner?<\/strong><\/a><\/p>",
+            "row_content": "<p>We do offer a discount schemes for Practitioners.</p><p></p><p>Practitioners should apply online to register for a discount. Click here for more details:  <a href=\"https://www.dulwichhealth.co.uk/are-you-a-practitioner/?v=13b5bfe96f3e\"><strong>Are you a practitioner?</strong></a></p>",
             "page": ""
           }
         },
@@ -706,7 +706,7 @@
           "settings": {
             "heading": "Do you give discounts for large orders?",
             "icon": "check_mark",
-            "row_content": "<p>We do not operate any discount schemes for our products, but instead try to keep all prices as low as possible.<em><strong> (Apart from a 35% discount if you buy 5 or more copies of Rolf Gordon’s books)<\/strong><\/em><\/p><p><\/p><p>Practitioners should apply online to register for a discount. Click here for more details:  <a href=\"\/pages\/are-you-a-practitioner\" title=\"Are You A Practitioner?\"><strong>Are you a practitioner?<\/strong><\/a><\/p>",
+            "row_content": "<p>We do not operate any discount schemes for our products, but instead try to keep all prices as low as possible.<em><strong> (Apart from a 35% discount if you buy 5 or more copies of Rolf Gordon’s books)</strong></em></p><p></p><p>Practitioners should apply online to register for a discount. Click here for more details:  <a href=\"/pages/are-you-a-practitioner\" title=\"Are You A Practitioner?\"><strong>Are you a practitioner?</strong></a></p>",
             "page": ""
           }
         }
@@ -740,35 +740,35 @@
           "type": "faq_item",
           "settings": {
             "faq_header": "What is your Returns Policy?",
-            "faq_message": "<p><strong>Our Returns Policy<\/strong><br\/>Your rights to return goods are protected under the EU Distance Selling Directive which can be found at: <a href=\"http:\/\/www.hmso.gov.uk\/si\/si2000\/20002334.htm\">http:\/\/www.hmso.gov.uk\/si\/si2000\/20002334.htm<\/a><\/p><p><\/p><p><strong>In a nutshell the directive says…<\/strong><\/p><p><\/p><p><strong>Online, mail and telephone orders customers<br\/><\/strong><em>“Online, mail and telephone order customers have the right to cancel their order for a limited time even if the goods aren’t faulty. Sales of this kind are known as ‘<\/em><a href=\"https:\/\/www.gov.uk\/online-and-distance-selling-for-businesses\"><em>distance selling<\/em><\/a><em>’.<\/em><\/p><p><\/p><p><em>You must offer a refund to customers if they’ve told you within 14 days of receiving their goods that they want to cancel. They have another 14 days to return the goods once they’ve told you.<\/em><\/p><p><\/p><p><em>You must refund the customer within 14 days of receiving the goods back. They don’t have to provide a reason.”<\/em><\/p><p><\/p><p><strong>Reaching Us<br\/><\/strong>If you need to reach us, please email us using the link on the contact page, alternatively, you can call on <strong>020 8670 5883<\/strong> (International +44 20 8670 5883) or write to us at: <strong>2 Grecian Crescent, London SE19 1HH, United Kingdom<\/strong><\/p>"
+            "faq_message": "<p><strong>Our Returns Policy</strong><br/>Your rights to return goods are protected under the EU Distance Selling Directive which can be found at: <a href=\"http://www.hmso.gov.uk/si/si2000/20002334.htm\">http://www.hmso.gov.uk/si/si2000/20002334.htm</a></p><p></p><p><strong>In a nutshell the directive says…</strong></p><p></p><p><strong>Online, mail and telephone orders customers<br/></strong><em>“Online, mail and telephone order customers have the right to cancel their order for a limited time even if the goods aren’t faulty. Sales of this kind are known as ‘</em><a href=\"https://www.gov.uk/online-and-distance-selling-for-businesses\"><em>distance selling</em></a><em>’.</em></p><p></p><p><em>You must offer a refund to customers if they’ve told you within 14 days of receiving their goods that they want to cancel. They have another 14 days to return the goods once they’ve told you.</em></p><p></p><p><em>You must refund the customer within 14 days of receiving the goods back. They don’t have to provide a reason.”</em></p><p></p><p><strong>Reaching Us<br/></strong>If you need to reach us, please email us using the link on the contact page, alternatively, you can call on <strong>020 8670 5883</strong> (International +44 20 8670 5883) or write to us at: <strong>2 Grecian Crescent, London SE19 1HH, United Kingdom</strong></p>"
           }
         },
         "faq_item_XyNLXx": {
           "type": "faq_item",
           "settings": {
             "faq_header": "What if I do not like the products I have ordered? Can I return them?",
-            "faq_message": "<p>You can return products for a refund within 30 days of delivery if not suitable. Please note that we cannot accept returns on products where the seal or packaging has been broken.<\/p>"
+            "faq_message": "<p>You can return products for a refund within 30 days of delivery if not suitable. Please note that we cannot accept returns on products where the seal or packaging has been broken.</p>"
           }
         },
         "faq_item_yxdXPC": {
           "type": "faq_item",
           "settings": {
             "faq_header": "What if my order is lost in transit?",
-            "faq_message": "<p>All orders are insured, so in the case of an order not arriving, we can issue a replacement package. In the case of UK orders, 10 calendar days must elapse after the despatch date before we consider the package to be missing; for other countries, one month must pass, except France, Italy and Africa, for which six weeks must pass.<\/p><p><\/p><p>After this time, please contact us via our customer enquiry form to report the missing order. Please note: (i) Before a replacement package can be sent, we will require you to contact your local postal delivery office to check that the item is not awaiting collection. (In the UK, details of your local delivery office can be obtained from Royal Mail Customer Services on 08457 740740.) (ii) If we suspect that a customer’s package has been stolen in the post, we reserve the right to refuse to supply further orders.<\/p>"
+            "faq_message": "<p>All orders are insured, so in the case of an order not arriving, we can issue a replacement package. In the case of UK orders, 10 calendar days must elapse after the despatch date before we consider the package to be missing; for other countries, one month must pass, except France, Italy and Africa, for which six weeks must pass.</p><p></p><p>After this time, please contact us via our customer enquiry form to report the missing order. Please note: (i) Before a replacement package can be sent, we will require you to contact your local postal delivery office to check that the item is not awaiting collection. (In the UK, details of your local delivery office can be obtained from Royal Mail Customer Services on 08457 740740.) (ii) If we suspect that a customer’s package has been stolen in the post, we reserve the right to refuse to supply further orders.</p>"
           }
         },
         "faq_item_XhdLag": {
           "type": "faq_item",
           "settings": {
             "faq_header": "What if my order is damaged in transit?",
-            "faq_message": "<p>Orders are insured, so in the case of any items arriving damaged, we can issue a replacement without charge. Please contact us via our customer services enquiry form. We will issue you with a returns number and require you to return the damaged item(s), but you will be reimbursed for your return postage. Please do not return damaged items to us without contacting us first.<\/p>"
+            "faq_message": "<p>Orders are insured, so in the case of any items arriving damaged, we can issue a replacement without charge. Please contact us via our customer services enquiry form. We will issue you with a returns number and require you to return the damaged item(s), but you will be reimbursed for your return postage. Please do not return damaged items to us without contacting us first.</p>"
           }
         },
         "faq_item_QwBdHt": {
           "type": "faq_item",
           "settings": {
             "faq_header": "What if I receive a faulty product?",
-            "faq_message": "<p>We will replace any faulty item free of charge. Please contact us via our customer services enquiry form. We will issue you with a returns number and will require you to return the faulty item(s), but you will be reimbursed for your return postage. Please do not return faulty items to us without contacting us first.<\/p>"
+            "faq_message": "<p>We will replace any faulty item free of charge. Please contact us via our customer services enquiry form. We will issue you with a returns number and will require you to return the faulty item(s), but you will be reimbursed for your return postage. Please do not return faulty items to us without contacting us first.</p>"
           }
         }
       },
@@ -780,8 +780,8 @@
         "faq_item_QwBdHt"
       ],
       "settings": {
-        "section_heading": "<p>Returns & Faulty Products<\/p>",
-        "section_subheading": "<p><\/p><p><\/p>",
+        "section_heading": "<p>Returns & Faulty Products</p>",
+        "section_subheading": "<p></p><p></p>",
         "heading_alignment": "left",
         "color_scheme": "",
         "padding_top": 36,
@@ -796,7 +796,7 @@
           "settings": {
             "heading": "What is your Returns Policy?",
             "icon": "check_mark",
-            "row_content": "<p><strong>Our Returns Policy<\/strong><br\/>Your rights to return goods are protected under the EU Distance Selling Directive which can be found at: <a href=\"http:\/\/www.hmso.gov.uk\/si\/si2000\/20002334.htm\">http:\/\/www.hmso.gov.uk\/si\/si2000\/20002334.htm<\/a><\/p><p><\/p><p><strong>In a nutshell the directive says…<\/strong><\/p><p><\/p><p><strong>Online, mail and telephone orders customers<br\/><\/strong><em>“Online, mail and telephone order customers have the right to cancel their order for a limited time even if the goods aren’t faulty. Sales of this kind are known as ‘<\/em><a href=\"https:\/\/www.gov.uk\/online-and-distance-selling-for-businesses\"><em>distance selling<\/em><\/a><em>’.<\/em><\/p><p><\/p><p><em>You must offer a refund to customers if they’ve told you within 14 days of receiving their goods that they want to cancel. They have another 14 days to return the goods once they’ve told you.<\/em><\/p><p><\/p><p><em>You must refund the customer within 14 days of receiving the goods back. They don’t have to provide a reason.”<\/em><\/p><p><\/p><p><strong>Reaching Us<br\/><\/strong>If you need to reach us, please email us using the link on the contact page, alternatively, you can call on <strong>020 8670 5883<\/strong> (International +44 20 8670 5883) or write to us at: <strong>2 Grecian Crescent, London SE19 1HH, United Kingdom<\/strong><\/p>",
+            "row_content": "<p><strong>Our Returns Policy</strong><br/>Your rights to return goods are protected under the EU Distance Selling Directive which can be found at: <a href=\"http://www.hmso.gov.uk/si/si2000/20002334.htm\">http://www.hmso.gov.uk/si/si2000/20002334.htm</a></p><p></p><p><strong>In a nutshell the directive says…</strong></p><p></p><p><strong>Online, mail and telephone orders customers<br/></strong><em>“Online, mail and telephone order customers have the right to cancel their order for a limited time even if the goods aren’t faulty. Sales of this kind are known as ‘</em><a href=\"https://www.gov.uk/online-and-distance-selling-for-businesses\"><em>distance selling</em></a><em>’.</em></p><p></p><p><em>You must offer a refund to customers if they’ve told you within 14 days of receiving their goods that they want to cancel. They have another 14 days to return the goods once they’ve told you.</em></p><p></p><p><em>You must refund the customer within 14 days of receiving the goods back. They don’t have to provide a reason.”</em></p><p></p><p><strong>Reaching Us<br/></strong>If you need to reach us, please email us using the link on the contact page, alternatively, you can call on <strong>020 8670 5883</strong> (International +44 20 8670 5883) or write to us at: <strong>2 Grecian Crescent, London SE19 1HH, United Kingdom</strong></p>",
             "page": ""
           }
         },
@@ -805,7 +805,7 @@
           "settings": {
             "heading": "What if I do not like the products I have ordered? Can I return them?",
             "icon": "check_mark",
-            "row_content": "<p>You can return products for a refund within 30 days of delivery if not suitable. Please note that we cannot accept returns on products where the seal or packaging has been broken.<\/p>",
+            "row_content": "<p>You can return products for a refund within 30 days of delivery if not suitable. Please note that we cannot accept returns on products where the seal or packaging has been broken.</p>",
             "page": ""
           }
         },
@@ -814,7 +814,7 @@
           "settings": {
             "heading": "What if my order is lost in transit?",
             "icon": "check_mark",
-            "row_content": "<p>All orders are insured, so in the case of an order not arriving, we can issue a replacement package. In the case of UK orders, 10 calendar days must elapse after the despatch date before we consider the package to be missing; for other countries, one month must pass, except France, Italy and Africa, for which six weeks must pass.<\/p><p><\/p><p>After this time, please contact us via our customer enquiry form to report the missing order. Please note: (i) Before a replacement package can be sent, we will require you to contact your local postal delivery office to check that the item is not awaiting collection. (In the UK, details of your local delivery office can be obtained from Royal Mail Customer Services on 08457 740740.) (ii) If we suspect that a customer’s package has been stolen in the post, we reserve the right to refuse to supply further orders.<\/p>",
+            "row_content": "<p>All orders are insured, so in the case of an order not arriving, we can issue a replacement package. In the case of UK orders, 10 calendar days must elapse after the despatch date before we consider the package to be missing; for other countries, one month must pass, except France, Italy and Africa, for which six weeks must pass.</p><p></p><p>After this time, please contact us via our customer enquiry form to report the missing order. Please note: (i) Before a replacement package can be sent, we will require you to contact your local postal delivery office to check that the item is not awaiting collection. (In the UK, details of your local delivery office can be obtained from Royal Mail Customer Services on 08457 740740.) (ii) If we suspect that a customer’s package has been stolen in the post, we reserve the right to refuse to supply further orders.</p>",
             "page": ""
           }
         },
@@ -823,7 +823,7 @@
           "settings": {
             "heading": "What if my order is damaged in transit?",
             "icon": "check_mark",
-            "row_content": "<p>Orders are insured, so in the case of any items arriving damaged, we can issue a replacement without charge. Please contact us via our customer services enquiry form. We will issue you with a returns number and require you to return the damaged item(s), but you will be reimbursed for your return postage. Please do not return damaged items to us without contacting us first.<\/p>",
+            "row_content": "<p>Orders are insured, so in the case of any items arriving damaged, we can issue a replacement without charge. Please contact us via our customer services enquiry form. We will issue you with a returns number and require you to return the damaged item(s), but you will be reimbursed for your return postage. Please do not return damaged items to us without contacting us first.</p>",
             "page": ""
           }
         },
@@ -832,7 +832,7 @@
           "settings": {
             "heading": "What if I receive a faulty product?",
             "icon": "check_mark",
-            "row_content": "<p>We will replace any faulty item free of charge. Please contact us via our customer services enquiry form. We will issue you with a returns number and will require you to return the faulty item(s), but you will be reimbursed for your return postage. Please do not return faulty items to us without contacting us first.<\/p>",
+            "row_content": "<p>We will replace any faulty item free of charge. Please contact us via our customer services enquiry form. We will issue you with a returns number and will require you to return the faulty item(s), but you will be reimbursed for your return postage. Please do not return faulty items to us without contacting us first.</p>",
             "page": ""
           }
         }
