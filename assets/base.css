@@ -4146,6 +4146,27 @@ shopify-accelerated-checkout-cart {
     --grid-mobile-vertical-spacing: 20px;
   }
 }
+.cart-section__cart-items .ruk_rating_snippet {
+  display: none;
+}
+.header__heading-link {
+  padding-bottom: 0;
+  padding-top: 11px;
+}
+.product-form .quantity__rules {
+  margin-top: 0;
+}
+.cart__footer .tax-note a {
+  font-size: inherit;
+  text-decoration: underline;
+}
+.cart__footer
+  .cbb-shipping-rates-calculator-chooser
+  .cbb-shipping-rates-rate-list
+  .cbb-shipping-rates-rate-item {
+  display: flex !important;
+  align-items: center;
+}
 
 /* 31-03-25 css added by sravani */
 
