@@ -225,11 +225,6 @@
     },
     "content_for_index": [],
     "blocks": {
-      "74204263759510710": {
-        "type": "shopify://apps/dcart-discount-in-cart/blocks/app-embed/731e2611-8bdf-4514-b5e4-f64f1cae3fb7",
-        "disabled": false,
-        "settings": {}
-      },
       "10274677211107884116": {
         "type": "shopify://apps/shipping-rates-calc/blocks/app-embed-block/de9da91b-8d51-4359-81df-b8b0288464c7",
         "disabled": false,
