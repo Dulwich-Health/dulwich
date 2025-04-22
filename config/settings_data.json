@@ -287,6 +287,11 @@
         "type": "shopify://apps/seoant-redirects/blocks/brokenlink-404/cc7b1996-e567-42d0-8862-356092041863",
         "disabled": false,
         "settings": {}
+      },
+      "6628239160433917566": {
+        "type": "shopify://apps/littledata-revenue-tracking/blocks/LittledataLayer/45a35ed8-a2b2-46c3-84fa-6f58497c5345",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
