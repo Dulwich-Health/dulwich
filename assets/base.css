@@ -4172,7 +4172,6 @@ shopify-accelerated-checkout-cart {
 
 .splide {
   display: flex;
-  flex-direction: column;
 }
 
 .shopify-policy__body {
@@ -4181,57 +4180,4 @@ shopify-accelerated-checkout-cart {
 
 .shopify-policy__body .rte p {
   margin: 12px 0px;
-}
-
-.product-card__title,
-.product-card__price {
-  margin: 0 0px !important;
-}
-
-.faq-red-medium {
-  color: #60919f;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 1.2;
-}
-
-.disclaimer-block-order {
-  background: rgb(252 209 147 / 50%);
-  border-color: #fcd193 !important;
-}
-
-div#shopify-section-template--25042223202570__about_us_section_xJBcEJ
-  .page-title
-  h1 {
-  text-align: left !important;
-}
-
-.page.static-page.section-template--25042222874890__about_us_section_6GGbJr-padding
-  .page-title
-  h1 {
-  text-align: left !important;
-}
-
-.page_content > * {
-  font-family: Poppins !important;
-}
-
-@media screen and (max-width: 750px) {
-  .collection .splide__arrows {
-    position: unset;
-  }
-
-  .collection .splide__arrow--prev,
-  .related-products .splide__arrow--prev,
-  cart-upsell-recommendations .splide__arrow--prev {
-    top: 40%;
-    left: -20px;
-  }
-
-  .collection .splide__arrow--next,
-  .related-products .splide__arrow--next,
-  cart-upsell-recommendations .splide__arrow--next {
-    top: 40%;
-    right: -20px;
-  }
 }
