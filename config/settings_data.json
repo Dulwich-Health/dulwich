@@ -292,6 +292,19 @@
         "type": "shopify://apps/littledata-revenue-tracking/blocks/LittledataLayer/45a35ed8-a2b2-46c3-84fa-6f58497c5345",
         "disabled": false,
         "settings": {}
+      },
+      "5133962947178206058": {
+        "type": "shopify://apps/kraken-cart-drawer/blocks/cart-drawer/395e4ebd-4534-4c0b-b7c2-4ccc91f8fe1e",
+        "disabled": false,
+        "settings": {
+          "custom_style": "",
+          "custom_script": ""
+        }
+      },
+      "12440966767595914869": {
+        "type": "shopify://apps/sales-motiv-free-gifts/blocks/app-block/790f143d-f67c-4036-9b09-2d69c24dd826",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
