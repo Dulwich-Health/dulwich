@@ -191,7 +191,6 @@
         },
         "26cad0da-0c18-4f04-9211-f8aa7a4a094c": {
           "type": "carousel_block",
-          "disabled": true,
           "settings": {
             "image_desktop": "shopify://shop_images/Banner_AlliTech.png",
             "image_mobile": "shopify://shop_images/AlliTech_Mobile_Banner.png",
