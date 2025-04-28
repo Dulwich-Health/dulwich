@@ -181,27 +181,27 @@
     "3fe7c8be-5899-4e5d-9802-e0af9980a81f": {
       "type": "slideshow",
       "blocks": {
-        "26cad0da-0c18-4f04-9211-f8aa7a4a094c": {
-          "type": "carousel_block",
-          "settings": {
-            "image_desktop": "shopify://shop_images/Founders_Day_Desktop_2025.png",
-            "image_mobile": "shopify://shop_images/Founders_Day_Mobile_2025.png",
-            "image_url": "shopify://collections/all"
-          }
-        },
         "00eb27cf-4970-4b8b-80a9-caf265729feb": {
           "type": "carousel_block",
-          "disabled": true,
           "settings": {
             "image_desktop": "shopify://shop_images/Banner_OxyTech.png",
             "image_mobile": "shopify://shop_images/OxyTech_Mobile_Banner.png",
             "image_url": "shopify://collections/oxytech"
           }
+        },
+        "26cad0da-0c18-4f04-9211-f8aa7a4a094c": {
+          "type": "carousel_block",
+          "disabled": true,
+          "settings": {
+            "image_desktop": "shopify://shop_images/Banner_AlliTech.png",
+            "image_mobile": "shopify://shop_images/AlliTech_Mobile_Banner.png",
+            "image_url": "shopify://collections/allitech"
+          }
         }
       },
       "block_order": [
-        "26cad0da-0c18-4f04-9211-f8aa7a4a094c",
-        "00eb27cf-4970-4b8b-80a9-caf265729feb"
+        "00eb27cf-4970-4b8b-80a9-caf265729feb",
+        "26cad0da-0c18-4f04-9211-f8aa7a4a094c"
       ],
       "settings": {
         "enable_autoplay": true,
