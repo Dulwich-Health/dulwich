@@ -301,10 +301,25 @@
           "custom_script": ""
         }
       },
-      "12440966767595914869": {
-        "type": "shopify://apps/sales-motiv-free-gifts/blocks/app-block/790f143d-f67c-4036-9b09-2d69c24dd826",
+      "14348518947459141286": {
+        "type": "shopify://apps/oxilayer-invoice/blocks/order_view_download_invoice/bfc5c46a-c89f-49e7-a859-28fc2c844936",
         "disabled": false,
-        "settings": {}
+        "settings": {
+          "selector": ".order h2",
+          "custom_selector": "",
+          "vertical_position": "afterend",
+          "horizontal_position": "left",
+          "clear_both": true,
+          "button_label": "Download Invoice",
+          "type": "secondary",
+          "button_color": "",
+          "button_color_hover": "",
+          "text_color": "",
+          "margin_top": 15,
+          "margin_bottom": 15,
+          "margin_left": 0,
+          "margin_right": 0
+        }
       }
     },
     "color_schemes": {
