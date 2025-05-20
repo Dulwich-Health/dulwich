@@ -4235,3 +4235,10 @@ div#shopify-section-template--25042223202570__about_us_section_xJBcEJ
     right: -20px;
   }
 }
+
+/* Blog Link styling 20-05-25 */
+
+.article-template__content a {
+  color: #60919f !important;
+  text-decoration: underline;
+}
