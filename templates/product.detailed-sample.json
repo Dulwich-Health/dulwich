@@ -147,6 +147,7 @@
         },
         "reviews_io_reviewsio_rating_output_wdzPXD": {
           "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-output/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "disabled": true,
           "settings": {}
         },
         "scroll_to_section_block_dcGqJi": {
@@ -640,6 +641,7 @@
       "blocks": {
         "reviews_io_reviewsio_polaris_NfwCmY": {
           "type": "shopify://apps/reviews-io/blocks/reviewsio-polaris/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "disabled": true,
           "settings": {
             "star": "#000000",
             "review_type": "product_review,questions",
