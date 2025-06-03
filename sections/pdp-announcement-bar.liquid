@@ -29,16 +29,23 @@
       data-perMove="1"
       data-disabledrag="true"
     >
-      <div class="splide__track md:tw-mx-auto ">
+      <div class="splide__track">
         <ul class="splide__list tw-items-center">
           {% for block in section.blocks %}
             <li class="splide__slide tw-text-center tw-items-center tw-flex pdp-announecment-block tw-flex-col tw-relative tw-gap-[1.77rem] tw-px-[0.5rem] md:tw-px-[2.5rem]">
               {% if block.settings.block_value != blank %}
                 <div class="tw-text-center">
                   {% if block.settings.link != blank %}
-                    <a href="{{ block.settings.link }}" class="tw-text-[0.85rem] md:tw-text-[1.4rem] tw-font-medium tw-font-primary tw-text-[rgba(var(--color-foreground))]">{{ block.settings.block_value | strip_html }}</a>
+                    <a
+                      href="{{ block.settings.link }}"
+                      class="tw-text-[0.85rem] md:tw-text-[1.4rem] tw-font-medium tw-font-primary tw-text-[rgba(var(--color-foreground))]"
+                    >
+                      {{- block.settings.block_value | strip_html -}}
+                    </a>
                   {% else %}
-                    <div class="tw-text-[0.85rem] md:tw-text-[1.4rem] tw-font-medium tw-font-primary tw-text-[rgba(var(--color-foreground))]">{{ block.settings.block_value | strip_html }}</div>
+                    <div class="tw-text-[0.85rem] md:tw-text-[1.4rem] tw-font-medium tw-font-primary tw-text-[rgba(var(--color-foreground))]">
+                      {{ block.settings.block_value | strip_html }}
+                    </div>
                   {% endif %}
                 </div>
               {% endif %}
@@ -55,7 +62,7 @@
   "name": "PDP Announcement bar",
   "class": "section",
   "tag": "section",
-  "settings": [  
+  "settings": [
     {
       "type": "color_scheme",
       "id": "color_scheme",
@@ -78,13 +85,13 @@
     },
     {
       "type": "checkbox",
-      "id":"show_arrows",
+      "id": "show_arrows",
       "label": "Show arrows on desktop",
       "default": false
     },
     {
       "type": "checkbox",
-      "id":"show_arrows_on_mobile",
+      "id": "show_arrows_on_mobile",
       "label": "Show arrows on mobile",
       "default": false
     },
@@ -137,16 +144,16 @@
       "name": "Block",
       "type": "block",
       "settings": [
-       {
-         "type": "richtext",
-         "id": "block_value",
-         "label": "Text"
-       },
-       {
-         "type": "url",
-         "id": "link",
-         "label": "Link"
-       }
+        {
+          "type": "richtext",
+          "id": "block_value",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
       ]
     }
   ],
