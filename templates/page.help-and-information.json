@@ -78,6 +78,7 @@
         },
         "faq_item_tGNqn3": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "faq_header": "Do you have a shop I can visit?",
             "faq_message": "<p>Yes –<em><strong>BUT</strong></em>we would prefer you ordered online, you can visit our office at<strong>2 Grecian Crescent, London SE19 3HH</strong>. Where we will be happy to help.(Between 9am – 5pm weekdays)</p>"
