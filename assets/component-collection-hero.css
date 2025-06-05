@@ -10,7 +10,8 @@
 
 @media screen and (min-width: 750px) {
   .collection-hero.collection-hero--with-image {
-    padding: calc(4rem + var(--page-width-margin)) 0 calc(4rem + var(--page-width-margin));
+    padding: calc(4rem + var(--page-width-margin)) 0
+      calc(4rem + var(--page-width-margin));
     overflow: hidden;
   }
 
@@ -52,7 +53,7 @@
     font-size: 1.8rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    text-align: justify;
+    text-align: start;
   }
 
   .collection-hero__description {
@@ -73,9 +74,11 @@
 }
 
 .collection-hero__image-container {
-  border: var(--media-border-width) solid rgba(var(--color-foreground), var(--media-border-opacity));
+  border: var(--media-border-width) solid
+    rgba(var(--color-foreground), var(--media-border-opacity));
   border-radius: var(--media-radius);
-  box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
+  box-shadow: var(--media-shadow-horizontal-offset)
+    var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
     rgba(var(--color-shadow), var(--media-shadow-opacity));
 }
 
@@ -90,7 +93,7 @@
     font-size: 12px;
     line-height: normal;
   }
-  .collection-hero__title+.collection-hero__description {
+  .collection-hero__title + .collection-hero__description {
     margin-top: 0;
   }
 }

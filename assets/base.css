@@ -4056,6 +4056,7 @@ article .article-template__content ol {
 @media screen and (min-width: 750px) {
   .collection-hero__description.description-columns {
     column-count: 2;
+    column-gap: 44px;
   }
 }
 .sticky-atc-button.sticky-atc
