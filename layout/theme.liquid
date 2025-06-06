@@ -66,6 +66,20 @@
   {% else %}
     <!doctype html>
     <head>
+      <!-- Google Tag Manager -->
+      <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NTQTLJLX');
+      </script>
+      <!-- End Google Tag Manager -->
       <title>{{ page_title }}</title>
       <meta name="title" content="{{ page_title | escape }}">
       {% if page_description %}
@@ -85,15 +99,6 @@
   <!doctype html>
   <html class="no-js" lang="{{ request.locale.iso_code }}">
     <head>
-      <!-- Google Tag Manager -->
-      <script>
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-NTQTLJLX');
-      </script>
-      <!-- End Google Tag Manager -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -407,11 +412,18 @@
       </script>
 
       <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "qii41wob2f");
+        (function (c, l, a, r, i, t, y) {
+          c[a] =
+            c[a] ||
+            function () {
+              (c[a].q = c[a].q || []).push(arguments);
+            };
+          t = l.createElement(r);
+          t.async = 1;
+          t.src = 'https://www.clarity.ms/tag/' + i;
+          y = l.getElementsByTagName(r)[0];
+          y.parentNode.insertBefore(t, y);
+        })(window, document, 'clarity', 'script', 'qii41wob2f');
       </script>
     </head>
 
@@ -450,14 +462,14 @@
       <script src="https://widget.reviews.io/rating-snippet/dist.js"></script>
       <link rel="stylesheet" href="https://widget.reviews.io/rating-snippet/dist.css">
       <script>
-        ratingSnippet("ruk_rating_snippet", {
-          store: "dulwichhealth.co.uk",
-          mode: "default",
-          color: "#0E1311",
+        ratingSnippet('ruk_rating_snippet', {
+          store: 'dulwichhealth.co.uk',
+          mode: 'default',
+          color: '#0E1311',
           linebreak: false,
-          text: "Reviews",
-          singularText: "Review",
-          lang: "en",
+          text: 'Reviews',
+          singularText: 'Review',
+          lang: 'en',
           usePolaris: false,
           showEmptyStars: false,
         });
@@ -469,44 +481,44 @@
       </ul>
 
       <script>
-      window.shopUrl = '{{ request.origin }}';
-      window.routes = {
-        cart_add_url: '{{ routes.cart_add_url }}',
-        cart_change_url: '{{ routes.cart_change_url }}',
-        cart_update_url: '{{ routes.cart_update_url }}',
-        cart_url: '{{ routes.cart_url }}',
-        predictive_search_url: '{{ routes.predictive_search_url }}',
-      };
+        window.shopUrl = '{{ request.origin }}';
+        window.routes = {
+          cart_add_url: '{{ routes.cart_add_url }}',
+          cart_change_url: '{{ routes.cart_change_url }}',
+          cart_update_url: '{{ routes.cart_update_url }}',
+          cart_url: '{{ routes.cart_url }}',
+          predictive_search_url: '{{ routes.predictive_search_url }}',
+        };
 
-      window.cartStrings = {
-        error: `{{ 'sections.cart.cart_error' | t }}`,
-        quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`,
-      };
+        window.cartStrings = {
+          error: `{{ 'sections.cart.cart_error' | t }}`,
+          quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`,
+        };
 
-      window.variantStrings = {
-        addToCart: `{{ 'products.product.add_to_cart' | t }}`,
-        soldOut: `{{ 'products.product.sold_out' | t }}`,
-        unavailable: `{{ 'products.product.unavailable' | t }}`,
-        unavailable_with_option: `{{ 'products.product.value_unavailable' | t: option_value: '[value]' }}`,
-      };
+        window.variantStrings = {
+          addToCart: `{{ 'products.product.add_to_cart' | t }}`,
+          soldOut: `{{ 'products.product.sold_out' | t }}`,
+          unavailable: `{{ 'products.product.unavailable' | t }}`,
+          unavailable_with_option: `{{ 'products.product.value_unavailable' | t: option_value: '[value]' }}`,
+        };
 
-      window.quickOrderListStrings = {
-        itemsAdded: `{{ 'sections.quick_order_list.items_added.other' | t: quantity: '[quantity]' }}`,
-        itemAdded: `{{ 'sections.quick_order_list.items_added.one' | t: quantity: '[quantity]' }}`,
-        itemsRemoved: `{{ 'sections.quick_order_list.items_removed.other' | t: quantity: '[quantity]' }}`,
-        itemRemoved: `{{ 'sections.quick_order_list.items_removed.one' | t: quantity: '[quantity]' }}`,
-        viewCart: `{{- 'sections.quick_order_list.view_cart' | t -}}`,
-        each: `{{- 'sections.quick_order_list.each' | t: money: '[money]' }}`,
-      };
+        window.quickOrderListStrings = {
+          itemsAdded: `{{ 'sections.quick_order_list.items_added.other' | t: quantity: '[quantity]' }}`,
+          itemAdded: `{{ 'sections.quick_order_list.items_added.one' | t: quantity: '[quantity]' }}`,
+          itemsRemoved: `{{ 'sections.quick_order_list.items_removed.other' | t: quantity: '[quantity]' }}`,
+          itemRemoved: `{{ 'sections.quick_order_list.items_removed.one' | t: quantity: '[quantity]' }}`,
+          viewCart: `{{- 'sections.quick_order_list.view_cart' | t -}}`,
+          each: `{{- 'sections.quick_order_list.each' | t: money: '[money]' }}`,
+        };
 
-      window.accessibilityStrings = {
-        imageAvailable: `{{ 'products.product.media.image_available' | t: index: '[index]' }}`,
-        shareSuccess: `{{ 'general.share.success_message' | t }}`,
-        pauseSlideshow: `{{ 'sections.slideshow.pause_slideshow' | t }}`,
-        playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
-        recipientFormExpanded: `{{ 'recipient.form.expanded' | t }}`,
-        recipientFormCollapsed: `{{ 'recipient.form.collapsed' | t }}`,
-      };
+        window.accessibilityStrings = {
+          imageAvailable: `{{ 'products.product.media.image_available' | t: index: '[index]' }}`,
+          shareSuccess: `{{ 'general.share.success_message' | t }}`,
+          pauseSlideshow: `{{ 'sections.slideshow.pause_slideshow' | t }}`,
+          playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
+          recipientFormExpanded: `{{ 'recipient.form.expanded' | t }}`,
+          recipientFormCollapsed: `{{ 'recipient.form.collapsed' | t }}`,
+        };
       </script>
 
       {%- if settings.predictive_search_enabled -%}
@@ -517,39 +529,40 @@
       <script src="{{ 'carousel.js' | asset_url }}" defer="defer"></script>
 
       <script>
-        window.addEventListener("klaviyoForms", function(e) {
+        window.addEventListener('klaviyoForms', function (e) {
           if (e.detail.type == 'open' || e.detail.type == 'embedOpen') {
-            gtag('event', 'form_open', {'form': 'Klaviyo form', 'form_id': e.detail.formId});
+            gtag('event', 'form_open', { form: 'Klaviyo form', form_id: e.detail.formId });
           }
           if (e.detail.type == 'submit') {
-            gtag('event', 'form_submit', {'form': 'Klaviyo form', 'form_id': e.detail.formId});
+            gtag('event', 'form_submit', { form: 'Klaviyo form', form_id: e.detail.formId });
           }
           if (e.detail.type == 'stepSubmit') {
-            gtag('event', 'form_step_submit', {'form': 'Klaviyo form', 'step_name': e.detail.metaData.$step_name});
+            gtag('event', 'form_step_submit', { form: 'Klaviyo form', step_name: e.detail.metaData.$step_name });
           }
           if (e.detail.type == 'redirectedToUrl') {
-            gtag('event', 'form_url_redirect', {'form': 'Klaviyo form', 'form_id': e.detail.formId});
+            gtag('event', 'form_url_redirect', { form: 'Klaviyo form', form_id: e.detail.formId });
           }
           if (e.detail.type == 'close') {
-            gtag('event', 'form_close', {'form': 'Klaviyo form', 'form_id': e.detail.formId});
+            gtag('event', 'form_close', { form: 'Klaviyo form', form_id: e.detail.formId });
           }
         });
       </script>
 
       <script>
         // Dulwich Health Contact Form Submission Tracking - Simplified
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
           // Only run on contact page with the success parameter
-          if (window.location.pathname.includes('/pages/contact') &&
-              window.location.href.includes('contact_posted=true')) {
-
+          if (
+            window.location.pathname.includes('/pages/contact') &&
+            window.location.href.includes('contact_posted=true')
+          ) {
             console.log('Dulwich Health contact form submission detected');
 
             // Send the event to GA4
             if (typeof gtag === 'function') {
               gtag('event', 'Contact Us Shopify', {
-                'form': 'Contact form',
-                'form_location': 'Dulwich Health contact page'
+                form: 'Contact form',
+                form_location: 'Dulwich Health contact page',
               });
               console.log('Contact form submission event sent to GA4');
             } else {
