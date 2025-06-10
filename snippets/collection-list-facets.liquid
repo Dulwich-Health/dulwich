@@ -2,20 +2,35 @@
 
 <div class="facets-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
   <div class="collections-filter small-hide collection-filter-drawer-desktop">
-    <h2 class="tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[8px] md:tw-text-[19px] tw-font-semibold tw-uppercase tw-leading-[19px] md:tw-leading-[26px] tw-py-[13px] tw-whitespace-nowrap">
+    <h2 class="tw-font-primary tw-text-[8px] md:tw-text-[19px] tw-font-semibold tw-uppercase tw-leading-[19px] md:tw-leading-[26px] tw-py-[13px] tw-whitespace-nowrap">
       {{ 'products.facets.product_categories' | t }}
     </h2>
     <div class="is-divider product-filter-divider"></div>
     <ul>
-      {% for collection in collections %}
-        <li class="tw-py-[3px] tw-border-b tw-border-solid tw-border-[#C3C3C3] {% if collection.url == request.path %}active{% endif %}">
-          <a
-            href="{{ collection.url }}"
-            class="tw-text-[#000] tw-font-primary tw-font-light tw-leading-[24px] md:tw-leading-[33px] custom-collection-filter-list tw-text-[13px] md:tw-text-[14px]"
-          >
-            {{ collection.title }}
-          </a>
-        </li>
+      {% for link in section.settings.sidebar.links %}
+        {% if link.links.size > 0 %}
+          <li class="tw-font-primary tw-text-[8px] md:tw-text-[19px] tw-font-semibold tw-uppercase tw-leading-[19px] md:tw-leading-[26px] tw-pt-[13px] tw-whitespace-nowrap">
+            {{ link.title }}
+          </li>
+          <ul>
+            {% for child_link in link.links %}
+              <li class="">
+                <a
+                  href="{{ child_link.url }}"
+                  class="tw-text-[rgb(var(--color-button))] tw-pl-[8px]"
+                >
+                  {% if child_link.url == request.path %}
+                    -
+                    {{- child_link.title -}}
+                    -
+                  {% else %}
+                    {{- child_link.title -}}
+                  {% endif %}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
       {% endfor %}
     </ul>
 

@@ -30,21 +30,42 @@
     {% assign paginate_product_count = collection.products_count %}
 
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
-     <div class="tw-flex tw-items-center tw-justify-end facets-sort-by-filter tw-px-[25px] md:tw-px-[147px] page-width">
-      <nav class="breadcrumbs tw-text-[0.85em] tw-my-[20px] blg:tw-mt-[15px] blg:tw-mb-[6px] tw-mr-auto bmd:tw-hidden md:tw-block" role="navigation" aria-label="breadcrumbs">
+    <div class="tw-flex tw-items-center tw-justify-end facets-sort-by-filter tw-px-[25px] md:tw-px-[147px] page-width">
+      <nav
+        class="breadcrumbs tw-text-[0.85em] tw-my-[20px] blg:tw-mt-[15px] blg:tw-mb-[6px] tw-mr-auto bmd:tw-hidden md:tw-block"
+        role="navigation"
+        aria-label="breadcrumbs"
+      >
         <ol class="tw-list-none tw-m-0 tw-p-0">
           <li class="tw-inline-block">
-              <a class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-light tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline" href="/" title="Home">Home</a>
+            <a
+              class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-light tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline"
+              href="/"
+              title="Home"
+              >Home</a
+            >
           </li>
           {% if current_tags %}
             <li class="tw-inline-block">{{ collection.title | link_to: collection.url }}</li>
             <li class="tw-inline-block">
               {% capture tag_url %}{{ collection.url }}/{{ current_tags | join: "+"}}{% endcapture %}
-              <a href="{{ tag_url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ current_tags | join: " + "}}</a>
+              <a
+                href="{{ tag_url }}"
+                class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline"
+                aria-current="page"
+              >
+                {{- current_tags | join: ' + ' -}}
+              </a>
             </li>
           {% else %}
             <li class="tw-inline-block">
-              <a href="{{ collection.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ collection.title }}</a>
+              <a
+                href="{{ collection.url }}"
+                class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline"
+                aria-current="page"
+              >
+                {{- collection.title -}}
+              </a>
             </li>
           {% endif %}
         </ol>
@@ -52,14 +73,24 @@
       <div class="mobile-facets-collection">
         {% render 'collection-list-facets' %}
       </div>
-      <p class="small-hide tw-font-primary tw-text-[rgb(var(--color-foreground))] tw-text-[8px] md:tw-text-[13px] tw-font-normal collection-filter-product-count">{{ 'products.facets.product_results' | t: current_start: current_start, current_end: current_end, paginate_product_count: paginate_product_count }}</p>
+      <p class="small-hide tw-font-primary tw-text-[rgb(var(--color-foreground))] tw-text-[8px] md:tw-text-[13px] tw-font-normal collection-filter-product-count">
+        {{
+          'products.facets.product_results'
+          | t: current_start: current_start, current_end: current_end, paginate_product_count: paginate_product_count
+        }}
+      </p>
       {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
         <facet-filters-form class="facets facets-vertical-sort no-js-hidden">
           <form class="facets-vertical-form" id="FacetSortForm">
             <div class="facet-filters sorting caption">
               <div class="facet-filters__field bmd:tw-rounded-[10px] tw-pl-[12px] tw-pr-[12px] md:tw-pl-[26px] md:tw-pr-[22px] tw-bg-white collection-sort-by-filter">
                 <h2 class="facet-filters__label caption-large text-body">
-                  <label class="tw-font-primary tw-text-[8px] md:tw-text-[13px] tw-font-light tw-whitespace-nowrap" for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
+                  <label
+                    class="tw-font-primary tw-text-[8px] md:tw-text-[13px] tw-font-light tw-whitespace-nowrap"
+                    for="SortBy"
+                  >
+                    {{- 'products.facets.sort_by_label' | t -}}
+                  </label>
                 </h2>
                 <div class="select bmd:tw-border-none tw-border tw-border-solid tw-border-black tw-rounded-[30px]">
                   {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
@@ -81,7 +112,7 @@
                       </option>
                     {%- endfor -%}
                   </select>
-                  {% render 'icon-dropdown' class : "icon icon-caret tw-h-[2.1rem]" %}
+                  {% render 'icon-dropdown', class: 'icon icon-caret tw-h-[2.1rem]' %}
                 </div>
               </div>
               <noscript>
@@ -124,11 +155,16 @@
           </form>
         </facet-filters-form>
       {%- endif -%}
-     </div>
-   
-     <div class="page-width mobile-filter-drawer">
-      <p class="tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[9px] md:tw-text-[18px] bmd:tw-font-medium md:tw-font-normal tw-leading-normal tw-pt-[11px] md:tw-pt-[22px] tw-text-right md:tw-text-center">{{ 'products.facets.product_results' | t: current_start: current_start, current_end: current_end, paginate_product_count: paginate_product_count }}</p>
-     </div>
+    </div>
+
+    <div class="page-width mobile-filter-drawer">
+      <p class="tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[9px] md:tw-text-[18px] bmd:tw-font-medium md:tw-font-normal tw-leading-normal tw-pt-[11px] md:tw-pt-[22px] tw-text-right md:tw-text-center">
+        {{
+          'products.facets.product_results'
+          | t: current_start: current_start, current_end: current_end, paginate_product_count: paginate_product_count
+        }}
+      </p>
+    </div>
 
     <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical tw-px-[25px] md:tw-px-[147px] page-width {% endif %}">
       {{ 'component-facets.css' | asset_url | stylesheet_tag: preload: true }}
@@ -190,10 +226,21 @@
             <div class="loading-overlay gradient"></div>
 
             {% if section.settings.enable_infinite_scrolling %}
-              <load-previous-page class="button hidden tw-my-10 tw-w-full" data-currentPage="{{ collection_current_page }}" data-totalpages="{{ total_pages }}">
+              <load-previous-page
+                class="button hidden tw-my-10 tw-w-full"
+                data-currentPage="{{ collection_current_page }}"
+                data-totalpages="{{ total_pages }}"
+              >
                 LOAD PREVIOUS PAGE
                 <div class="loading-overlay__spinner">
-                  <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    role="presentation"
+                    class="spinner"
+                    viewBox="0 0 66 66"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
                   </svg>
                 </div>
@@ -220,7 +267,11 @@
                     style="--animation-order: {{ forloop.index }};"
                   {% endif %}
                 >
-                {% render 'product-card', product: product, product_on_page: paginate.current_page, forloop: forloop %}
+                  {% render 'product-card',
+                    product: product,
+                    product_on_page: paginate.current_page,
+                    forloop: forloop
+                  %}
                 </li>
               {%- endfor -%}
             </ul>
@@ -230,9 +281,20 @@
                 -This element is for infinite scrolling
                 -Removing it will halt the functionality
               {% endcomment %}
-              <infinite-page-loader data-totalpages="{{ total_pages }}" data-section="{{ section.id }}" data-currentPage="{{ collection_current_page }}">
+              <infinite-page-loader
+                data-totalpages="{{ total_pages }}"
+                data-section="{{ section.id }}"
+                data-currentPage="{{ collection_current_page }}"
+              >
                 <div class="hidden center tw-mx-auto tw-w-12">
-                  <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    role="presentation"
+                    class="spinner"
+                    viewBox="0 0 66 66"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
                   </svg>
                 </div>
@@ -245,7 +307,6 @@
       </div>
     </div>
   {%- endpaginate -%}
-
 </div>
 
 {% schema %}
@@ -276,6 +337,15 @@
       "step": 1,
       "default": 4,
       "label": "t:sections.main-collection-product-grid.settings.columns_desktop.label"
+    },
+    {
+      "type": "header",
+      "content": "Sidebar"
+    },
+    {
+      "type": "link_list",
+      "id": "sidebar",
+      "label": "Sidebar Collection"
     },
     {
       "type": "header",
