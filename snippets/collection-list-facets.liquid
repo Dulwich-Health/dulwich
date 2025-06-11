@@ -17,7 +17,7 @@
               <li>
                 <a
                   href="{{ child_link.url }}"
-                  class="tw-text-dulwich-green tw-text-[16px] tw-pl-[8px] {% if child_link.url == request.path %}tw-font-bold tw-text-dulwich-mustard{% endif %}"
+                  class="tw-text-dulwich-green tw-text-4 tw-pl-4 {% if child_link.url == request.path %}tw-font-bold tw-text-dulwich-mustard{% endif %}"
                 >
                   {{- child_link.title -}}
                 </a>
@@ -130,16 +130,25 @@
             </div>
           </div>
           <div class="mobile-facets__main has-submenu gradient">
-            <ul class="tw-px-[16px]">
-              {% for collection in collections %}
-                <li class="tw-py-[3px] tw-border-b tw-border-solid tw-border-[#C3C3C3] {% if collection.url == request.path %}active{% endif %}">
-                  <a
-                    href="{{ collection.url }}"
-                    class="tw-text-[#000] tw-font-primary tw-font-light tw-leading-[24px] md:tw-leading-[33px] custom-collection-filter-list tw-text-[13px] md:tw-text-[14px]"
-                  >
-                    {{ collection.title }}
-                  </a>
-                </li>
+            <ul class="tw-px-4">
+              {% for link in section.settings.sidebar.links %}
+                {% if link.links.size > 0 %}
+                  <li class="tw-text-1.5 tw-font-semibold tw-uppercase tw-pt-6 tw-whitespace-nowrap">
+                    {{ link.title }}
+                  </li>
+                  <ul>
+                    {% for child_link in link.links %}
+                      <li class="tw-py-1">
+                        <a
+                          href="{{ child_link.url }}"
+                          class="tw-text-dulwich-green tw-text-1 tw-pl-2 {% if child_link.url == request.path %}tw-font-bold tw-text-dulwich-mustard{% endif %}"
+                        >
+                          {{- child_link.title -}}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
               {% endfor %}
             </ul>
 
