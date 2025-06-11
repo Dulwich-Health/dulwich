@@ -14,18 +14,12 @@
           </li>
           <ul>
             {% for child_link in link.links %}
-              <li class="">
+              <li>
                 <a
                   href="{{ child_link.url }}"
-                  class="tw-text-[rgb(var(--color-button))] tw-pl-[8px]"
+                  class="tw-text-dulwich-green tw-text-[16px] tw-pl-[8px] {% if child_link.url == request.path %}tw-font-bold tw-text-dulwich-mustard{% endif %}"
                 >
-                  {% if child_link.url == request.path %}
-                    -
-                    {{- child_link.title -}}
-                    -
-                  {% else %}
-                    {{- child_link.title -}}
-                  {% endif %}
+                  {{- child_link.title -}}
                 </a>
               </li>
             {% endfor %}

@@ -34,7 +34,7 @@ module.exports = {
     },
     fontFamily: {
       'primary': ["Poppins"],
-      'secondary': ['Arial'],
+      'secondary': ['Poppins'],
       'tertiary': ['Poppins']
     },
     fontSize: {
@@ -61,12 +61,18 @@ module.exports = {
     },
     extend: {
       colors: {
-        'pale-sky-blue': '#BCE3EE',
+        // 'pale-sky-blue': '#BCE3EE',
         'bright-red': '#60919F',
-        'deep-blue': '#E9F6FF',
-        'light-gray': '#F1F1F1',
-        'taupe-gray': '#726969',
-        'medium-gray': '#777777'
+        // 'deep-blue': '#E9F6FF',
+        // 'light-gray': '#F1F1F1',
+        // 'taupe-gray': '#726969',
+        // 'medium-gray': '#777777',
+        'dulwich-mustard': '#CFC972',
+        'dulwich-green': '#87B79D',
+        'dulwich-blue': '#949CB1',
+        'dulwich-thistle': '#C2ADCC',
+        'dulwich-orange': '#EAA35F',
+        'dulwich-orchid': '#D786B7'
       }
     }
   },
