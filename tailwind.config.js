@@ -72,7 +72,8 @@ module.exports = {
         'dulwich-blue': '#949CB1',
         'dulwich-thistle': '#C2ADCC',
         'dulwich-orange': '#EAA35F',
-        'dulwich-orchid': '#D786B7'
+        'dulwich-orchid': '#D786B7',
+        'dulwich-charcoal': '#000000bf'
       }
     }
   },
