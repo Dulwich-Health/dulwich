@@ -15,7 +15,6 @@
         "color_scheme_plp": "scheme-9da49f90-5b84-4957-b185-c2b04dcfcf9e",
         "products_per_page": 15,
         "columns_desktop": 3,
-        "sidebar": "collection-sidebar",
         "enable_filtering": false,
         "filter_type": "vertical",
         "enable_sorting": true,

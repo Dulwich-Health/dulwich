@@ -2,18 +2,18 @@
 
 <div class="facets-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
   <div class="collections-filter small-hide collection-filter-drawer-desktop">
-    <h2 class="tw-font-primary tw-text-[8px] md:tw-text-[19px] tw-font-semibold tw-uppercase tw-leading-[19px] md:tw-leading-[26px] tw-py-[13px] tw-whitespace-nowrap">
+    <h2 class="tw-text-dulwich-charcoal tw-text-[8px] md:tw-text-[19px] tw-font-semibold tw-uppercase tw-leading-[19px] md:tw-leading-[26px] tw-py-[13px] tw-whitespace-nowrap">
       {{ 'products.facets.product_categories' | t }}
     </h2>
     <div class="is-divider product-filter-divider"></div>
     <ul>
-      {% for link in section.settings.sidebar.links %}
-        {% if link.links.size > 0 %}
-          <li class="tw-font-primary tw-text-[8px] md:tw-text-[19px] tw-font-semibold tw-uppercase tw-leading-[19px] md:tw-leading-[26px] tw-pt-[13px] tw-whitespace-nowrap">
-            {{ link.title }}
+      {%- for link in settings['sidebar-collection'].links -%}
+        {%- if link.links.size > 0 -%}
+          <li class="tw-text-dulwich-charcoal tw-text-[8px] md:tw-text-[19px] tw-font-semibold tw-uppercase tw-leading-[19px] md:tw-leading-[26px] tw-pt-[13px] tw-whitespace-nowrap">
+            {{- link.title -}}
           </li>
           <ul>
-            {% for child_link in link.links %}
+            {%- for child_link in link.links -%}
               <li>
                 <a
                   href="{{ child_link.url }}"
@@ -21,11 +21,23 @@
                 >
                   {{- child_link.title -}}
                 </a>
+                {%- if child_link.active -%}
+                  {%- for grandchild_link in child_link.links -%}
+                    <li>
+                      <a
+                        href="{{ grandchild_link.url }}"
+                        class="tw-text-dulwich-green tw-text-4 tw-pl-8 {% if grandchild_link.active %}tw-font-bold tw-text-dulwich-mustard{% endif %}"
+                      >
+                        {{- grandchild_link.title -}}
+                      </a>
+                    </li>
+                  {%- endfor -%}
+                {%- endif -%}
               </li>
-            {% endfor %}
+            {%- endfor -%}
           </ul>
-        {% endif %}
-      {% endfor %}
+        {%- endif -%}
+      {%- endfor -%}
     </ul>
 
     <div class="tw-mt-[20px] md:tw-mt-[40px]">
@@ -124,27 +136,39 @@
         <div class="mobile-facets__inner gradient">
           <div class="mobile-facets__header">
             <div class="mobile-facets__header-inner tw-text-left">
-              <h2 class="mobile-facets__heading tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[8px] md:tw-text-[25px] tw-font-semibold tw-uppercase tw-leading-[19px] tw-py-[13px] tw-whitespace-nowrap filter-drawer-heading">
+              <h2 class="mobile-facets__heading tw-font-primary tw-text-dulwich-charcoal tw-text-[8px] md:tw-text-[25px] tw-font-semibold tw-uppercase tw-leading-[19px] tw-py-[13px] tw-whitespace-nowrap filter-drawer-heading">
                 {{ 'products.facets.product_categories' | t }}
               </h2>
             </div>
           </div>
           <div class="mobile-facets__main has-submenu gradient">
             <ul class="tw-px-4">
-              {% for link in section.settings.sidebar.links %}
+              {%- for link in settings['sidebar-collection'].links -%}
                 {% if link.links.size > 0 %}
                   <li class="tw-text-1.5 tw-font-semibold tw-uppercase tw-pt-6 tw-whitespace-nowrap">
-                    {{ link.title }}
+                    {{- link.title -}}
                   </li>
                   <ul>
-                    {% for child_link in link.links %}
+                    {%- for child_link in link.links -%}
                       <li class="tw-py-1">
                         <a
                           href="{{ child_link.url }}"
-                          class="tw-text-dulwich-green tw-text-1 tw-pl-2 {% if child_link.url == request.path %}tw-font-bold tw-text-dulwich-mustard{% endif %}"
+                          class="tw-text-dulwich-green tw-text-1 tw-pl-4 {% if child_link.url == request.path %}tw-font-bold tw-text-dulwich-mustard{% endif %}"
                         >
                           {{- child_link.title -}}
                         </a>
+                        {%- if child_link.active -%}
+                          {%- for grandchild_link in child_link.links -%}
+                            <li class="tw-py-1">
+                              <a
+                                href="{{ grandchild_link.url }}"
+                                class="tw-text-dulwich-green tw-text-4 tw-pl-8 {% if grandchild_link.active %}tw-font-bold tw-text-dulwich-mustard{% endif %}"
+                              >
+                                {{- grandchild_link.title -}}
+                              </a>
+                            </li>
+                          {%- endfor -%}
+                        {%- endif -%}
                       </li>
                     {% endfor %}
                   </ul>

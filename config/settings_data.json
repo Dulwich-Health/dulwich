@@ -11,6 +11,7 @@
   "current": {
     "enable_lazy_loading_sections": false,
     "hp_eager_section_count": 2,
+    "sidebar-collection": "collection-sidebar",
     "logo": "shopify://shop_images/DulwichHealthLogo_Round.svg",
     "logo_width": 117,
     "favicon": "shopify://shop_images/cropped-Logo-Icon-32x32.png",

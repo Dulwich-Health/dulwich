@@ -1,5 +1,4 @@
 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
-{{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .bleed-width {
@@ -16,7 +15,7 @@
   </h1>
 
   {%- if section.settings.show_collection_description -%}
-    <div class="tw-text-inherit {% if section.settings.show_description_two_columns %}md:tw-columns-2{% endif %}">
+    <div class="tw-text-inherit {% if section.settings.show_description_two_columns %}md:tw-columns-2 md:tw-gap-[44px]{% endif %}">
       {{ collection.description }}
     </div>
   {%- endif -%}
@@ -53,7 +52,7 @@
       "content": "t:sections.main-collection-banner.settings.paragraph.content"
     },
     {
-      "type": "color_background",
+      "type": "color",
       "id": "background_colour",
       "default": "#dfd7e7",
       "label": "Background Colour"
