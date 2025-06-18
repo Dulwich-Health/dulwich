@@ -245,11 +245,6 @@
         "disabled": false,
         "settings": {}
       },
-      "6913107989674730356": {
-        "type": "shopify://apps/reviews-io/blocks/reviewsio-sessions/92a082e5-b297-4e88-b428-ac96cbc505f9",
-        "disabled": true,
-        "settings": {}
-      },
       "13768625480086291342": {
         "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": false,
