@@ -4053,12 +4053,6 @@ article .article-template__content ol {
 .product__info-container product-form.product-form {
   margin: 1rem 0;
 }
-@media screen and (min-width: 750px) {
-  .collection-hero__description.description-columns {
-    column-count: 2;
-    column-gap: 44px;
-  }
-}
 .sticky-atc-button.sticky-atc
   .recurpay__widget_container.recurpay__widget_container--selected
   + .recurpay__widget_container,

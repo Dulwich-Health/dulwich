@@ -1,86 +1,177 @@
 {{ 'breadcrumbs-styles.css' | asset_url | stylesheet_tag }}
 
 {% unless template == 'index' or template == 'list-collections' or template == '404' %}
-    {% assign t = template | split: '.' | first %}
-    <nav class="breadcrumbs lg:tw-px-[147px] blg:tw-px-[25px] page-width tw-text-[0.85em] tw-my-[20px] blg:tw-mt-[15px] blg:tw-mb-[6px] {% if template == 'collection' %} bmd:tw-block md:tw-hidden{% endif %}" role="navigation" aria-label="breadcrumbs">
-        <ol class="tw-list-none tw-m-0 tw-p-0">
-            <li class="tw-inline-block">
-                <a class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-light tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline" href="/" title="Home">Home</a>
-            </li>
+  {% assign t = template | split: '.' | first %}
+  <nav
+    class="breadcrumbs lg:tw-px-[147px] blg:tw-px-[25px] page-width tw-text-[0.85em] tw-my-[20px] blg:tw-mt-[15px] blg:tw-mb-[6px] {% if template == 'collection' %} bmd:tw-block md:tw-hidden{% endif %}"
+    role="navigation"
+    aria-label="breadcrumbs"
+  >
+    <ol class="tw-list-none tw-m-0 tw-p-0 tw-text-[#848484] md:tw-text-[#282828B2]">
+      <li class="tw-inline-block">
+        <a
+          class="tw-text-inherit tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline"
+          href="{{ routes.root_url }}"
+          title="Home"
+        >
+          Home
+        </a>
+      </li>
 
-        {% case t %}
-            {% when 'page' %}
-                <li class="tw-inline-block">
-                    <a href="{{ page.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ page.title }}</a>
-                </li>
+      {% case t %}
+        {% when 'page' %}
+          <li class="tw-inline-block">
+            <a
+              href="{{ page.url }}"
+              class="tw-text-inherit tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline"
+              aria-current="page"
+            >
+              {{- page.title -}}
+            </a>
+          </li>
 
-            {% when 'product' %}
-                <breadcrumbs-referrer>
-                    <li class="tw-inline-block" id="search-term-placeholder">
-                    </li>
-                    {% if collection %}
-                        {%- assign current_collection = collection -%}
-                        <li class="tw-inline-block">
-                            <a href="{{ current_collection.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline">{{ current_collection.title }}</a>
-                        </li>
-                    {% else %}
-                        {% assign collections = product.collections %}
-                        {% if collections.size > 0 %}
-                                <li class="tw-inline-block" id="collection-placeholder">
-                                </li>
-                        {% endif %}
-                    {% endif %}
-                    <li class="tw-inline-block">
-                        <a href="{{ product.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium bmd:tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page">{{ product.title }}</a>
-                    </li>
-                </breadcrumbs-referrer>          
-
-            {% when 'collection' and collection.handle %}
-
-                {% if current_tags %}
-                <li class="tw-inline-block">{{ collection.title | link_to: collection.url }}</li>
-                <li class="tw-inline-block">
-                    {% capture tag_url %}{{ collection.url }}/{{ current_tags | join: "+"}}{% endcapture %}
-                    <a href="{{ tag_url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium bmd:tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ current_tags | join: " + "}}</a>
-                </li>
-                {% else %}
-                <li class="tw-inline-block">
-                    <a href="{{ collection.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium bmd:tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ collection.title }}</a>
-                </li>
-                {% endif %}
-
-            {% when 'blog' %}
-
-                {% if current_tags %}
-                <li class="tw-inline-block">
-                    <a href="{{ blog.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary tw-font-[400] md:tw-font-medium tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ blog.title }}</a>
-                </li>
-                <li class="tw-inline-block">
-                    {% capture tag_url %}{{blog.url}}/tagged/{{ current_tags | join: "+" }}{% endcapture %}
-                    <a href="{{ tag_url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-normal tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ current_tags | join: " + " }}</a>
-                </li>
-                {% else %}
-                <li class="tw-inline-block">
-                    <a href="{{ blog.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary tw-font-[400] md:tw-font-medium tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ blog.title }}</a>
-                </li>
-                {% endif %}
-
-            {% when 'article' %}
-
-                <li class="tw-inline-block">
-                    <a href="{{ blog.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary tw-font-[400] md:tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ blog.title }}</a>
-                </li>
-                <li class="tw-inline-block">
-                    <a href="{{ article.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ article.title }}</a>
-                </li>
-
+        {% when 'product' %}
+          <breadcrumbs-referrer>
+            <li class="tw-inline-block" id="search-term-placeholder"></li>
+            {% if collection %}
+              {%- assign current_collection = collection -%}
+              <li class="tw-inline-block">
+                <a
+                  href="{{ current_collection.url }}"
+                  class="tw-text-inherit tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline"
+                >
+                  {{- current_collection.title -}}
+                </a>
+              </li>
             {% else %}
+              {% assign collections = product.collections %}
+              {% if collections.size > 0 %}
+                <li class="tw-inline-block" id="collection-placeholder"></li>
+              {% endif %}
+            {% endif %}
+            <li class="tw-inline-block">
+              <a
+                href="{{ product.url }}"
+                class="tw-text-inherit tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium bmd:tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline"
+                aria-current="page"
+              >
+                {{- product.title -}}
+              </a>
+            </li>
+          </breadcrumbs-referrer>
 
-                <li class="tw-text-[#848484] md:tw-text-[#282828B2] tw-inline-block tw-font-[normal] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >
-                    <a href="{{ request.path }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ page_title }}</a>
-                </li>
-        {% endcase %}
+        {% when 'collection' and collection.handle %}
+          <li class="tw-inline-block">
+            <a
+              href="{{ collection.url }}"
+              class="tw-text-inherit tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline"
+              aria-current="page"
+            >
+              {{- collection.title -}}
+            </a>
+          </li>
+          {% if current_tags %}
+            {%- if current_tags.size == 1 -%}
+              <li class="tw-inline-block">
+                {%- for link in settings['sidebar-collection'].links -%}
+                  {%- if link.child_active -%}
+                    {%- for child_link in link.links -%}
+                      {%- for grandchild_link in child_link.links -%}
+                        {%- if grandchild_link.url == request.path -%}
+                          <a
+                            href="{{ grandchild_link.url }}"
+                            class="tw-text-inherit tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline"
+                            aria-current="page"
+                          >
+                            {{- grandchild_link.title -}}
+                          </a>
+                        {%- endif -%}
+                      {%- endfor -%}
+                    {%- endfor -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              </li>
+            {%- else -%}
+              <li class="tw-inline-block">
+                {% capture tag_url %}{{ collection.url }}/{{ current_tags | join: "+"}}{% endcapture %}
+                <a
+                  href="{{ tag_url }}"
+                  class="tw-text-inherit tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline"
+                  aria-current="page"
+                >
+                  {{- current_tags | join: ' + ' -}}
+                </a>
+              </li>
+            {%- endif -%}
+          {% endif %}
 
-        </ol>
-    </nav>
+        {% when 'blog' %}
+          {% if current_tags %}
+            <li class="tw-inline-block">
+              <a
+                href="{{ blog.url }}"
+                class="tw-text-inherit tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary tw-font-[400] md:tw-font-medium tw-no-underline hover:tw-underline focus:tw-underline"
+                aria-current="page"
+              >
+                {{- blog.title -}}
+              </a>
+            </li>
+            <li class="tw-inline-block">
+              {% capture tag_url %}{{blog.url}}/tagged/{{ current_tags | join: "+" }}{% endcapture %}
+              <a
+                href="{{ tag_url }}"
+                class="tw-text-inherit tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-normal tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline"
+                aria-current="page"
+              >
+                {{- current_tags | join: ' + ' -}}
+              </a>
+            </li>
+          {% else %}
+            <li class="tw-inline-block">
+              <a
+                href="{{ blog.url }}"
+                class="tw-text-inherit tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary tw-font-[400] md:tw-font-medium tw-no-underline hover:tw-underline focus:tw-underline"
+                aria-current="page"
+              >
+                {{- blog.title -}}
+              </a>
+            </li>
+          {% endif %}
+
+        {% when 'article' %}
+          <li class="tw-inline-block">
+            <a
+              href="{{ blog.url }}"
+              class="tw-text-inherit tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary tw-font-[400] md:tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline"
+              aria-current="page"
+            >
+              {{- blog.title -}}
+            </a>
+          </li>
+          <li class="tw-inline-block">
+            <a
+              href="{{ article.url }}"
+              class="tw-text-inherit tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline"
+              aria-current="page"
+            >
+              {{- article.title -}}
+            </a>
+          </li>
+
+        {% else %}
+          <li
+            class="tw-text-inherit tw-inline-block tw-font-[normal] tw-no-underline hover:tw-underline focus:tw-underline"
+            aria-current="page"
+          >
+            <a
+              href="{{ request.path }}"
+              class="tw-text-inherit tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline"
+              aria-current="page"
+            >
+              {{- page_title -}}
+            </a>
+          </li>
+      {% endcase %}
+    </ol>
+  </nav>
 {% endunless %}

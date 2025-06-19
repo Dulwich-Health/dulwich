@@ -62,6 +62,11 @@
         "id": "show_breadcrumb_nav",
         "label": "Show breadcrumb navigation",
         "default": true
+      },
+      {
+        "type": "link_list",
+        "id": "sidebar-collection",
+        "label": "Sidebar Collection"
       }
     ]
   },
