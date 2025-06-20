@@ -242,6 +242,7 @@
     },
     "a6ac85cd-b558-4cf8-9f53-accb3b902ecd": {
       "type": "megamenu-item-demo-1",
+      "disabled": true,
       "settings": {
         "parent": "CASE HISTORIES",
         "heading": "",
