@@ -46,9 +46,6 @@
       </h2>
       <div class="is-divider product-filter-divider"></div>
       <div {{ block.shopify_attributes }} class="collection-filter-newsletter">
-        <div class="tw-text-black tw-text-left tw-font-primary tw-text-[11px] md:tw-text-[16px] tw-font-medium tw-pb-[8px]">
-          {{ 'newsletter.email_address' | t }}
-        </div>
         {% form 'customer', class: 'newsletter-form' %}
           <input type="hidden" name="contact[tags]" value="newsletter">
           <div
@@ -60,7 +57,35 @@
           >
             <div class="field tw-mb-[8px] md:tw-mb-[12px]">
               <input
-                id="NewsletterForm--{{ section.id }}"
+                id="NewsletterForm--{{ section.id }}--first_name"
+                type="text"
+                name="contact[first_name]"
+                class="field__input tw-bg-white tw-border tw-border-solid tw-border-black  tw-text-[9px] md:tw-text-[10px] tw-min-h-[22px] tw-max-h-[22px] md:tw-max-h-[30px] md:tw-min-h-[30px]"
+                value="{{ form.first_name }}"
+                aria-required="true"
+                autocorrect="off"
+                autocapitalize="off"
+                autocomplete="given-name"
+                {% if form.errors %}
+                  autofocus
+                  aria-invalid="true"
+                  aria-describedby="Newsletter-error--{{ section.id }}--first_name"
+                {% elsif form.posted_successfully? %}
+                  aria-describedby="Newsletter-success--{{ section.id }}--first_name"
+                {% endif %}
+                placeholder="{{ 'newsletter.label' | t }}"
+                required
+              >
+              <label
+                class="field__label newsletter-label tw-text-[9px] md:tw-text-[10px]"
+                for="NewsletterForm--{{ section.id }}--first_name"
+              >
+                First Name
+              </label>
+            </div>
+            <div class="field tw-mb-[8px] md:tw-mb-[12px]">
+              <input
+                id="NewsletterForm--{{ section.id }}--email"
                 type="email"
                 name="contact[email]"
                 class="field__input tw-bg-white tw-border tw-border-solid tw-border-black  tw-text-[9px] md:tw-text-[10px] tw-min-h-[22px] tw-max-h-[22px] md:tw-max-h-[30px] md:tw-min-h-[30px]"
@@ -72,23 +97,23 @@
                 {% if form.errors %}
                   autofocus
                   aria-invalid="true"
-                  aria-describedby="Newsletter-error--{{ section.id }}"
+                  aria-describedby="Newsletter-error--{{ section.id }}--email"
                 {% elsif form.posted_successfully? %}
-                  aria-describedby="Newsletter-success--{{ section.id }}"
+                  aria-describedby="Newsletter-success--{{ section.id }}--email"
                 {% endif %}
                 placeholder="{{ 'newsletter.label' | t }}"
                 required
               >
               <label
                 class="field__label newsletter-label tw-text-[9px] md:tw-text-[10px]"
-                for="NewsletterForm--{{ section.id }}"
+                for="NewsletterForm--{{ section.id }}--email"
               >
                 {{ 'newsletter.your_email_address' | t }}
               </label>
             </div>
             <button
               type="submit"
-              class="newsletter-form__button field__button tw-relative tw-bg-[rgb(var(--color-button))] tw-text-[rgb(var(--color-button-text))] tw-text-left tw-rounded-[12px] md:tw-rounded-[19px] tw-text-[9px] md:tw-text-[13px] tw-capitalize tw-py-0 md:tw-py-[2.5px] tw-min-w-[70px] md:tw-min-w-[80px]"
+              class="newsletter-form__button field__button tw-relative tw-bg-[rgb(var(--color-button))] tw-text-[rgb(var(--color-button-text))] tw-text-left tw-rounded-[12px] md:tw-rounded-[19px] tw-text-[9px] md:tw-text-[13px] tw-capitalize tw-py-0 md:tw-py-[2.5px] tw-w-full tw-min-h-[30px]"
               name="commit"
               id="Subscribe"
               aria-label="{{ 'newsletter.button_label' | t }}"
@@ -182,9 +207,6 @@
               </h2>
               <div class="is-divider product-filter-divider"></div>
               <div {{ block.shopify_attributes }} class="collection-filter-newsletter">
-                <div class="tw-text-black tw-text-left tw-font-primary tw-text-[11px] md:tw-text-[16px] tw-font-medium tw-pb-[8px]">
-                  {{ 'newsletter.email_address' | t }}
-                </div>
                 {% form 'customer', class: 'newsletter-form' %}
                   <input type="hidden" name="contact[tags]" value="newsletter">
                   <div
@@ -196,7 +218,35 @@
                   >
                     <div class="field tw-mb-[8px] md:tw-mb-[12px]">
                       <input
-                        id="NewsletterForm--{{ section.id }}"
+                        id="NewsletterForm--{{ section.id }}--first_name"
+                        type="text"
+                        name="contact[first_name]"
+                        class="field__input tw-bg-white tw-border tw-border-solid tw-border-black  tw-text-[9px] md:tw-text-[10px] tw-min-h-[22px] tw-max-h-[22px] md:tw-max-h-[30px] md:tw-min-h-[30px]"
+                        value="{{ form.first_name }}"
+                        aria-required="true"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        autocomplete="given-name"
+                        {% if form.errors %}
+                          autofocus
+                          aria-invalid="true"
+                          aria-describedby="Newsletter-error--{{ section.id }}--first_name"
+                        {% elsif form.posted_successfully? %}
+                          aria-describedby="Newsletter-success--{{ section.id }}--first_name"
+                        {% endif %}
+                        placeholder="{{ 'newsletter.label' | t }}"
+                        required
+                      >
+                      <label
+                        class="field__label newsletter-label tw-text-[9px] md:tw-text-[10px]"
+                        for="NewsletterForm--{{ section.id }}--first_name"
+                      >
+                        First Name
+                      </label>
+                    </div>
+                    <div class="field tw-mb-[8px] md:tw-mb-[12px]">
+                      <input
+                        id="NewsletterForm--{{ section.id }}--email"
                         type="email"
                         name="contact[email]"
                         class="field__input tw-bg-white tw-border tw-border-solid tw-border-black  tw-text-[9px] md:tw-text-[10px] tw-min-h-[22px] tw-max-h-[22px] md:tw-max-h-[30px] md:tw-min-h-[30px]"
@@ -208,23 +258,23 @@
                         {% if form.errors %}
                           autofocus
                           aria-invalid="true"
-                          aria-describedby="Newsletter-error--{{ section.id }}"
+                          aria-describedby="Newsletter-error--{{ section.id }}--email"
                         {% elsif form.posted_successfully? %}
-                          aria-describedby="Newsletter-success--{{ section.id }}"
+                          aria-describedby="Newsletter-success--{{ section.id }}--email"
                         {% endif %}
                         placeholder="{{ 'newsletter.label' | t }}"
                         required
                       >
                       <label
                         class="field__label newsletter-label tw-text-[9px] md:tw-text-[10px]"
-                        for="NewsletterForm--{{ section.id }}"
+                        for="NewsletterForm--{{ section.id }}--email"
                       >
                         {{ 'newsletter.your_email_address' | t }}
                       </label>
                     </div>
                     <button
                       type="submit"
-                      class="newsletter-form__button field__button tw-relative tw-bg-[rgb(var(--color-button))] tw-text-[rgb(var(--color-button-text))] tw-text-left tw-rounded-[12px] md:tw-rounded-[19px] tw-text-[9px] md:tw-text-[13px] tw-capitalize tw-py-0 md:tw-py-[2.5px] tw-min-w-[70px] md:tw-min-w-[80px]"
+                      class="newsletter-form__button field__button tw-relative tw-bg-[rgb(var(--color-button))] tw-text-[rgb(var(--color-button-text))] tw-text-left tw-rounded-[12px] md:tw-rounded-[19px] tw-text-[9px] md:tw-text-[13px] tw-capitalize tw-py-0 md:tw-py-[2.5px] tw-w-full tw-min-h-[30px]"
                       name="commit"
                       id="Subscribe"
                       aria-label="{{ 'newsletter.button_label' | t }}"
