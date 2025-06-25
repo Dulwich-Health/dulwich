@@ -1,0 +1,111 @@
+{% comment %}
+  ** Mega menu - homepage partial **
+  - Section gets appended under level 1 link at header.liquid.
+  - section.settings.parent should match the link.heading.
+  - Uses blocks
+  - @Functionality - component-megamenu-item.js
+{% endcomment %}
+
+{%- capture lazy_load_section %}
+  {%- render 'lazy-load-section-validations' -%}
+{%- endcapture -%}
+
+{% if lazy_load_section != blank %}
+  <lazy-section data-trigger-target="body" data-trigger-event="mouseover">
+{% endif %}
+
+{% if lazy_load_section == blank %}
+  <javascript-injected-section
+    style="display:none"
+    data-target-location='[data-submenu="{{ section.settings.parent | handleize }}"]'
+  >
+    <div class="page-width-desktop" {{ section.index }}>
+      <div class="tw-flex md:tw-justify-between tw-gap-[1.4rem]">
+        <div class="tw-w-[100%]">
+          <div class="tw-gap-4">
+            <ul
+              class="has-submenu md:tw-flex tw-justify-between tw-mt-[1.6rem] md:tw-mt-[2rem]"
+              role="list"
+            >
+              {%- for column in section.settings.menu.links -%}
+                <li class="{% if forloop.index > 1 %}tw-pl-[2%] tw-border-l-2 tw-border-solid tw-border-l-white{% endif %}">
+                  {%- for link in column.links -%}
+                    {%- if link.links != blank -%}
+                      <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
+                        <summary
+                          id="HeaderDrawer-{{ link.handle }}"
+                          class="menu-drawer__menu-item list-menu__item tw-items-start md:tw-flex md:tw-flex-col tw-justify-start tw-cursor-default"
+                          tabindex="-1"
+                        >
+                          <span class="tw-text-[1.3rem] tw-uppercase tw-font-primary tw-font-semibold" tabindex="-1">
+                            {{- link.title | escape -}}
+                          </span>
+                          <ul class="tw-flex tw-flex-col tw-gap-[1.2rem] md:tw-gap-[0.4rem] tw-pb-[1.3rem] tw-w-[100%]">
+                            {% for sublink in link.links %}
+                              <li>
+                                <a
+                                  href="{{ sublink.url }}"
+                                  class="tw-text-[1.4rem] md:tw-text-[1.3rem] tw-font-normal tw-font-primary link link--text list-menu__item list-menu__item--link tw-py-0 {% if link.active %} list-menu__item--active{% endif %} tw-text-[rgb(var(--color-button))]"
+                                >
+                                  {{ sublink.title }}
+                                </a>
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        </summary>
+                      </details>
+                    {%- else -%}
+                      <a
+                        id="HeaderDrawer-{{ link.handle }}"
+                        href="{{ link.url }}"
+                        class="menu-drawer__menu-item tw-text-[1.4rem] tw-font-primary tw-font-bold list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"
+                        {% if link.current %}
+                          aria-current="page"
+                        {% endif %}
+                      >
+                        {{ link.title | escape }}
+                      </a>
+                    {%- endif -%}
+                  {%- endfor -%}
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </javascript-injected-section>
+{% endif %}
+
+{% if lazy_load_section != blank %}
+  </lazy-section>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Custom mega menu items",
+  "class": "mega-menu-section",
+  "enabled_on": {
+    "groups": ["header"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "parent",
+      "label": "Link heading",
+      "default": "SHOP",
+      "info": "The mega menu will appear below this parent link"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Megamenu Shop"
+    }
+  ]
+}
+{% endschema %}
