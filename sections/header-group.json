@@ -113,7 +113,7 @@
       "settings": {
         "menu": "main-menu",
         "menu_type_desktop": "mega",
-        "sticky_header_type": "always",
+        "sticky_header_type": "reduce-logo-size",
         "show_line_separator": true,
         "color_scheme": "background-1",
         "menu_color_scheme": "scheme-1d915114-8978-4198-9b07-e7d64993e6b7",
@@ -136,108 +136,11 @@
         "padding_bottom": 52
       }
     },
-    "cb405230-628a-4089-807a-c8664c7378b9": {
-      "type": "megamenu-item",
-      "blocks": {
-        "96f5c4b2-8f7f-47de-93cb-feccccd2ee43": {
-          "type": "column",
-          "settings": {
-            "link_text": "I-series",
-            "link_description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
-            "link_url": ""
-          }
-        },
-        "ecd8f8d0-55af-48c9-823f-1684d9fe87d1": {
-          "type": "column",
-          "settings": {
-            "link_text": "I-series",
-            "link_description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
-            "link_url": ""
-          }
-        },
-        "6cae09e9-97eb-46ad-9c4e-89b60a20c784": {
-          "type": "column",
-          "settings": {
-            "link_text": "I-series",
-            "link_description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
-            "link_url": ""
-          }
-        },
-        "1d6656e5-9246-44d5-93ec-09f72bfee2d7": {
-          "type": "column",
-          "settings": {
-            "link_text": "I-series",
-            "link_description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
-            "link_url": ""
-          }
-        },
-        "87c0ee14-ab14-4e9e-b2c4-05c7e1d686f0": {
-          "type": "column",
-          "settings": {
-            "link_text": "I-series",
-            "link_description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
-            "link_url": ""
-          }
-        },
-        "22d92066-2acf-49a6-9033-12c37a854233": {
-          "type": "column",
-          "settings": {
-            "link_text": "I-series",
-            "link_description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
-            "link_url": ""
-          }
-        },
-        "2849358e-cddb-427c-8572-a8b97ff3d3c4": {
-          "type": "column",
-          "settings": {
-            "link_text": "I-series",
-            "link_description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
-            "link_url": ""
-          }
-        },
-        "3e6be402-ae87-4b83-9a89-e31070a89004": {
-          "type": "column",
-          "settings": {
-            "link_text": "I-series",
-            "link_description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
-            "link_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "96f5c4b2-8f7f-47de-93cb-feccccd2ee43",
-        "ecd8f8d0-55af-48c9-823f-1684d9fe87d1",
-        "6cae09e9-97eb-46ad-9c4e-89b60a20c784",
-        "1d6656e5-9246-44d5-93ec-09f72bfee2d7",
-        "87c0ee14-ab14-4e9e-b2c4-05c7e1d686f0",
-        "22d92066-2acf-49a6-9033-12c37a854233",
-        "2849358e-cddb-427c-8572-a8b97ff3d3c4",
-        "3e6be402-ae87-4b83-9a89-e31070a89004"
-      ],
-      "disabled": true,
-      "settings": {
-        "parent": "Catalog",
-        "heading": "Main Heading",
-        "subheading": "Main Subheading",
-        "image_heading": "Heading",
-        "image_subheading": "<p>Subheading</p>",
-        "image_button_text": "Click",
-        "image_button_link": "shopify://collections/all"
-      }
-    },
-    "7a146f3f-997d-4b81-882f-6acfbd99a2c1": {
-      "type": "megamenu-item-demo-1",
+    "megamenu-shop": {
+      "type": "megamenu-shop",
       "settings": {
         "parent": "SHOP",
-        "heading": "",
-        "subheading": "",
-        "menu": "shop",
-        "popular_menu_item": "",
-        "popular_text": "",
-        "image_heading": "",
-        "image_subheading": "",
-        "image_button_text": "",
-        "image_button_link": ""
+        "menu": "header-desktop-shop"
       }
     },
     "a6ac85cd-b558-4cf8-9f53-accb3b902ecd": {
@@ -247,8 +150,8 @@
         "heading": "",
         "subheading": "",
         "menu": "case-histories",
-        "popular_menu_item": "AlliTech",
-        "popular_text": "Popular",
+        "popular_menu_item": "",
+        "popular_text": "",
         "image_heading": "",
         "image_subheading": "",
         "image_button_text": "",
@@ -314,8 +217,8 @@
         "heading": "",
         "subheading": "",
         "menu": "health-suggestions",
-        "popular_menu_item": "AlliTech",
-        "popular_text": "Popular",
+        "popular_menu_item": "",
+        "popular_text": "",
         "image_heading": "",
         "image_subheading": "",
         "image_button_text": "",
@@ -329,8 +232,7 @@
     "announcement-bar",
     "header",
     "29597e83-b5df-402e-9c55-1f5773f2d069",
-    "cb405230-628a-4089-807a-c8664c7378b9",
-    "7a146f3f-997d-4b81-882f-6acfbd99a2c1",
+    "megamenu-shop",
     "a6ac85cd-b558-4cf8-9f53-accb3b902ecd",
     "pdp_announcement_bar_prQhEe",
     "megamenu_item_demo_1_bnzqex"
