@@ -33,8 +33,9 @@
             {{ block.settings.heading }}
           </h2>
         {%- when 'paragraph' -%}
+          {%- comment -%} 615px is equal to the width of the form below {%- endcomment -%}
           <div
-            class="newsletter__subheading tw-font-primary newsletter-para rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="tw-max-w-[615px] tw-mx-auto tw-font-primary newsletter-para rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
@@ -46,7 +47,7 @@
         {%- when 'email_form' -%}
           <div
             {{ block.shopify_attributes }}
-            class="color-{{ section.settings.color_scheme }} tw-pt-[10px] md:tw-pt-[35px]"
+            class="color-{{ section.settings.color_scheme }} tw-pt-[10px] md:tw-pt-[35px] tw-w-[min-content] tw-mx-auto"
           >
             <div class="tw-text-[#0C066A] tw-text-center tw-font-primary tw-text-[9px] md:tw-text-[20px] tw-font-medium tw-pb-[8px] hidden">
               {{ 'newsletter.email_address' | t }}
@@ -54,13 +55,13 @@
             {% form 'customer', class: 'newsletter-form' %}
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div
-                class="newsletter-form__field-wrapper md:tw-flex md:tw-justify-center md:tw-items-center md:tw-gap-x-3 {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="tw-inline-block tw-mx-auto tw-w-full md:tw-flex md:tw-justify-center md:tw-items-center md:tw-gap-x-3 {% if settings.animations_reveal_on_scroll %}scroll-trigger animate--slide-in{% endif %}"
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                <div class="field bmd:tw-mb-[13px] tw-min-w-80">
+                <div class="field bmd:tw-mb-[13px] tw-min-w-80 tw-max-w-80">
                   <input
                     id="NewsletterForm--{{ section.id }}--first_name"
                     type="text"
@@ -88,7 +89,7 @@
                     First Name
                   </label>
                 </div>
-                <div class="field bmd:tw-mb-[13px] tw-min-w-80">
+                <div class="field bmd:tw-mb-[13px] tw-min-w-80 tw-max-w-80">
                   <input
                     id="NewsletterForm--{{ section.id }}--email"
                     type="email"

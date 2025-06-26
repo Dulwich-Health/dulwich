@@ -11,7 +11,7 @@
   .newsletter-form {
     align-items: flex-start;
     margin: 0 auto;
-    max-width: 40rem;
+    /* max-width: 40rem; */
   }
 }
 
@@ -50,12 +50,14 @@
 }
 
 .newsletter-form__button:focus-visible {
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.4rem rgba(var(--color-foreground));
+  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
+    0 0 0 0.4rem rgba(var(--color-foreground));
   background-color: rgb(var(--color-button));
 }
 
 .newsletter-form__button:focus {
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.4rem rgba(var(--color-foreground));
+  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
+    0 0 0 0.4rem rgba(var(--color-foreground));
   background-color: rgb(var(--color-button));
 }
 
@@ -68,16 +70,18 @@
 }
 
 .newsletter .field__label.newsletter-label {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-.newsletter .field__input:not(:placeholder-shown)~.field__label.newsletter-label,
-.newsletter .field__input:focus~.field__label.newsletter-label {
-    top: 25%;
+.newsletter
+  .field__input:not(:placeholder-shown)
+  ~ .field__label.newsletter-label,
+.newsletter .field__input:focus ~ .field__label.newsletter-label {
+  top: 25%;
 }
