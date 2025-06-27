@@ -297,12 +297,12 @@
     "60c6c5f7-a53f-4f0e-8c7f-ac8a2ffd94ae": {
       "type": "featured-collection",
       "settings": {
-        "title": "All Our Products",
+        "title": "Latest Products",
         "text_alignment": "center",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
-        "collection": "all",
+        "collection": "latest",
         "products_to_show": 12,
         "full_width": false,
         "show_view_all": true,
