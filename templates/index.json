@@ -263,7 +263,7 @@
         "text_TNCErP": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Delivery to Europe?</strong>  We are excited to announce that EU deliveries are once again available.</p>",
+            "text": "<p><strong>Need help?</strong> Give us a call on <a href=\"tel:+44 208 670 5883\">+44 (0)20 8670 5883</a></p>",
             "text_font_size": "18",
             "text_font_weight": "400",
             "text_line_height": "28",
