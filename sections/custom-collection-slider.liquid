@@ -8,28 +8,30 @@
 
 {% if lazy_load_section == blank %}
   {% style %}
-   .padding-{{ section.id }} {
-      padding-top: {{ section.settings.mobile_padding_top | append: 'px' }};
-      padding-bottom: {{ section.settings.mobile_padding_bottom | append: 'px' }};
-    }
-    @media screen and (min-width: 750px) {
-      .padding-{{ section.id }} {
-        padding-top: {{ section.settings.section_padding_top | append: 'px' }};
-        padding-bottom: {{ section.settings.section_padding_bottom | append: 'px' }};
-      }
-    }
-    {% for block in section.blocks %}
-      .collection_slider-bg--{{ block.id }} {
-        background: {{ block.settings.disc_color }};
-      }
-    {% endfor %}
+    .padding-{{ section.id }} {
+       padding-top: {{ section.settings.mobile_padding_top | append: 'px' }};
+       padding-bottom: {{ section.settings.mobile_padding_bottom | append: 'px' }};
+     }
+     @media screen and (min-width: 750px) {
+       .padding-{{ section.id }} {
+         padding-top: {{ section.settings.section_padding_top | append: 'px' }};
+         padding-bottom: {{ section.settings.section_padding_bottom | append: 'px' }};
+       }
+     }
+     {% for block in section.blocks %}
+       .collection_slider-bg--{{ block.id }} {
+         background: {{ block.settings.disc_color }};
+       }
+     {% endfor %}
   {% endstyle %}
 
   {{ 'custom-collection-slider.css' | asset_url | stylesheet_tag }}
 
   <div class="padding-{{ section.id }} color-{{ section.settings.color_scheme }} tw-px-[12px] md:tw-px-[40px] page-width">
     {% if section.settings.section_title != blank %}
-      <div class="tw-text-center tw-font-primary tw-text-[19px] md:tw-text-[41px] tw-font-light tw-leading-[27px] md:tw-leading-[58px] tw-mb-[11px] md:tw-mb-[40px] tw-w-full tw-text-[rgb(var(--color-button))]">{{ section.settings.section_title }}</div>
+      <div class="tw-text-center tw-font-primary tw-text-[19px] md:tw-text-[41px] tw-font-light tw-leading-[27px] md:tw-leading-[58px] tw-mb-[11px] md:tw-mb-[40px] tw-w-full tw-text-[rgb(var(--color-button))]">
+        {{ section.settings.section_title }}
+      </div>
     {% endif %}
     {% if section.blocks != blank %}
       <div class="custom-collection-slider tw-flex md:tw-flex-nowrap tw-justify-start lg:tw-justify-center tw-overflow-auto md:tw-pt-[20px] md:tw-pb-[10px] {% if section.settings.flex_wrap %} tw-flex-wrap tw-justify-center {% endif %}">
@@ -39,169 +41,173 @@
           {%- else -%}
             <div class="collection_slider-inner">
           {%- endif -%}
-              <div class="{% if section.settings.show_title_in_disc %}title-inside-disc{% endif %}">
-                <div class="collection_slider-inner-image collection_slider-bg--{{ block.id }}">
-                  {%- assign image_fetch = false -%}
-                  {%- if block.settings.image_fetch == true -%}
-                    {%- assign image_fetch = 'high' -%}
-                    {%- else -%}
-                    {%- assign image_fetch = 'auto' -%}
-                  {%- endif -%}
-                  {%- if block.settings.image != blank -%}
-                    {% render 'responsive-picture', desktopImage: block.settings.image, fetchpriority: image_fetch %}
-                  {%- endif -%}
-                </div>
-                {% if block.settings.collection_name != blank %}
-                  <div class="collection_slider-inner-text tw-text-[9px] md:tw-text-[14px] tw-font-medium tw-text-[rgb(var(--color-foreground))] tw-font-{{ block.settings.font_family_options }}">{{ block.settings.collection_name }}</div>
-                {% else %}
-                  <div class="collection_slider-inner-text tw-text-[9px] md:tw-text-[14px] tw-font-mediumc tw-text-[rgb(var(--color-foreground))] tw-font-{{ block.settings.font_family_options }}">{{ block.settings.collection.title }}</div>
-                {% endif %}
+          <div class="{% if section.settings.show_title_in_disc %}title-inside-disc{% endif %}">
+            <div class="collection_slider-inner-image collection_slider-bg--{{ block.id }}">
+              {%- assign image_fetch = false -%}
+              {%- if block.settings.image_fetch == true -%}
+                {%- assign image_fetch = 'high' -%}
+              {%- else -%}
+                {%- assign image_fetch = 'auto' -%}
+              {%- endif -%}
+              {%- if block.settings.image != blank -%}
+                {% render 'responsive-picture', desktopImage: block.settings.image, fetchpriority: image_fetch %}
+              {%- endif -%}
+            </div>
+            {% if block.settings.collection_name != blank %}
+              <div class="collection_slider-inner-text tw-text-[9px] md:tw-text-[14px] tw-font-medium tw-text-[rgb(var(--color-foreground))] tw-font-{{ block.settings.font_family_options }}">
+                {{ block.settings.collection_name }}
               </div>
+            {% else %}
+              <div class="collection_slider-inner-text tw-text-[9px] md:tw-text-[14px] tw-font-mediumc tw-text-[rgb(var(--color-foreground))] tw-font-{{ block.settings.font_family_options }}">
+                {{ block.settings.collection.title }}
+              </div>
+            {% endif %}
+          </div>
           {%- if block.settings.collection.url != blank -%}
             </a>
           {%- else -%}
             </div>
           {%- endif -%}
-        {% endfor %}    
+        {% endfor %}
       </div>
     {% endif %}
   </div>
-{% endif %}       
-  
+{% endif %}
+
 {% if lazy_load_section != blank %}
   </lazy-section>
 {% endif %}
 
 {% schema %}
-  {
-    "name": "Top Collection Slider",
-    "settings": [
-      {
-        "type" : "checkbox",
-        "id": "show_desktop",
-        "label": "Show on desktop"
-      },
-      {
-        "type": "text",
-        "id": "section_title",
-        "label": "Section title"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_title_in_disc",
-        "label": "Show text over the disc",
-        "default": false
-      },
-      {
-        "type": "checkbox",
-        "id": "flex_wrap",
-        "label": "Wrap Images",
-        "default": false
-      },
-      {
-        "type": "color_scheme",
-        "id": "color_scheme",
-        "default": "scheme_1",
-        "label": "Color Scheme"
-      },
-      {
-        "type": "header",
-        "content": "Section padding settings"
-      },
-      {
-        "type": "range",
-        "id": "section_padding_top",
-        "label": "Padding top (Desktop)",
-        "default": 80,
-        "min": 0,
-        "max": 100,
-        "step": 2
-      },
-      {
-        "type": "range",
-        "id": "section_padding_bottom",
-        "label": "Padding bottom (Desktop)",
-        "default": 80,
-        "min": 0,
-        "max": 100,
-        "step": 2
-      },
-      {
-        "type": "range",
-        "id": "mobile_padding_top",
-        "label": "Padding top (Mobile)",
-        "default": 32,
-        "min": 0,
-        "max": 100,
-        "step": 2
-      },
-      {
-        "type": "range",
-        "id": "mobile_padding_bottom",
-        "label": "Padding bottom (Mobile)",
-        "default": 32,
-        "min": 0,
-        "max": 100,
-        "step": 2
-      }
-    ],
-    "blocks": [
-      {
-        "name": "Collection block",
-        "type": "collection_block",
-        "settings": [
-          {
-            "type": "color",
-            "id": "disc_color",
-            "label": "Disc color",
-            "default": "#60919F"
-          },
-          {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image",
-            "info": "Recommended image dimenisions: 192 x 192 pixels"
-          },
-          {
-            "type": "checkbox",
-            "id": "image_fetch",
-            "label": "Prioritize image fetching",
-            "default":false,
-            "info": "enable it to fetch images faster, only enable it if the secton is in the top level"
-          },
-          {
-            "type": "collection",
-            "id": "collection",
-            "label": "Select Collection"
-          },
-          {
-            "type": "text",
-            "id": "collection_name",
-            "label": "Collection Name"
-          },
-          {
-            "type": "select",
-            "id": "font_family_options",
-            "label": "Font Family",
-            "options": [
-              {
-                "value": "primary",
-                "label": "Poppins"
-              },
-              {
-                "value": "secondary",
-                "label": "Arial"
-              }
-            ],
-            "default": "primary"
-          },
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Top Collection Slider"
-      }
-    ]
-  }
+{
+  "name": "Top Collection Slider",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_desktop",
+      "label": "Show on desktop"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section title"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_title_in_disc",
+      "label": "Show text over the disc",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "flex_wrap",
+      "label": "Wrap Images",
+      "default": false
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "default": "scheme_1",
+      "label": "Color Scheme"
+    },
+    {
+      "type": "header",
+      "content": "Section padding settings"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Padding top (Desktop)",
+      "default": 80,
+      "min": 0,
+      "max": 100,
+      "step": 2
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Padding bottom (Desktop)",
+      "default": 80,
+      "min": 0,
+      "max": 100,
+      "step": 2
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "label": "Padding top (Mobile)",
+      "default": 32,
+      "min": 0,
+      "max": 100,
+      "step": 2
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "label": "Padding bottom (Mobile)",
+      "default": 32,
+      "min": 0,
+      "max": 100,
+      "step": 2
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Collection block",
+      "type": "collection_block",
+      "settings": [
+        {
+          "type": "color",
+          "id": "disc_color",
+          "label": "Disc color",
+          "default": "#60919F"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Recommended image dimenisions: 192 x 192 pixels"
+        },
+        {
+          "type": "checkbox",
+          "id": "image_fetch",
+          "label": "Prioritize image fetching",
+          "default": false,
+          "info": "enable it to fetch images faster, only enable it if the secton is in the top level"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Select Collection"
+        },
+        {
+          "type": "text",
+          "id": "collection_name",
+          "label": "Collection Name"
+        },
+        {
+          "type": "select",
+          "id": "font_family_options",
+          "label": "Font Family",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Poppins"
+            },
+            {
+              "value": "secondary",
+              "label": "Poppins"
+            }
+          ],
+          "default": "primary"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Top Collection Slider"
+    }
+  ]
+}
 {% endschema %}

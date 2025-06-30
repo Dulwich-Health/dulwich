@@ -158,7 +158,7 @@
         "image_button_link": ""
       }
     },
-    "pdp_announcement_bar_prQhEe": {
+    "pdp_announcement_bar": {
       "type": "pdp-announcement-bar",
       "blocks": {
         "block_p7ntLj": {
@@ -234,7 +234,7 @@
     "29597e83-b5df-402e-9c55-1f5773f2d069",
     "megamenu-shop",
     "a6ac85cd-b558-4cf8-9f53-accb3b902ecd",
-    "pdp_announcement_bar_prQhEe",
+    "pdp_announcement_bar",
     "megamenu_item_demo_1_bnzqex"
   ]
 }

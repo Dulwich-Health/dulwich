@@ -1,5 +1,3 @@
-{{ 'pdp-announcement-bar.css' | asset_url | stylesheet_tag }}
-
 {% style %}
   .padding-{{ section.id }} {
     padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
@@ -11,15 +9,61 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  .pdp-announecment-block:not(.is-prev):not(:last-child)::after {
+    content: "";
+    display: block;
+    width: .05rem;
+    height: 2rem;
+    background: rgba(var(--color-foreground));
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media only screen and (max-width: 750px) {
+  .pdp-announecment-block:not(.is-prev):not(:last-child)::after {
+      height: 1.3rem;
+    }
+  }
+  .carousel-wrapper {
+    container-type: inline-size;
+    container-name: wrapper;
+  }
+  .carousel-text {
+    font-size: 0.85rem;
+    font-size: 0.85cqw;
+    font-weight: 500;
+    color: rgba(var(--color-foreground));
+  }
+  @container wrapper (width > 1700px) {
+    .carousel-text {
+      font-size: 1.4rem;
+    }
+  }
+  @container wrapper (width < 1100px) {
+    .carousel-text {
+      font-size: 0.85rem;
+    }
+  }
 {% endstyle %}
 
-<div class="color-{{ section.settings.color_scheme }} pdp-announcement-bar padding-{{ section.id }} {% if section.settings.hide_in_desktop %}md:tw-hidden{%else%}md:tw-block{% endif %} {% if section.settings.hide_in_mobile %}tw-hidden{%else%}tw-block{% endif %}">
-  <div class="tw-max-w-[1440px] tw-mx-auto tw-px-[10px] lg:tw-px-[147px] pdp-container">
+<div
+  class="
+    color-{{ section.settings.color_scheme }}
+    padding-{{ section.id }}
+    {% if section.settings.hide_in_desktop %}md:tw-hidden{%else%}md:tw-block{% endif %}
+    {% if section.settings.hide_in_mobile %}tw-hidden{%else%}tw-block{% endif %}
+    bmd:tw-h-[26px]
+    md:tw-h-[37px]
+    carousel-wrapper
+  "
+>
+  <div class="tw-max-w-[1440px] tw-mx-auto tw-px-[10px] lg:tw-px-[147px]">
     <carousel-component
       id="carousel--{{ section.id }}"
       class="splide"
       data-autoplay="{{ section.settings.enable_autoplay | default: false }}"
-      data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 | default: 3000  }}"
+      data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 | default: 3000 }}"
       data-desktopperpage="{{ section.settings.slides_perpage | default: 1 }}"
       data-mobileperpage="{{ section.settings.slides_perpage_mobile | default: 1 }}"
       data-type="slide"
@@ -38,14 +82,14 @@
                   {% if block.settings.link != blank %}
                     <a
                       href="{{ block.settings.link }}"
-                      class="tw-text-[0.85rem] md:tw-text-[1.4rem] tw-font-medium tw-font-primary tw-text-[rgba(var(--color-foreground))]"
+                      class="carousel-text"
                     >
                       {{- block.settings.block_value | strip_html -}}
                     </a>
                   {% else %}
-                    <div class="tw-text-[0.85rem] md:tw-text-[1.4rem] tw-font-medium tw-font-primary tw-text-[rgba(var(--color-foreground))]">
+                    <span class="carousel-text">
                       {{ block.settings.block_value | strip_html }}
-                    </div>
+                    </span>
                   {% endif %}
                 </div>
               {% endif %}
