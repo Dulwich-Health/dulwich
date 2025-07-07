@@ -1,7 +1,7 @@
 <media-gallery id="MediaGallery-{{ section.id }}" role="region" {% if section.settings.enable_sticky_info %}class="product__media-gallery"{% endif %} aria-label="{{ 'products.product.media.gallery_viewer' | t }}">
   <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
   
-<div class="
+<div class="product-media-gallery
   tw-flex tw-flex-col tw-gap-[18px] md:tw-gap-[28px]
   {%- if section.settings.gallery_layout == 'splide_slider_vertical_thumbnails' -%}
     md:tw-flex md:tw-flex-row-reverse md:tw-gap-x-1
@@ -79,8 +79,8 @@
       aria-label="Thumbnails Viewer"
       data-type="slide"
       data-focus="0"
-      data-desktopperpage="5"
-      data-desktopSlideGap="2rem"
+      data-desktopperpage="3"
+      data-desktopSlideGap="1rem"
       data-isNavigation="true"
       data-showArrows="true"
       {% if section.settings.gallery_layout == 'splide_slider_vertical_thumbnails' %}
@@ -90,7 +90,7 @@
       <div class="splide__track">
         <ul class="{% if section.settings.gallery_layout contains 'slider' %} splide__list{% else %} tw-flex tw-flex-wrap tw-justify-center tw-gap-y-3{% endif %}">
           {%- for media in product.media -%}
-          <li class="{% if section.settings.gallery_layout contains 'slider' %} splide__slide tw-overflow-hidden tw-mr-[6px] md:tw-mr-[22px]{% else %} {{ section.settings.mobile_items }} {{ section.settings.desktop_items }} tw-px-2{% endif %}" data-media-id="{{ media.id }}" data-filter="{{ media.alt | escape }}">
+          <li class="{% if section.settings.gallery_layout contains 'slider' %} splide__slide tw-overflow-hidden tw-mr-[6px] md:tw-mr-[9px]{% else %} {{ section.settings.mobile_items }} {{ section.settings.desktop_items }} tw-px-2{% endif %}" data-media-id="{{ media.id }}" data-filter="{{ media.alt | escape }}">
             <div class="slot-item group">
               {%- if media.media_type == 'model' -%}
                 <span class="thumbnail__badge" aria-hidden="true">

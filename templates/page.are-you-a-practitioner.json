@@ -19,15 +19,6 @@
     },
     "1735563144c8e709de": {
       "type": "apps",
-      "blocks": {
-        "advanced_registration_advanced_registration_3E6kcr": {
-          "type": "shopify://apps/advanced-registration/blocks/advanced-registration/a64c4b10-b618-4bd2-915b-dbb6662c9253",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "advanced_registration_advanced_registration_3E6kcr"
-      ],
       "disabled": true,
       "settings": {
         "include_margins": true

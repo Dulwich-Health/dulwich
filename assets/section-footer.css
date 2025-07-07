@@ -50,8 +50,8 @@
 .footer__content-bottom {
   border-top: solid 0.1rem rgba(var(--color-foreground), 0.08);
   padding-top: 14px;
-  background: #557781;
-  color: #ffffff80;
+  background: #ffffff;
+  color: #000000;
 }
 
 .footer__content-bottom:only-child {
@@ -537,12 +537,12 @@
   opacity: 0.2;
   background-color: #60919F;
 }
-.footer-block--menu ul.footer-block__details-content.list-unstyled>li+li {
+/* .footer-block--menu ul.footer-block__details-content.list-unstyled>li+li {
   border-top: 2px solid rgb(var(--color-foreground), 0.29);
-}
-.footer-block__details-content .list-menu__item--link {
+} */
+/* .footer-block__details-content .list-menu__item--link {
   padding: 8px 0;
-}
+} */
 .footer-brand-desc p,
 .footer-block__details-content .list-menu__item--link {
   font-size: 17px;

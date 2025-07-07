@@ -31,7 +31,7 @@
                         {% endif %}
                     {% endif %}
                     <li class="tw-inline-block">
-                        <a href="{{ product.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium bmd:tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page">{{ product.title }}</a>
+                        <a href="{{ product.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium bmd:tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page">{{ product.title | truncate: 30 }}</a>
                     </li>
                 </breadcrumbs-referrer>          
 

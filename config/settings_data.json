@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "enable_lazy_loading_sections": true,
+    "enable_lazy_loading_sections": false,
     "hp_eager_section_count": 2,
     "logo": "shopify://shop_images/DulwichHealthLogo_Round.svg",
     "logo_width": 117,
@@ -110,8 +110,9 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
-    "brand_headline": "Dulwich Health",
+    "brand_headline": "",
     "brand_description": "<p>The most unique range of health information & products. Including OxyTech, AlliTech and Geomack.</p>",
+    "brand_image": "shopify://shop_images/DulwichHealthLogo_Round.svg",
     "social_facebook_link": "https://www.facebook.com/DulwichHealth",
     "social_instagram_link": "https://www.instagram.com/dulwichhealth/",
     "social_youtube_link": "",
@@ -128,7 +129,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": false,
-    "cart_type": "notification_drawer",
+    "cart_type": "page",
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
@@ -244,11 +245,6 @@
         "disabled": false,
         "settings": {}
       },
-      "6913107989674730356": {
-        "type": "shopify://apps/reviews-io/blocks/reviewsio-sessions/92a082e5-b297-4e88-b428-ac96cbc505f9",
-        "disabled": true,
-        "settings": {}
-      },
       "13768625480086291342": {
         "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": false,
@@ -266,6 +262,44 @@
           "show_cart": true
         }
       },
+      "10384935893930344104": {
+        "type": "shopify://apps/seoant-redirects/blocks/brokenlink-404/cc7b1996-e567-42d0-8862-356092041863",
+        "disabled": false,
+        "settings": {}
+      },
+      "6628239160433917566": {
+        "type": "shopify://apps/littledata-revenue-tracking/blocks/LittledataLayer/45a35ed8-a2b2-46c3-84fa-6f58497c5345",
+        "disabled": false,
+        "settings": {}
+      },
+      "5133962947178206058": {
+        "type": "shopify://apps/kraken-cart-drawer/blocks/cart-drawer/395e4ebd-4534-4c0b-b7c2-4ccc91f8fe1e",
+        "disabled": false,
+        "settings": {
+          "custom_style": "",
+          "custom_script": ""
+        }
+      },
+      "14348518947459141286": {
+        "type": "shopify://apps/oxilayer-invoice/blocks/order_view_download_invoice/bfc5c46a-c89f-49e7-a859-28fc2c844936",
+        "disabled": false,
+        "settings": {
+          "selector": ".order h2",
+          "custom_selector": "",
+          "vertical_position": "afterend",
+          "horizontal_position": "left",
+          "clear_both": true,
+          "button_label": "Download Invoice",
+          "type": "secondary",
+          "button_color": "",
+          "button_color_hover": "",
+          "text_color": "",
+          "margin_top": 15,
+          "margin_bottom": 15,
+          "margin_left": 0,
+          "margin_right": 0
+        }
+      },
       "15316669992541710076": {
         "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-snippet/92a082e5-b297-4e88-b428-ac96cbc505f9",
         "disabled": false,
@@ -278,15 +312,10 @@
           "listen_for_changes": true,
           "rating_without_brackets": false,
           "format_review_count": false,
-          "show_popup": true,
+          "show_popup": false,
           "anchor_to_reviews_widget": true,
           "show_empty_stars": true
         }
-      },
-      "10384935893930344104": {
-        "type": "shopify://apps/seoant-redirects/blocks/brokenlink-404/cc7b1996-e567-42d0-8862-356092041863",
-        "disabled": false,
-        "settings": {}
       }
     },
     "color_schemes": {
