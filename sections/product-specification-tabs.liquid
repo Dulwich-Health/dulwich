@@ -1,0 +1,216 @@
+{%- liquid
+  assign current_variant = product.selected_or_first_available_variant
+-%}
+
+
+<section class="product-specification-section page-width" id="product_tabs_content">
+
+    <div class="mobile-tabs">
+        {% if product.metafields.custom.product_detail_description != blank %}
+            <button data-target="#description">Description</button>
+        {% endif %}
+        {% if product.metafields.custom.product_detail_instructions != blank %}
+            <button data-target="#instructions">Instructions</button>
+        {% endif %}
+        {% if product.metafields.custom.product_detail_information != blank %}
+            <button data-target="#product-info">Product Information</button>
+        {% endif %}
+        {% if product.metafields.custom.product_detail_ingredients != blank %}
+            <button data-target="#ingredients">Ingredients</button>
+        {% endif %}
+        {% if product.metafields.custom.product_quality_requirements != blank %}
+            <button data-target="#quality">Quality Requirements</button>
+        {% endif %}
+        {% if product.metafields.custom.product_detail_review != blank %}
+            <button data-target="#product-review">Review</button>
+        {% endif %}
+    </div>
+
+    <div class="content-wrapper">
+        <div class="left-side-content">
+            {% if product.metafields.custom.product_detail_description != blank %}
+              <section id="description" class="product-section-card product_detail_description">
+                  <h2 class="specification_title">Description</h2>
+                      <div class="section_content description_content">
+                           <div class="short-description">
+                                {{ product.metafields.custom.product_detail_description | metafield_tag }}
+                            </div>
+                            <a href="#" class="readmore">Read more...</a>
+
+                            <div class="full-description" style="display: none;">
+                                {{ product.metafields.custom.product_detail_description | metafield_tag }}
+                                <a href="#" class="readless">Read less</a>
+                            </div>
+                      </div>
+                      
+                      {% if product.metafields.custom.product_detail_pdf != blank %}
+                          <div class="tw-mt-[12px] button-block-order">
+                              <a href="{{ product.metafields.custom.product_detail_pdf }}" target="_blank" class="tw-font-primary tw-text-[14px] lg:tw-text-[18px] tw-uppercase tw-font-normal tw-py-[8px] lg:tw-py-[12px] tw-px-[22px] lg:tw-px-[34px] tw-rounded-[39px] tw-text-center tw-text-white tw-bg-bright-red">CLICK TO DOWNLOAD PDF</a>
+                          </div>
+                      {% endif %}
+              </section>
+          {% endif %}
+  
+          {% if product.metafields.custom.product_detail_instructions != blank %}
+              <section id="instructions" class="product-section-card product_detail_instruction">
+                  <h2 class="specification_title">Instruction</h2>
+                  <div class="section_content instructions_content">
+                      {{ product.metafields.custom.product_detail_instructions | metafield_tag }}
+                  </div>
+              </section>
+          {% endif %}
+        </div>
+
+        <div class="right-side-content">
+          {% if product.metafields.custom.product_detail_information != blank %}
+            <section id="product-info" class="product-section-card product_detail_information">
+                <h2 class="specification_title">Product Information</h2>
+                <div class="section_content product_info_content">
+
+                    <div class="tw-p-[10px] lg:tw-p-[18px] tw-overflow-x-auto">
+                      {% assign informations_table = product.metafields.custom.product_detail_information | metafield_tag | replace: '<p>', '' | replace: '</p>', '' | split: "\n" %}
+                      {% assign headers = informations_table[0] | split: "|" %}
+                      {% assign rows = informations_table | slice: 1, informations_table.size %}
+                      <table class="tw-w-full product-information-table">
+                        <thead>
+                          <tr>
+                            {% for header in headers %}
+                              <th class="tw-font-primary tw-text-[14px] lg:tw-text-[19px] tw-font-medium tw-text-left tw-text-bright-red">{{ header }}</th>
+                            {% endfor %}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {% for row in rows %}
+                            {% assign columns = row | split: "|" %}
+                            <tr>
+                              {% for column in columns %}
+                                <td class="tw-font-primary tw-text-[13px] lg:tw-text-[18px] tw-font-normal tw-text-black tw-text-left tw-py-[10px] lg:tw-py-[17px]">{{ column | replace: "<br />", "" | strip }}</td>
+                              {% endfor %}
+                            </tr>
+                          {% endfor %}
+                        </tbody>
+                      </table>
+                    </div>
+                    
+                    {% if product.metafields.custom.product_information_table_description != blank %}
+                        <p class="product-info-tabel-description">{{ product.metafields.custom.product_information_table_description | replace: '<p>', '' | replace: '</p>', '' }}</p>
+                    {% endif %}
+                </div>
+            </section>
+        {% endif %}
+
+        {% if product.metafields.custom.product_detail_ingredients != blank %}
+            <section id="ingredients" class="product-section-card product_detail_ingredients">
+                <h2 class="specification_title">Ingredients</h2>
+                <div class="section_content ingredients_content">
+                    {{ product.metafields.custom.product_detail_ingredients | metafield_tag }}
+                </div>
+            </section>
+        {% endif %}
+
+        {% if product.metafields.custom.product_quality_requirements != blank %}
+            <section id="quality" class="product-section-card product_quality_requirements">
+                <h2 class="specification_title">Quality Requirements</h2>
+                <div class="section_content quality_requirements_content">
+                    {{ product.metafields.custom.product_quality_requirements | metafield_tag }}
+
+                    {% if product.metafields.custom.product_usp_image != blank %}
+                      <div class="usp-img-block-order">
+                        <img src="{{ product.metafields.custom.product_usp_image | image_url  }}" alt='usp' />
+                      </div>
+                    {% endif %}
+                </div>
+            </section>
+        {% endif %}
+
+        {% if product.metafields.custom.product_detail_review != blank %}
+            <section id="product-review" class="product-section-card product_detail_review">
+                <h2 class="specification_title">Review</h2>
+                <div class="section_content detail_review_content">
+                    {{ product.metafields.custom.product_detail_review | metafield_tag }}
+                </div>
+            </section>
+        {% endif %}
+        </div>
+        {% if product.metafields.custom.product_disclaimer != blank %}
+            <section id="disclaimer" class="product_disclaimer">
+                <h2>Disclaimer</h2>
+                <div class="section_content disclaimer_content">
+                    {{ product.metafields.custom.product_disclaimer | metafield_tag }}
+                </div>
+            </section>
+        {% endif %}
+    </div>
+    
+</section>
+
+{% schema %}
+{
+    "name": "Product Detail Section",
+    "settings": [
+        
+    ],
+    "presets": [
+        {
+            "name": "Product Detail Section"
+        }
+    ]
+}
+{% endschema %}
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+       const tabButtons = document.querySelectorAll('.mobile-tabs button');
+      const offset = document.querySelector('.mobile-tabs').offsetHeight;
+      
+      // Get --header-height value from CSS (e.g., ":root { --header-height: 10px; }")
+      const rootStyles = getComputedStyle(document.documentElement);
+      const headerHeight = parseInt(rootStyles.getPropertyValue('--header-height')) || 0;
+      
+      // Scroll to section on tab click
+      tabButtons.forEach(button => {
+          button.addEventListener('click', () => {
+              const targetId = button.getAttribute('data-target');
+              const targetSection = document.querySelector(targetId);
+      
+              if (targetSection) {
+                  const targetPosition = targetSection.offsetTop - offset - headerHeight;
+      
+                  window.scrollTo({
+                      top: targetPosition,
+                      behavior: 'smooth'
+                  });
+              }
+          });
+      });
+      
+      const sections = document.querySelectorAll('.product-section-card');
+      
+      // Highlight active tab on scroll and scroll tab into view
+      window.addEventListener('scroll', () => {
+          let currentSectionId = '';
+      
+          sections.forEach(section => {
+            const sectionTop = section.offsetTop - offset - headerHeight - 15;
+            const sectionBottom = sectionTop + section.offsetHeight + 15;
+    
+            if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+                currentSectionId = `#${section.id}`;
+            }
+        });
+    
+        tabButtons.forEach(button => {
+            const isActive = button.getAttribute('data-target') === currentSectionId;
+            button.classList.toggle('active', isActive);
+    
+            if (isActive) {
+                button.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+            }
+        });
+      });
+
+    });
+
+</script>

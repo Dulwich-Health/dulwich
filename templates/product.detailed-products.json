@@ -12,43 +12,58 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "rating_9AXLF6": {
+          "type": "rating",
           "disabled": true,
+          "settings": {}
+        },
+        "reviews_io_reviewsio_rating_output_9d364J": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-output/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {}
+        },
+        "text_4breqY": {
+          "type": "text",
           "settings": {
-            "text": "<p>{{ product.vendor }}</p>",
-            "text_color": "",
+            "custom_class": "product-highlights",
+            "text": "<p>{{ product.metafields.custom.product_highlights.value.info_1.value }}</p><p>{{ product.metafields.custom.product_highlights.value.info_2.value }}</p>",
+            "text_color": "#000000",
             "text_font_style": "normal",
-            "text_style": "uppercase",
+            "text_style": "body",
             "text_bg_color": "",
-            "text_font_size": "13",
+            "text_font_size": "12",
             "text_font_weight": "400",
-            "text_top_spacing": 10,
-            "text_bottom_spacing": 10,
-            "mobile_text_font_size": "11",
+            "text_top_spacing": 0,
+            "text_bottom_spacing": 0,
+            "mobile_text_font_size": "12",
             "mobile_text_font_weight": "400",
             "mobile_text_top_spacing": 6,
             "mobile_text_bottom_spacing": 6
           }
         },
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
-        "caption": {
-          "type": "text",
-          "disabled": true,
+        "description_r8AP4h": {
+          "type": "description",
           "settings": {
-            "text": "<p>{{ product.metafields.descriptors.subtitle.value }}</p>",
-            "text_color": "",
+            "is_meta_description": true
+          }
+        },
+        "text_qGWJxV": {
+          "type": "text",
+          "settings": {
+            "custom_class": "product-instruction",
+            "text": "<p>{{ product.metafields.custom.product_instruction.value }}</p>",
+            "text_color": "#000000",
             "text_font_style": "normal",
-            "text_style": "subtitle",
+            "text_style": "body",
             "text_bg_color": "",
-            "text_font_size": "13",
+            "text_font_size": "12",
             "text_font_weight": "400",
             "text_top_spacing": 10,
             "text_bottom_spacing": 10,
-            "mobile_text_font_size": "11",
+            "mobile_text_font_size": "12",
             "mobile_text_font_weight": "400",
             "mobile_text_top_spacing": 6,
             "mobile_text_bottom_spacing": 6
@@ -56,8 +71,10 @@
         },
         "text_MUQWEr": {
           "type": "text",
+          "disabled": true,
           "settings": {
-            "text": "<p>{{ product.metafields.custom.product_description.value.text_1 | metafield_tag }}</p>",
+            "custom_class": "",
+            "text": "<p>{{ product.metafields.custom.product_description.value.text_1 | metafield_tag }}</p><p></p>",
             "text_color": "#000000",
             "text_font_style": "normal",
             "text_style": "subtitle",
@@ -74,7 +91,9 @@
         },
         "text_fWYi8t": {
           "type": "text",
+          "disabled": true,
           "settings": {
+            "custom_class": "",
             "text": "<p>{{ product.metafields.custom.product_description.value.text_2 | metafield_tag }}</p>",
             "text_color": "#60919f",
             "text_font_style": "italic",
@@ -92,7 +111,9 @@
         },
         "text_KqPYKy": {
           "type": "text",
+          "disabled": true,
           "settings": {
+            "custom_class": "",
             "text": "<p>{{ product.metafields.custom.product_description.value.text_3 | metafield_tag }}</p>",
             "text_color": "#363636",
             "text_font_style": "italic",
@@ -110,7 +131,9 @@
         },
         "text_zrNWkt": {
           "type": "text",
+          "disabled": true,
           "settings": {
+            "custom_class": "",
             "text": "<p>{{ product.metafields.custom.product_description.value.text_4 | metafield_tag }}</p>",
             "text_color": "",
             "text_font_style": "normal",
@@ -130,6 +153,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
+            "custom_class": "",
             "text": "<p>{{ product.metafields.custom.product_description.value.text_5 | metafield_tag }}</p>",
             "text_color": "",
             "text_font_style": "normal",
@@ -144,10 +168,6 @@
             "mobile_text_top_spacing": 0,
             "mobile_text_bottom_spacing": 0
           }
-        },
-        "reviews_io_reviewsio_rating_output_wdzPXD": {
-          "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-output/92a082e5-b297-4e88-b428-ac96cbc505f9",
-          "settings": {}
         },
         "scroll_to_section_block_dcGqJi": {
           "type": "scroll_to_section_block",
@@ -183,9 +203,37 @@
             "show_gift_card_recipient": true
           }
         },
+        "payment_icons_8kQBLd": {
+          "type": "payment_icons",
+          "settings": {
+            "payment_enable": true
+          }
+        },
+        "icon_with_text_G3W7ez": {
+          "type": "icon-with-text",
+          "settings": {
+            "block_title": "Why Dulwich ?",
+            "layout": "horizontal",
+            "icon_1": "truck",
+            "heading_1": "Next day deliver available",
+            "icon_2": "snowflake",
+            "heading_2": "Trusted since 1986",
+            "icon_3": "return",
+            "heading_3": "30 Day No Quibbles Returns"
+          }
+        },
+        "faq_dcaPyf": {
+          "type": "faq",
+          "settings": {
+            "show_faq": true,
+            "block_title": "Frequently Asked Questions"
+          }
+        },
         "text_DpBRNX": {
           "type": "text",
+          "disabled": true,
           "settings": {
+            "custom_class": "",
             "text": "<p><strong>Dulwich Heath Trusted Since 1986 | With over 30,000 customers</strong></p>",
             "text_color": "#60919f",
             "text_font_style": "normal",
@@ -203,7 +251,9 @@
         },
         "text_fj3ike": {
           "type": "text",
+          "disabled": true,
           "settings": {
+            "custom_class": "",
             "text": "<p><strong>30 Day No Quibbles Returns </strong></p>",
             "text_color": "#60919f",
             "text_font_style": "normal",
@@ -221,7 +271,9 @@
         },
         "text_PrWUqf": {
           "type": "text",
+          "disabled": true,
           "settings": {
+            "custom_class": "",
             "text": "<p><strong>Next Day UK Delivery Available</strong></p>",
             "text_color": "#60919f",
             "text_font_style": "normal",
@@ -236,104 +288,41 @@
             "mobile_text_top_spacing": 12,
             "mobile_text_bottom_spacing": 12
           }
-        },
-        "payment_icons_8kQBLd": {
-          "type": "payment_icons",
-          "settings": {
-            "payment_enable": true
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "disabled": true,
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "8fa31550-c1f0-451b-8f6f-0233d67db94a": {
-          "type": "pincode",
-          "disabled": true,
-          "settings": {
-            "heading": "Check availability at",
-            "heading_size": "h1",
-            "placeholder_text": "Enter Pincode",
-            "pincode_available_message": "We deliver to your pincode.",
-            "pincode_unavailable_message": "Sorry, Pincode not serviceable!",
-            "button_text": "Check"
-          }
-        },
-        "complementary_hHMnVh": {
-          "type": "complementary",
-          "disabled": true,
-          "settings": {
-            "block_heading": "Pairs well with",
-            "make_collapsible_row": false,
-            "icon": "price_tag",
-            "product_list_limit": 10,
-            "products_per_page": 3,
-            "pagination_style": "counter",
-            "image_ratio": "square",
-            "enable_quick_add": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "disabled": true,
-          "settings": {}
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "disabled": true,
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
-        "vendor",
         "title",
-        "caption",
+        "rating_9AXLF6",
+        "reviews_io_reviewsio_rating_output_9d364J",
+        "text_4breqY",
+        "description_r8AP4h",
+        "text_qGWJxV",
         "text_MUQWEr",
         "text_fWYi8t",
         "text_KqPYKy",
         "text_zrNWkt",
         "text_4h8pwe",
-        "reviews_io_reviewsio_rating_output_wdzPXD",
         "scroll_to_section_block_dcGqJi",
         "price",
         "inventory_ce6m4Q",
         "popup_block_PTWYXj",
         "buy_buttons",
+        "payment_icons_8kQBLd",
+        "icon_with_text_G3W7ez",
+        "faq_dcaPyf",
         "text_DpBRNX",
         "text_fj3ike",
-        "text_PrWUqf",
-        "payment_icons_8kQBLd",
-        "variant_picker",
-        "8fa31550-c1f0-451b-8f6f-0233d67db94a",
-        "complementary_hHMnVh",
-        "description",
-        "collapsible-row-0",
-        "share"
+        "text_PrWUqf"
       ],
       "settings": {
         "enable_sticky_info": false,
-        "media_size": "small",
+        "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "splide_slider",
+        "gallery_layout": "splide_slider_vertical_thumbnails",
         "media_position": "left",
         "image_zoom": "none",
-        "image_enlarge": "enable",
+        "image_enlarge": "hide",
         "mobile_thumbnails": "show",
         "hide_variants": true,
         "enable_video_looping": false,
@@ -344,16 +333,9 @@
         "padding_bottom": 16
       }
     },
-    "product_description_V9WMtJ": {
-      "type": "product-description",
-      "disabled": true,
-      "settings": {
-        "show_description": true,
-        "desktop_padding_top": 30,
-        "desktop_padding_bottom": 30,
-        "mobile_padding_top": 10,
-        "mobile_padding_bottom": 10
-      }
+    "product_specification_tabs_83ip7i": {
+      "type": "product-specification-tabs",
+      "settings": {}
     },
     "tab_switch_header_MQEeye": {
       "type": "tab-switch-header",
@@ -366,14 +348,12 @@
         },
         "text_6HRxnV": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "tab_name": "Additional Information"
           }
         },
         "text_AdWaU3": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "tab_name": "Delivery costs & Returns"
           }
@@ -389,28 +369,6 @@
         "heading": "",
         "padding_top": 60,
         "padding_top_mobile": 20
-      }
-    },
-    "product_details_tab_switching_yyNcFh": {
-      "type": "product-details-tab-switching",
-      "blocks": {
-        "description_qEfWdw": {
-          "type": "description",
-          "settings": {
-            "show_description": true
-          }
-        }
-      },
-      "block_order": [
-        "description_qEfWdw"
-      ],
-      "disabled": true,
-      "settings": {
-        "tab_name": "Description",
-        "desktop_padding_top": 30,
-        "desktop_padding_bottom": 30,
-        "mobile_padding_top": 30,
-        "mobile_padding_bottom": 30
       }
     },
     "product_details_tab_switching_nwjfxh": {
@@ -523,56 +481,9 @@
         "list_block_PAbnmx",
         "media_wwNhkf"
       ],
+      "disabled": true,
       "settings": {
         "tab_name": "{{ product.metafields.custom.product_description_header_tabs.value.tab_1.value }}",
-        "desktop_padding_top": 30,
-        "desktop_padding_bottom": 30,
-        "mobile_padding_top": 30,
-        "mobile_padding_bottom": 30
-      }
-    },
-    "product_details_tab_switching_4LXyBX": {
-      "type": "product-details-tab-switching",
-      "blocks": {
-        "faq_block_ran6gJ": {
-          "type": "faq_block",
-          "settings": {
-            "faq_heading": "",
-            "faq_left_box": "<p>{{ product.metafields.custom.additional_information | metafield_tag }}</p>",
-            "faq_right_box": ""
-          }
-        }
-      },
-      "block_order": [
-        "faq_block_ran6gJ"
-      ],
-      "disabled": true,
-      "settings": {
-        "tab_name": "Additional Information",
-        "desktop_padding_top": 30,
-        "desktop_padding_bottom": 30,
-        "mobile_padding_top": 10,
-        "mobile_padding_bottom": 10
-      }
-    },
-    "product_details_tab_switching_HCqpBc": {
-      "type": "product-details-tab-switching",
-      "blocks": {
-        "faq_block_BMWjFe": {
-          "type": "faq_block",
-          "settings": {
-            "faq_heading": "",
-            "faq_left_box": "<h2><strong>[* Delivery Costs *]</strong></h2><p></p><p>Our delivery and handling costs are added to your order amount at the check out once we know where you want the item delivered.</p><h2><br/><strong>[* UK Standard Postage*]</strong></h2><p><strong>Royal Mail 48: </strong>£3.5<br/><strong>Royal Mail Special Delivery: </strong>£9<br/><strong>Books: </strong>FREE OF CHARGE<br/><strong>RadiTech: </strong>£15 + £7.5 for each additional item<br/><br/></p><h2><strong>[*Europe Postage *]</strong></h2><p><strong>Supplements/Books: </strong>£10 + £1 for each additional item<br/><strong>RadiTech: </strong>£25 + £5 for each additional item<br/><br/></p><h2><strong>[*International Postage*]</strong></h2><p><strong>Supplements/Books: </strong>£15 + £1 for each additional item<br/><strong>RadiTech: </strong>£45 + £20 for each additional item<br/><br/></p><h2><strong>[*30 Day No Quibbles Returns*]</strong></h2><p>You can return products for a refund within 30 days of delivery if not suitable. We hope you understand that we cannot accept returns on products where the seal or packaging has been broken.<br/><strong>Of course we will replace any faulty item free of charge.</strong></p>",
-            "faq_right_box": ""
-          }
-        }
-      },
-      "block_order": [
-        "faq_block_BMWjFe"
-      ],
-      "disabled": true,
-      "settings": {
-        "tab_name": "Delivery costs & Returns",
         "desktop_padding_top": 30,
         "desktop_padding_bottom": 30,
         "mobile_padding_top": 30,
@@ -619,22 +530,6 @@
         "mobile_padding_bottom": 60
       }
     },
-    "6384ab31-b366-4e70-9ed4-7a8b7db6a04c": {
-      "type": "complementary-products",
-      "disabled": true,
-      "settings": {
-        "heading": "Frequently bought together",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "1738569401f7cd9b2b": {
       "type": "apps",
       "blocks": {
@@ -679,14 +574,10 @@
   },
   "order": [
     "main",
-    "product_description_V9WMtJ",
+    "product_specification_tabs_83ip7i",
     "tab_switch_header_MQEeye",
-    "product_details_tab_switching_yyNcFh",
     "product_details_tab_switching_nwjfxh",
-    "product_details_tab_switching_4LXyBX",
-    "product_details_tab_switching_HCqpBc",
     "related-products",
-    "6384ab31-b366-4e70-9ed4-7a8b7db6a04c",
     "1738569401f7cd9b2b"
   ]
 }

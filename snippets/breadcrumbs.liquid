@@ -23,7 +23,7 @@
           <li class="tw-inline-block">
             <a
               href="{{ page.url }}"
-              class="tw-text-inherit tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline"
+              class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline"
               aria-current="page"
             >
               {{- page.title -}}
@@ -38,7 +38,7 @@
               <li class="tw-inline-block">
                 <a
                   href="{{ current_collection.url }}"
-                  class="tw-text-inherit tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline"
+                  class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline"
                 >
                   {{- current_collection.title -}}
                 </a>
@@ -52,10 +52,10 @@
             <li class="tw-inline-block">
               <a
                 href="{{ product.url }}"
-                class="tw-text-inherit tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium bmd:tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline"
+                class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium bmd:tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline"
                 aria-current="page"
               >
-                {{- product.title -}}
+                {{- product.title | truncate: 30 -}}
               </a>
             </li>
           </breadcrumbs-referrer>

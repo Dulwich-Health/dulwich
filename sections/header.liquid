@@ -363,7 +363,9 @@
       const AnnouncementBarHeight = document.querySelector('.custom-announcement-bar').offsetHeight;
       if (scrollTop >= AnnouncementBarHeight) {
         this.header.classList.add('scrolled-past-header');
-        document.querySelector(".drawer.cart-notification-drawer").classList.add('header-cart-drawer-sticky');
+        if (document.querySelector(".drawer.cart-notification-drawer") != null) {
+          document.querySelector(".drawer.cart-notification-drawer").classList.add('header-cart-drawer-sticky');          
+        }
       }
 
       if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
@@ -387,7 +389,10 @@
         }
       } else if (scrollTop <= this.headerBounds.top) {
         this.header.classList.remove('scrolled-past-header');
-        document.querySelector(".drawer.cart-notification-drawer").classList.remove('header-cart-drawer-sticky');
+        
+        if (document.querySelector(".drawer.cart-notification-drawer") != null) {
+          document.querySelector(".drawer.cart-notification-drawer").classList.remove('header-cart-drawer-sticky');
+        }
         requestAnimationFrame(this.reset.bind(this));
       }
 
