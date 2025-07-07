@@ -111,9 +111,8 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
-    "brand_headline": "",
+    "brand_headline": "Dulwich Health",
     "brand_description": "<p>The most unique range of health information & products. Including OxyTech, AlliTech and Geomack.</p>",
-    "brand_image": "shopify://shop_images/DulwichHealthLogo_Round.svg",
     "social_facebook_link": "https://www.facebook.com/DulwichHealth",
     "social_instagram_link": "https://www.instagram.com/dulwichhealth/",
     "social_youtube_link": "",
@@ -263,6 +262,23 @@
           "show_cart": true
         }
       },
+      "15316669992541710076": {
+        "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-snippet/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "disabled": false,
+        "settings": {
+          "star": "#c2c67a",
+          "text_color": "#c2c67a",
+          "snippet_mode": "default",
+          "text": "Reviews",
+          "line_break": false,
+          "listen_for_changes": true,
+          "rating_without_brackets": false,
+          "format_review_count": false,
+          "show_popup": true,
+          "anchor_to_reviews_widget": true,
+          "show_empty_stars": true
+        }
+      },
       "10384935893930344104": {
         "type": "shopify://apps/seoant-redirects/blocks/brokenlink-404/cc7b1996-e567-42d0-8862-356092041863",
         "disabled": false,
@@ -300,24 +316,7 @@
           "margin_left": 0,
           "margin_right": 0
         }
-      },
-      "15316669992541710076": {
-        "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-snippet/92a082e5-b297-4e88-b428-ac96cbc505f9",
-        "disabled": false,
-        "settings": {
-          "star": "#c2c67a",
-          "text_color": "#c2c67a",
-          "snippet_mode": "default",
-          "text": "Reviews",
-          "line_break": false,
-          "listen_for_changes": true,
-          "rating_without_brackets": false,
-          "format_review_count": false,
-          "show_popup": false,
-          "anchor_to_reviews_widget": true,
-          "show_empty_stars": true
-        }
-      },
+      }
     },
     "color_schemes": {
       "background-1": {
