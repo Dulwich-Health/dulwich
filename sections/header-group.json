@@ -13,6 +13,7 @@
   "sections": {
     "custom_announcement_bar_KwBRNY": {
       "type": "custom-announcement-bar",
+      "name": "Call us / social bar",
       "settings": {
         "announcement_bar_text": "Call us on +44 (0)20 8670 5883",
         "announcement_bar_text_link": "tel:+44 208 670 5883",
@@ -64,6 +65,7 @@
         "block_6C3eTF",
         "block_MP7GNt"
       ],
+      "name": "Mobile Trust Bar",
       "settings": {
         "color_scheme": "scheme-5d415bee-8962-4d28-bea5-a42f7f862306",
         "hide_in_mobile": false,
@@ -76,36 +78,6 @@
         "slides_perpage_mobile": 2,
         "padding_top": 6,
         "padding_bottom": 6
-      }
-    },
-    "announcement-bar": {
-      "type": "announcement-bar",
-      "blocks": {
-        "announcement-bar-0": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "link": ""
-          }
-        },
-        "9a2a08db-5117-4d1a-b73a-cc208a063c19": {
-          "type": "announcement",
-          "settings": {
-            "text": "Annoucement bar text two",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "announcement-bar-0",
-        "9a2a08db-5117-4d1a-b73a-cc208a063c19"
-      ],
-      "disabled": true,
-      "settings": {
-        "auto_rotate": true,
-        "change_slides_speed": 3,
-        "show_arrows": true,
-        "show_arrows_on_mobile": false
       }
     },
     "header": {
@@ -138,6 +110,7 @@
     },
     "megamenu-shop": {
       "type": "megamenu-shop",
+      "name": "Shop mega menu",
       "settings": {
         "parent": "SHOP",
         "menu": "header-desktop-shop"
@@ -145,11 +118,28 @@
     },
     "a6ac85cd-b558-4cf8-9f53-accb3b902ecd": {
       "type": "megamenu-item-demo-1",
+      "name": "Case Histories mega menu",
       "settings": {
         "parent": "CASE HISTORIES",
         "heading": "",
         "subheading": "",
         "menu": "case-histories",
+        "popular_menu_item": "",
+        "popular_text": "",
+        "image_heading": "",
+        "image_subheading": "",
+        "image_button_text": "",
+        "image_button_link": ""
+      }
+    },
+    "megamenu_item_demo_1_bnzqex": {
+      "type": "megamenu-item-demo-1",
+      "name": "Health Suggestions mega menu",
+      "settings": {
+        "parent": "HEALTH SUGGESTIONS",
+        "heading": "",
+        "subheading": "",
+        "menu": "health-suggestions",
         "popular_menu_item": "",
         "popular_text": "",
         "image_heading": "",
@@ -196,6 +186,7 @@
         "block_FGUnCL",
         "block_wbmLQ8"
       ],
+      "name": "Desktop Trust Bar",
       "settings": {
         "color_scheme": "scheme-5d415bee-8962-4d28-bea5-a42f7f862306",
         "hide_in_mobile": true,
@@ -209,32 +200,16 @@
         "padding_top": 8,
         "padding_bottom": 9
       }
-    },
-    "megamenu_item_demo_1_bnzqex": {
-      "type": "megamenu-item-demo-1",
-      "settings": {
-        "parent": "HEALTH SUGGESTIONS",
-        "heading": "",
-        "subheading": "",
-        "menu": "health-suggestions",
-        "popular_menu_item": "",
-        "popular_text": "",
-        "image_heading": "",
-        "image_subheading": "",
-        "image_button_text": "",
-        "image_button_link": ""
-      }
     }
   },
   "order": [
     "custom_announcement_bar_KwBRNY",
     "pdp_announcement_bar_wrBmjL",
-    "announcement-bar",
     "header",
     "29597e83-b5df-402e-9c55-1f5773f2d069",
     "megamenu-shop",
     "a6ac85cd-b558-4cf8-9f53-accb3b902ecd",
-    "pdp_announcement_bar",
-    "megamenu_item_demo_1_bnzqex"
+    "megamenu_item_demo_1_bnzqex",
+    "pdp_announcement_bar"
   ]
 }
