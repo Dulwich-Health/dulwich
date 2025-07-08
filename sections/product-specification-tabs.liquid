@@ -66,41 +66,31 @@
     </div>
 
     <div class="right-side-content">
-      {% if product.metafields.custom.product_detail_information != blank %}
+      {% if product.metafields.custom.product_information_table.value.size > 0 %}
         <section id="product-info" class="product-section-card product_detail_information">
           <h2 class="specification_title">Product Information</h2>
           <div class="section_content product_info_content">
             <div class="tw-p-[10px] lg:tw-p-[18px] tw-overflow-x-auto">
-              {% assign informations_table = product.metafields.custom.product_detail_information
-                | metafield_tag
-                | replace: '<p>', ''
-                | replace: '</p>', ''
-                | split: '\n'
-              %}
-              {% assign headers = informations_table[0] | split: '|' %}
-              {% assign rows = informations_table | slice: 1, informations_table.size %}
               <table class="tw-w-full product-information-table">
-                <thead>
-                  <tr>
-                    {% for header in headers %}
-                      <th class="tw-font-primary tw-text-[14px] lg:tw-text-[19px] tw-font-medium tw-text-left tw-text-bright-red">
-                        {{ header }}
-                      </th>
-                    {% endfor %}
-                  </tr>
-                </thead>
-                <tbody>
-                  {% for row in rows %}
-                    {% assign columns = row | split: '|' %}
+                {% for row in product.metafields.custom.product_information_table.value %}
+                  {%- if forloop.index == 1 -%}
+                    <thead>
+                      {% for col in row %}
+                        <th class="tw-text-[14px] lg:tw-text-[19px] tw-text-left tw-text-bright-red tw-font-bold">
+                          {{ col | last }}
+                        </th>
+                      {% endfor %}
+                    </thead>
+                  {%- else -%}
                     <tr>
-                      {% for column in columns %}
-                        <td class="tw-font-primary tw-text-[13px] lg:tw-text-[18px] tw-font-normal tw-text-black tw-text-left tw-py-[10px] lg:tw-py-[17px]">
-                          {{ column | replace: '<br />', '' | strip }}
+                      {% for col in row %}
+                        <td class="tw-text-[13px] lg:tw-text-[18px] tw-font-normal tw-text-black tw-text-left tw-py-[10px] lg:tw-py-[17px]">
+                          {{ col | last }}
                         </td>
                       {% endfor %}
                     </tr>
-                  {% endfor %}
-                </tbody>
+                  {%- endif -%}
+                {% endfor %}
               </table>
             </div>
 
