@@ -616,13 +616,13 @@
               </div>
             {% when 'faq' %}
               {% assign faq_data = product.metafields.custom.product_faq.value %}
-
-              <div id="accordion--{{ block.id }}" class="faq_accordion">
+              <script src="{{ 'accordion.js' | asset_url }}" defer="defer"></script>
+              <div id="accordion--{{ block.id }}" class="faq_accordion tw-flex tw-flex-col tw-gap-2">
                 {% if block.settings.block_title != blank and faq_data != blank %}
-                  <div class="faq_block_title h3 tw-mb-8">{{ block.settings.block_title }}</div>
+                  <div class="faq_block_title h3">{{ block.settings.block_title }}</div>
                 {% endif %}
                 {% for faq in faq_data.faq.value.faqs %}
-                  <details class="tw-p-2 detail--{{ forloop.index }}">
+                  <details is="accordion-component" class="detail--{{ forloop.index }}">
                     <summary class="tw-flex tw-justify-between tw-gap-2">
                       <div class="h3">{{ faq.question | escape }}</div>
                       <div class="summary--icons">
@@ -630,7 +630,7 @@
                         <span class="icon-minus">{% render 'icon-minus' %}</span>
                       </div>
                     </summary>
-                    <div class="faq_accordion-content">{{ faq.answer | escape }}</div>
+                    <div class="faq_accordion-content content">{{ faq.answer | escape }}</div>
                   </details>
                 {% endfor %}
               </div>
