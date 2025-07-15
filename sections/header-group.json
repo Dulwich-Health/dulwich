@@ -11,6 +11,59 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "pdp_announcement_bar_YAixdA": {
+      "type": "pdp-announcement-bar",
+      "blocks": {
+        "block_PacRct": {
+          "type": "block",
+          "settings": {
+            "block_value": "<p>15% off orders over £125</p>",
+            "link": ""
+          }
+        },
+        "block_3jfY7Y": {
+          "type": "block",
+          "settings": {
+            "block_value": "<p>10% off orders over £75</p>",
+            "link": ""
+          }
+        },
+        "block_Qcp6NJ": {
+          "type": "block",
+          "settings": {
+            "block_value": "<p>FREE gift with every order</p>",
+            "link": ""
+          }
+        },
+        "block_XG7iKA": {
+          "type": "block",
+          "settings": {
+            "block_value": "<p>Offer ends midnight on the 18th</p>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "block_PacRct",
+        "block_3jfY7Y",
+        "block_Qcp6NJ",
+        "block_XG7iKA"
+      ],
+      "name": "PDP Announcement bar",
+      "settings": {
+        "color_scheme": "accent-1",
+        "hide_in_mobile": false,
+        "hide_in_desktop": false,
+        "show_arrows": false,
+        "show_arrows_on_mobile": false,
+        "enable_autoplay": true,
+        "autoplay_speed": 3,
+        "slides_perpage": 4,
+        "slides_perpage_mobile": 2,
+        "padding_top": 8,
+        "padding_bottom": 0
+      }
+    },
     "custom_announcement_bar_KwBRNY": {
       "type": "custom-announcement-bar",
       "name": "Call us / social bar",
@@ -203,6 +256,7 @@
     }
   },
   "order": [
+    "pdp_announcement_bar_YAixdA",
     "custom_announcement_bar_KwBRNY",
     "pdp_announcement_bar_wrBmjL",
     "header",
