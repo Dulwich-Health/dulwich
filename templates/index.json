@@ -204,7 +204,7 @@
           "type": "carousel_block",
           "settings": {
             "image_desktop": "shopify://shop_images/Its_our_Birthday_DESKTOP_WEB_BANNER.webp",
-            "image_mobile": "shopify://shop_images/Its_our_Birthday_MOBILE_BANNER_300420.webp",
+            "image_mobile": "shopify://shop_images/Its_our_Birthday_MOBILE_BANNER.webp",
             "image_url": ""
           }
         }
