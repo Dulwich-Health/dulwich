@@ -203,8 +203,8 @@
         "carousel_block_tT4BpB": {
           "type": "carousel_block",
           "settings": {
-            "image_desktop": "shopify://shop_images/1170335_DESKTOP_WEB_BANNER_3.png",
-            "image_mobile": "shopify://shop_images/MOBILE_BANNER_300420_4.png",
+            "image_desktop": "shopify://shop_images/Its_our_Birthday_DESKTOP_WEB_BANNER.webp",
+            "image_mobile": "shopify://shop_images/Its_our_Birthday_MOBILE_BANNER_300420.webp",
             "image_url": ""
           }
         }
