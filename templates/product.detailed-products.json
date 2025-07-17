@@ -216,7 +216,7 @@
         "text_zxPmze": {
           "type": "text",
           "settings": {
-            "text": "<h6>The customer reviews below are subjective and only moderated for offensive content. They are not endorsed by Dulwich Health and should not be regarded as or relied on for medical or health advice. If you have any health problems or questions regarding the suitability of any product, please contact a health professional. Products are not medicinal unless otherwise stated.</h6>",
+            "text": "<p>The customer reviews below are subjective and only moderated for offensive content. They are not endorsed by Dulwich Health and should not be regarded as or relied on for medical or health advice. If you have any health problems or questions regarding the suitability of any product, please contact a health professional. Products are not medicinal unless otherwise stated.</p>",
             "text_font_size": "17",
             "text_font_weight": "400",
             "text_line_height": "28",
